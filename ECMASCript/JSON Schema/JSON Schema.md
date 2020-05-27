@@ -353,6 +353,8 @@
 
 ## 使用ajv、ajv-keywords、ajv-errors校验
 
+
+
 ```js
 const Ajv = require('ajv')
 const ajv = new Ajv({ allErrors: true, jsonPointers: true, $data: true });
