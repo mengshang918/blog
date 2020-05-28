@@ -16,6 +16,9 @@
 
 4. 构建
    * bazel
+   * Rollup react
+   * Gulp babel
+   * Make
 
 ## [Lerna](https://github.com/lerna)
 
