@@ -119,8 +119,28 @@
 7. [lerna publish](https://github.com/lerna/lerna/tree/master/commands/publish#readme)
 
    [选择一个开源许可证](https://choosealicense.com/)
+   
+   如果是scope package（@xxx/some-package）,则需要在`package`的`package.json`指定`publishConfig.access`字段
+   
+   ```json
+   //package的package.json文件
+   {
+   	"publishConfig":{
+   		//指定范围包的访问权限 不设置public，就付钱升级npm账号吧。
+   		"access":"public",
+   		//指定发布的目录 可以配合.npmignore
+   		"directory":""
+   	}
+   }
+   ```
+   
+   需提前`npm login`,使用`npm whoami`判断是否登录成功。没问题使用`lerna publish from-package`发布包
 
 ## Yarn workspace
+
+`yarn config list`中没有设置workspaces-experimental则使用以下命令开启
+
+`yarn config set workspaces-experimental true`
 
 使用yarn workspace主要是可以将各个package相同的包提升到根目录中。避免每个package都install一个包。
 
@@ -173,4 +193,3 @@
 * [基于主干和基于中继的开发](https://trunkbaseddevelopment.com/)
 * [git submodule](https://www.atlassian.com/git/tutorials/git-submodule)
 
-- [`lerna publish`](https://github.com/lerna/lerna/blob/master/commands/publish#readme)
