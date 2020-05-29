@@ -13,3 +13,10 @@
    什么时候使用Map，什么时候使用object
 
 6. Monorepo lerna yarnworkspace
+
+7. 新技术学习
+
+   1. medium 搜索相应关键字
+   2. google 搜索 beginner Tutorial
+   3. npm
+   4. 官网介绍
