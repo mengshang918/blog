@@ -92,7 +92,7 @@
    // lerna.json
    {
    	"npmClient":"yarn",
-   	"useWorkspaces":"true"
+   	"useWorkspaces":true
    }
    //根目录 package.json
    {
@@ -151,6 +151,8 @@
 3. [nohoist in Workspaces](https://classic.yarnpkg.com/blog/2018/02/15/nohoist/)
 
 ### 常用命令
+
+当第一次安装package提示找不到package。可以试着写死版本
 
 1. 工作区
 
