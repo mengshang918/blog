@@ -12,15 +12,12 @@
 
    什么时候使用Map，什么时候使用object
 
-6. 新技术学习
-
-   1. medium 搜索相应关键字
-   2. google 搜索 beginner Tutorial
-   3. npm
-   4. 官网介绍
-
 7. ts
 
-8. Webpack vs rollup vs parcel
+7. Webpack vs rollup vs parcel vs Browserify
 
-9. 
+   * rollup
+     * 静态分析
+     * https://medium.com/@Rich_Harris/small-modules-it-s-not-quite-that-simple-3ca532d65de4
+     * 为什么library使用rollup
+
