@@ -87,7 +87,7 @@
      type Point = PartialPointX & { y: number; };
      ```
 
-2. 了解泛型
+2. 了解泛型 generic
 
    https://ts.chibicode.com/generics/
 
@@ -107,7 +107,21 @@
 
 3. 映射类型（mapped types）
 
-4. react + ts 
+   * [Mapped Types in TypeScript](https://mariusschulz.com/blog/mapped-types-in-typescript)
+
+4. Literal type
+
+   use literal types to specify exactly which value is allowed for a property
+
+5. **intersection type** &
+
+   use intersection types to override some properties and remove code duplication
+
+6. Union type |
+
+   union types are powerful when combined with conditional statements
+
+7. react + ts 
 
    [备忘单](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
 
