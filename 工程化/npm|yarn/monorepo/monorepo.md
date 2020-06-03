@@ -44,6 +44,10 @@
 
    * [固定模式和独立模式区别](https://github.com/lerna/lerna#fixedlocked-mode-default)
 
+     * lerna version
+
+       固定模式。会更新根目录changelog，并且publishconfig
+
 2. [lerna version](https://github.com/lerna/lerna/tree/master/commands/version#lernaversion)
 
    发布工作区中自上次发布有更改的package。包的版本可以自定义，也可以根据一些条件自动生成。这里我只介绍根据commit提交信息自动生成package版本，其它可以点击链接查看详情
@@ -61,8 +65,18 @@
      一般package的格式是major.minor.patch组成。例子：1.0.0
 
      * 默认模式：固定模式下 Fixed/Locked mode (default)
+       
        * 某个package有重大更新，工作区所有package都会增加一个major版本
+       * 根目录changelog会改变
+       * lerna.json中version的messge的`S%`版本会随着version变化。
+       
      * 独立模式
+
+       * 根目录changelog不会改变
+
+       * lerna.json中version的messge的`S%`版本不会由version代替。任然是`s%`。
+
+         建议独立模式使用`lerna version --conventional-commits -m "chore(release): publish 版本号"`
 
    ```json
    //lerna.json
