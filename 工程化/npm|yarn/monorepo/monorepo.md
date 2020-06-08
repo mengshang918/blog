@@ -47,6 +47,10 @@
      * lerna version
 
        固定模式。会更新根目录changelog，并且publishconfig
+       
+     * 独立模式
+
+       只有当前packge改变changelog才会改变。不会影响其他package
 
 2. [lerna version](https://github.com/lerna/lerna/tree/master/commands/version#lernaversion)
 
@@ -74,7 +78,7 @@
 
        * 根目录changelog不会改变
 
-       * lerna.json中version的messge的`S%`版本不会由version代替。任然是`s%`。
+       * lerna.json中version的messge的`S%`版本不会由version代替。任然是`s%`。（参考：[lerna version -m](https://github.com/lerna/lerna/tree/master/commands/version#--message-msg)）
 
          建议独立模式使用`lerna version --conventional-commits -m "chore(release): publish 版本号"`
 
@@ -175,6 +179,8 @@
       * 将 `react` 和 `react-dom` 作为 `devDependencies` 加到 `packages/awesome-package/package.json` 中
 
         `yarn workspace awesome-package add react react-dom --dev`
+
+      注意：第一次(some-package还未发布到npm上)使用lerna add some-package --scope=packaget
 
    2. 删除某个package的某个包
 
