@@ -109,7 +109,7 @@
 
    * [Mapped Types in TypeScript](https://mariusschulz.com/blog/mapped-types-in-typescript)
 
-4. Literal type
+4. literal type（文字类型）
 
    use literal types to specify exactly which value is allowed for a property
 
