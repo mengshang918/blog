@@ -110,12 +110,23 @@ why使用TS？
 
    * 函数throw一个error
 
+   * 永不返回的函数 
+
+     ```typescript
+     function infiniteLoop(): never {
+         while (true) {
+         }
+     }
+     ```
+
    * nerver是任何类型的子类型。但是任何类型都不是nerver的子类型（包括any和它本身）
 
 9. any
    * `any` 类型，允许被赋值为任意类型 
    * 声明一个变量为任意值之后，对它的任何操作，返回的内容的类型都是任意值。
    * 变量在声明未指定其类型，会被识别为任意值类型
+   
+10. object
 
 ## 类型推论
 
