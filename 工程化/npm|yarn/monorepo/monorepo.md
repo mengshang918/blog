@@ -1,3 +1,5 @@
+[TOC]
+
 # monorepo
 
 1. 什么是monorepo和multirepo
