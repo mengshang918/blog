@@ -9,6 +9,7 @@
     - [扩展](#扩展)
 
 <!-- /TOC -->
+
 # monorepo
 
 1. 什么是 monorepo 和 multirepo
@@ -203,11 +204,13 @@
 
    3. 给所有 package 添加某个包
 
-      `yarn workspace add some-package`
+      ~~`yarn workspace add some-package`~~
 
-   4. 给所有 package 删除某个包
+      使用`lerna add package`，一次只能添加一个
 
-      `yarn workspace remove some-package`
+   ~~4. 给所有 package 删除某个包~~
+
+   ​	~~`yarn workspace remove some-package`~~
 
 2. 根目录
 
