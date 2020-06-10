@@ -51,9 +51,17 @@
 
      * 使用const断言，将literal types 、object literals、array literals变成readonly
 
-3. 
+3. defaultProps使用方式
 
-4. [class component](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components)
+   [fc和class组件使用defaultProps](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#support-for-defaultprops-in-jsx)
+
+   * 函数式组件尽量使用es6 默认赋值
+
+4. type or interface
+
+   
+
+5. [class component](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components)
 
 ## 参考
 
@@ -62,4 +70,5 @@
 - [使用TypeScript开发React应用程序](https://egghead.io/courses/use-typescript-to-develop-react-applications)
 - [使用Typescript 2.8的Ultimate React组件模式](https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935)
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+- 
 
