@@ -20,4 +20,9 @@
      * 静态分析
      * https://medium.com/@Rich_Harris/small-modules-it-s-not-quite-that-simple-3ca532d65de4
      * 为什么library使用rollup
+   
+8. ts
+
+   1. namespace / moudles 
+   2. ///
 
