@@ -121,7 +121,9 @@
 
    union types are powerful when combined with conditional statements
 
-7. react + ts 
+7. declare module 和declare namespace
+
+8. react + ts 
 
    [备忘单](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
 
