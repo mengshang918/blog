@@ -181,5 +181,7 @@
 
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 
+- https://fettblog.eu/typescript-react/further-reading/
+
   
 

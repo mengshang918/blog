@@ -126,4 +126,6 @@
 9. react + ts 
 
    [备忘单](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
+   
+   [TS Deep Dive](https://basarat.gitbook.io/typescript/)
 
