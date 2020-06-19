@@ -108,6 +108,12 @@
 3. 映射类型（mapped types）
 
    * [Mapped Types in TypeScript](https://mariusschulz.com/blog/mapped-types-in-typescript)
+   * ReadOnly
+   * Partial
+   * Pick
+   * Record
+   * Exclude
+   * ReturnType
 
 4. literal type（文字类型）
 
@@ -123,9 +129,21 @@
 
 8. declare module 和declare namespace
 
-9. react + ts 
+9. infer
 
-   [备忘单](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
-   
-   [TS Deep Dive](https://basarat.gitbook.io/typescript/)
+10. 字符串索引和数字索引
+
+11. 类型防护
+
+12. unknown
+
+13. 什么时候使用nerver
+
+14. react + ts 
+
+    [备忘单](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#basic-cheatsheet-table-of-contents)
+
+    [TS Deep Dive](https://basarat.gitbook.io/typescript/)
+
+14. [Playground](https://www.typescriptlang.org/play/#)
 
