@@ -1,18 +1,10 @@
-1. recoil
 
-2. immutable.js和immer对比
-
-3. mobx
-
-   https://juejin.im/post/5eb04afc5188256d86197177
 
 4. coding like a pro
 
 5. 为啥需要使用Map
 
    什么时候使用Map，什么时候使用object
-
-7. ts
 
 7. Webpack vs rollup vs parcel vs Browserify
 
@@ -27,7 +19,23 @@
    1. namespace / moudles 
    2. ///
    
-9. react
+5. react
 
    1. Forwardref
+
+   2. recoil
+
+   3. immutable.js和immer对比
+
+   4. mobx
+
+      https://juejin.im/post/5eb04afc5188256d86197177
+
+6. nodejs framework
+
+   1. express
+   2. koa
+   3. Nestjs
+
+7. 异常处理
 
