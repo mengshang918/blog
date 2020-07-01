@@ -8,8 +8,6 @@
 
    * 参数3：可选。指令描述
 
-     
-
 3. 可选`program.option('-s,--small <type> [args]','description',[fn],[default])`
 
   * 参数1: 指令。由一个断指令和长指令组成，中间用`,`、`|`、`空格`分割
@@ -77,7 +75,7 @@
 
 7. [`.parse()`和`.parseAsync()`解析字符串组](https://github.com/tj/commander.js/blob/64053252cbd5b5434afb7ec3f12c46ad2a352d8a/Readme_zh-CN.md#parse-%E5%92%8C-parseasync)
 
-   **必须加**
+   **必须加**：用于解析process.argv(默认)，设置options以及触发commands
 
 ## 参考
 
