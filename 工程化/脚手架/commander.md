@@ -28,7 +28,7 @@
 
      git `-v` 中的`-v`就是上面所讲的option
 
-     git `clone from xxx`中的`clone from xxx`就是子命令了
+     git `clone xxx`中的`clone xxx`就是子命令了
 
      子命令也可以有option
 
