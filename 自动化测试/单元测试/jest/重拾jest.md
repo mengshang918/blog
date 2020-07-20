@@ -13,6 +13,8 @@
 
 2. [babel配置](https://jestjs.io/docs/en/getting-started.html#using-babel)
 
+   jest会自动添加`process.env.NODE_ENV === 'test'`环境变量
+
 3. [ts配置](https://jestjs.io/docs/en/getting-started.html#using-typescript)
 
 4. [webpack配置](https://jestjs.io/docs/en/getting-started.html#using-webpack)
@@ -192,5 +194,13 @@
 
    解决：`yarn add -D babel-jest`
 
+2. lerna + jest
 
+   * [Guide use jest with lerna](https://github.com/facebook/jest/issues/3112)
+
+3.  Failed to write coverage reports:no such file or directory xxx/istanbul-reports/lib/html/assets
+
+   `rm -rf node_modules .yarnclean && yarn install`
+
+   [No such file or directory (istanbul-reports/lib/html/assets)](https://github.com/gotwarlost/istanbul/issues/743)
 
