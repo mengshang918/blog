@@ -39,3 +39,39 @@
 
 7. 异常处理
 
+## 查漏补缺
+* git cherry-pick
+* git commit记录合并
+* git 合并模式
+* json schema 
+* mockjs
+* yapi文档
+* react admin
+* Memoization
+* redux和react-redux区别
+* redux-thunk和redux-saga区别
+* react-redux connect和provider
+* react context usecontext
+* hooks
+* formdata http协议 axios
+* filereader
+* 图片上传
+* bind call 
+* this指向
+* 箭头函数
+* es6 proxy reflect
+* cross-env
+* Prettier-ignore 和 eslint-next-line实现原理
+* https://travis-ci.org/github/wix/import-cost
+* https://juejin.im/post/5e3b9ae26fb9a07ca714a5cc
+* window.history
+* window.open和window.location.href区别
+* 在不刷新页面的情况下更改页面的url的qs
+* window.history
+* 为什么reducer必须返回一个新对象
+* https://recoiljs.org/
+## 待输出博客
+* const log = console.log
+* https://12factor.net/
+* https://css-tricks.com/debouncing-throttling-explained-examples/
+* 正则test加了g

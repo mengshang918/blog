@@ -1,0 +1,2 @@
+* [commit提交规范](https://www.conventionalcommits.org/)
+* [版本语义化](https://semver.org/lang/zh-CN/)
