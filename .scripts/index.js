@@ -80,7 +80,7 @@ let emptyDirQ = emptyDir.map((item) =>
   if(emptyDir.length===0){
     process.exit(0)
   }else{
-    log(chalk.green(emptyDirQ))
+    log(emptyDirQ)
     inquirer
       .prompt({
         type: 'confirm',
