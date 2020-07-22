@@ -17,7 +17,7 @@
   },
   "husky":{
     "hooks":{
-      "pre-push":"yarn pre-push"
+      "pre-push":"exec < /dev/tty && yarn pre-push"
     }
   }
 }
