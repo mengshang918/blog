@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "博客",
+  "main": "index.js",
+  "repository": "https://github.com/mengshang918/blog.git",
+  "author": "mengshang918",
+  "license": "MIT",
+  "scripts": {
+    "pre-push": "node ./.scripts/index"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.0",
+    "husky": "^4.2.5",
+    "inquirer": "^7.3.2",
+    "ora": "^4.0.5"
+  },
+  "husky":{
+    "hooks":{
+      "pre-push":"yarn pre-push"
+    }
+  }
+}
