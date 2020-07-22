@@ -11,13 +11,14 @@
   },
   "devDependencies": {
     "chalk": "^4.1.0",
+    "execa": "^4.0.3",
     "husky": "^4.2.5",
     "inquirer": "^7.3.2",
     "ora": "^4.0.5"
   },
-  "husky":{
-    "hooks":{
-      "pre-push":"exec < /dev/tty && yarn pre-push"
+  "husky": {
+    "hooks": {
+      "pre-push": "exec < /dev/tty && yarn pre-push"
     }
   }
 }
