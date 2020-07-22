@@ -7,7 +7,7 @@ const inquirer = require('inquirer')
 
 const loading = ora('读取当前项目空文件夹（git会忽略空文件夹）')
 // 递归判断文件夹是否为空的入口
-const rootPath = path.resolve(__dirname,'../')
+const rootPath = path.resolve(__dirname, '../')
 // 忽略的文件
 const ignoreDir = ['.git', '.scripts', '.gitignore', 'node_modules']
 const { log } = console
@@ -37,12 +37,11 @@ getGitIgnoreArr() */
  * @param {string} path 路径
  */
 const addTodoFn = (path) => {
-  fs.appendFile(`${path}/TODO.md`, '', (err) => {
-    if (err) {
-      log(chalk.red(err))
-    }
-    log(chalk.blue(`在${path}下新建TODO.md文件`))
-  })
+  try {
+    fs.appendFileSync(`${path}/TODO.md`, '')
+  } catch (error) {
+    log(chalk.red(error))
+  }
 }
 
 /**
@@ -73,7 +72,7 @@ loadDir(rootPath, emptyDir)
 loading.stop()
 
 // 去除rootPath前缀
-emptyDir = emptyDir.map((item) =>
+let emptyDirQ = emptyDir.map((item) =>
   item.split(rootPath).length > 1 ? item.split(rootPath)[1] : item
 )
 // confirm交互，是否
@@ -82,18 +81,18 @@ emptyDir = emptyDir.map((item) =>
   inquirer
     .prompt({
       type: 'confirm',
-      name:'addTodo',
-      message: `确认要在${emptyDir.join()}文件夹下新建TODO.md文件`,
+      name: 'addTodo',
+      message: `确认要在${emptyDirQ.join()}文件夹下新建TODO.md文件`,
       default: false,
     })
     .then((answer) => {
-      const {addTodo} = answer
+      const { addTodo } = answer
       if (addTodo) {
         emptyDir.map((item) => {
           addTodoFn(item)
         })
         process.exit(0)
-      }else{
+      } else {
         process.exit(1)
       }
     })
