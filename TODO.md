@@ -43,10 +43,8 @@
 * git cherry-pick
 * git commit记录合并
 * git 合并模式
-* json schema 
 * mockjs
 * yapi文档
-* react admin
 * Memoization
 * redux和react-redux区别
 * redux-thunk和redux-saga区别
