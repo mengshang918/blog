@@ -4,6 +4,7 @@ const readline = require('readline')
 const chalk = require('chalk')
 const ora = require('ora')
 const inquirer = require('inquirer')
+const execa = require('execa')
 
 const loading = ora('读取当前项目空文件夹（git会忽略空文件夹）')
 // 递归判断文件夹是否为空的入口
@@ -88,12 +89,18 @@ let emptyDirQ = emptyDir.map((item) =>
         message: `确认要在上面所有文件夹下新建TODO.md文件`,
         default: false,
       })
-      .then((answer) => {
+      .then(async (answer) => {
         const { addTodo } = answer
         if (addTodo) {
           emptyDir.map((item) => {
             addTodoFn(item)
           })
+          try {
+            await execa('git',['add','.'])
+            await execa('git',['commit','-m','新增TODO.md文件'])
+          } catch (error) {
+            log(chalk.red(error))
+          }
           process.exit(0)
         } else {
           process.exit(1)
