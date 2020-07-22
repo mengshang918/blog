@@ -77,23 +77,27 @@ let emptyDirQ = emptyDir.map((item) =>
 )
 // confirm交互，是否
 ;(async () => {
-  console.log(emptyDir)
-  inquirer
-    .prompt({
-      type: 'confirm',
-      name: 'addTodo',
-      message: `确认要在${emptyDirQ.join()}文件夹下新建TODO.md文件`,
-      default: false,
-    })
-    .then((answer) => {
-      const { addTodo } = answer
-      if (addTodo) {
-        emptyDir.map((item) => {
-          addTodoFn(item)
-        })
-        process.exit(0)
-      } else {
-        process.exit(1)
-      }
-    })
+  if(emptyDir.length===0){
+    process.exit(0)
+  }else{
+    log(chalk.green(emptyDirQ))
+    inquirer
+      .prompt({
+        type: 'confirm',
+        name: 'addTodo',
+        message: `确认要在上面所有文件夹下新建TODO.md文件`,
+        default: false,
+      })
+      .then((answer) => {
+        const { addTodo } = answer
+        if (addTodo) {
+          emptyDir.map((item) => {
+            addTodoFn(item)
+          })
+          process.exit(0)
+        } else {
+          process.exit(1)
+        }
+      })
+  }
 })()
