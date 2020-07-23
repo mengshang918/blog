@@ -7,18 +7,32 @@
   "author": "mengshang918",
   "license": "MIT",
   "scripts": {
-    "pre-push": "node ./.scripts/index"
+    "pre-push": "node scripts/index"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
     "chalk": "^4.1.0",
+    "eslint": "^7.5.0",
     "execa": "^4.0.3",
     "husky": "^4.2.5",
     "inquirer": "^7.3.2",
-    "ora": "^4.0.5"
+    "lint-staged": "^10.2.11",
+    "ora": "^4.0.5",
+    "prettier": "^2.0.5"
   },
   "husky": {
     "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "exec < /dev/tty && yarn pre-push"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --config .prettierrc.yml --write"
+    ],
+    "*.md": "prettier --config .prettierrc.yml --write"
   }
 }
