@@ -1,6 +1,13 @@
+/*
+ * pre-push脚本，自动递归当前项目是否存在空文件夹。存在则在空文件夹下自动新增TODO.md文件。因为git无法跟踪空文件夹
+ * @Author: jiangxiaowei
+ * @Date: 2020-07-23 15:00:45
+ * @Last Modified by: jiangxiaowei
+ * @Last Modified time: 2020-07-23 15:01:55
+ */
 const fs = require('fs')
 const path = require('path')
-const readline = require('readline')
+// const readline = require('readline')
 const chalk = require('chalk')
 const ora = require('ora')
 const inquirer = require('inquirer')
@@ -78,15 +85,15 @@ let emptyDirQ = emptyDir.map((item) =>
 )
 // confirm交互，是否
 ;(async () => {
-  if(emptyDir.length===0){
+  if (emptyDir.length === 0) {
     process.exit(0)
-  }else{
+  } else {
     log(emptyDirQ)
     inquirer
       .prompt({
         type: 'confirm',
         name: 'addTodo',
-        message: `确认要在上面所有文件夹下新建TODO.md文件`,
+        message: '确认要在上面所有文件夹下新建TODO.md文件',
         default: false,
       })
       .then(async (answer) => {
@@ -96,8 +103,8 @@ let emptyDirQ = emptyDir.map((item) =>
             addTodoFn(item)
           })
           try {
-            await execa('git',['add','.'])
-            await execa('git',['commit','-m','新增TODO.md文件'])
+            await execa('git', ['add', '.'])
+            await execa('git', ['commit', '-m', '新增TODO.md文件'])
           } catch (error) {
             log(chalk.red(error))
           }
