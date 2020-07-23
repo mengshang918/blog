@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [monorepo](#monorepo)
+  - [Lerna](#lerna)
+    - [常用 lerna 命令](#%E5%B8%B8%E7%94%A8-lerna-%E5%91%BD%E4%BB%A4)
+  - [Yarn workspace](#yarn-workspace)
+    - [常用命令](#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)
+  - [lerna 配合 yarn workspace](#lerna-%E9%85%8D%E5%90%88-yarn-workspace)
+  - [扩展](#%E6%89%A9%E5%B1%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <!-- TOC -->
 
 - [monorepo](#monorepo)

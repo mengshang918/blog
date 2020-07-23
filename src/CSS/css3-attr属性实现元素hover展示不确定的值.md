@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [什么是 attr](#%E4%BB%80%E4%B9%88%E6%98%AF-attr)
+- [用法](#%E7%94%A8%E6%B3%95)
+- [兼容](#%E5%85%BC%E5%AE%B9)
+- [test pre-commit doctoc](#test-pre-commit-doctoc)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 接到一个需求，楼层 hover 时候展示当前楼层的`name`和`order`。
 
 - 方案一 js
@@ -32,3 +44,5 @@ MDN 建议用于 content，其它还在实验中。
 ## 兼容
 
 [can i use](<https://caniuse.com/#search=attr()>)
+
+## test pre-commit doctoc

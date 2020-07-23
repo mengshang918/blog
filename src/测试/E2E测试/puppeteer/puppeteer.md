@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [puppeteer 用途](#puppeteer-%E7%94%A8%E9%80%94)
+- [常见用法](#%E5%B8%B8%E8%A7%81%E7%94%A8%E6%B3%95)
+- [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 本文为使用 puppeteer 进行自动化测试的实践总结，持续更新。
 
 ## puppeteer 用途

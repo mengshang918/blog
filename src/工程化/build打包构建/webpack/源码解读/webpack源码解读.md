@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 本文只是笔者初次学习 webpack 源码所写（感谢[依柳诚](https://juejin.im/user/57e1143479bc44610a4a9577)提供的阅读 webpack 源码的思路），供以后精读作目录使用。
 
 ![webpack流程图](/Users/jiangxiaowei/Desktop/blog/webpack流程图.jpg)

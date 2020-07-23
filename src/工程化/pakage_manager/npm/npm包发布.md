@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [.npmignore 和.gitignore](#npmignore-%E5%92%8Cgitignore)
+- [测试.npmignore 忽略的文件](#%E6%B5%8B%E8%AF%95npmignore-%E5%BF%BD%E7%95%A5%E7%9A%84%E6%96%87%E4%BB%B6)
+- [README.md](#readmemd)
+- [发布](#%E5%8F%91%E5%B8%83)
+- [包版本的更新](#%E5%8C%85%E7%89%88%E6%9C%AC%E7%9A%84%E6%9B%B4%E6%96%B0)
+- [git tag](#git-tag)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## [.npmignore 和.gitignore](https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package)
 
 > Use a `.npmignore` file to keep stuff out of your package. If there’s no `.npmignore` file, but there _is_ a `.gitignore` file, then npm will ignore the stuff matched by the `.gitignore` file. If you _want_ to include something that is excluded by your `.gitignore` file, you can create an empty `.npmignore` file to override it.

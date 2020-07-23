@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [。typescript](#typescript)
+  - [原始数据类型](#%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
+  - [类型推论](#%E7%B1%BB%E5%9E%8B%E6%8E%A8%E8%AE%BA)
+  - [联合类型 |](#%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B-)
+  - [类型断言](#%E7%B1%BB%E5%9E%8B%E6%96%AD%E8%A8%80)
+  - [对象的类型——接口](#%E5%AF%B9%E8%B1%A1%E7%9A%84%E7%B1%BB%E5%9E%8B%E6%8E%A5%E5%8F%A3)
+  - [数组类型](#%E6%95%B0%E7%BB%84%E7%B1%BB%E5%9E%8B)
+  - [函数的类型](#%E5%87%BD%E6%95%B0%E7%9A%84%E7%B1%BB%E5%9E%8B)
+  - [内置对象](#%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1)
+  - [类型别名](#%E7%B1%BB%E5%9E%8B%E5%88%AB%E5%90%8D)
+  - [字符串字面量类型](#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E9%9D%A2%E9%87%8F%E7%B1%BB%E5%9E%8B)
+  - [元祖](#%E5%85%83%E7%A5%96)
+  - [枚举](#%E6%9E%9A%E4%B8%BE)
+  - [类](#%E7%B1%BB)
+  - [类与接口](#%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3)
+  - [泛型](#%E6%B3%9B%E5%9E%8B)
+  - [声明合并](#%E5%A3%B0%E6%98%8E%E5%90%88%E5%B9%B6)
+  - [映射类型](#%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 。typescript
 
 why 使用 TS？

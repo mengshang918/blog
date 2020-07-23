@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [expect 介绍](#expect-%E4%BB%8B%E7%BB%8D)
+- [mac 下安装](#mac-%E4%B8%8B%E5%AE%89%E8%A3%85)
+- [启用选项](#%E5%90%AF%E7%94%A8%E9%80%89%E9%A1%B9)
+- [变量](#%E5%8F%98%E9%87%8F)
+- [条件测试](#%E6%9D%A1%E4%BB%B6%E6%B5%8B%E8%AF%95)
+- [函数](#%E5%87%BD%E6%95%B0)
+- [用法](#%E7%94%A8%E6%B3%95)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## expect 介绍
 
 expect 是一个用来处理交互的命令。借助 expect 可以将交互过程写在一个脚本里，就可以实现自动化完成，无须用户输入

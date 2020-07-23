@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [类型](#%E7%B1%BB%E5%9E%8B)
+- [关键字](#%E5%85%B3%E9%94%AE%E5%AD%97)
+  - [不会校验的关键字](#%E4%B8%8D%E4%BC%9A%E6%A0%A1%E9%AA%8C%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97)
+  - [会校验的关键字](#%E4%BC%9A%E6%A0%A1%E9%AA%8C%E7%9A%84%E5%85%B3%E9%94%AE%E5%AD%97)
+- [非 json 格式的数据校验](#%E9%9D%9E-json-%E6%A0%BC%E5%BC%8F%E7%9A%84%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C)
+- [组合模式](#%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F)
+- [条件](#%E6%9D%A1%E4%BB%B6)
+- [高级](#%E9%AB%98%E7%BA%A7)
+- [使用 ajv、ajv-keywords、ajv-errors 校验](#%E4%BD%BF%E7%94%A8-ajvajv-keywordsajv-errors-%E6%A0%A1%E9%AA%8C)
+- [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 类型
 
 > type
