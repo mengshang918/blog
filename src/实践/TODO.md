@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [优先级最高](#%E4%BC%98%E5%85%88%E7%BA%A7%E6%9C%80%E9%AB%98)
+- [清单池](#%E6%B8%85%E5%8D%95%E6%B1%A0)
+- [已完成](#%E5%B7%B2%E5%AE%8C%E6%88%90)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 优先级最高
 
 - 递归判断文件夹下必须有文件（push 脚本 1）

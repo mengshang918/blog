@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [shell 类型](#shell-%E7%B1%BB%E5%9E%8B)
+- [Bash shell 功能](#bash-shell-%E5%8A%9F%E8%83%BD)
+- [特殊符号](#%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7)
+- [变量](#%E5%8F%98%E9%87%8F)
+- [数组](#%E6%95%B0%E7%BB%84)
+- [Shell scripts](#shell-scripts)
+- [判断式](#%E5%88%A4%E6%96%AD%E5%BC%8F)
+- [条件判断式](#%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E5%BC%8F)
+- [循环](#%E5%BE%AA%E7%8E%AF)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 1. 更换系统默认 shell
 
 ## shell 类型

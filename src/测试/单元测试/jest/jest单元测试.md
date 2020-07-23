@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [global](#global)
+- [expext](#expext)
+- [jest 对象](#jest-%E5%AF%B9%E8%B1%A1)
+- [mock function](#mock-function)
+- [测试异步代码](#%E6%B5%8B%E8%AF%95%E5%BC%82%E6%AD%A5%E4%BB%A3%E7%A0%81)
+  - [回调](#%E5%9B%9E%E8%B0%83)
+  - [promise](#promise)
+  - [Async/await](#asyncawait)
+- [注意](#%E6%B3%A8%E6%84%8F)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## global
 
 - `afterAll(fn, timeout)`该文件中的所有测试完成后，运行一个函数；timeout：中止之前要等待的时间

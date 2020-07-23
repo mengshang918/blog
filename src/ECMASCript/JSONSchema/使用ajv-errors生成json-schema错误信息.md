@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [使用 ajv-errors 生成 json-schema 错误信息](#%E4%BD%BF%E7%94%A8-ajv-errors-%E7%94%9F%E6%88%90-json-schema-%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF)
+- [用法](#%E7%94%A8%E6%B3%95)
+- [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 使用 ajv-errors 生成 json-schema 错误信息
 
 ajv-errors 给 Json-schema 添加了一个`errorMessage`关键字,通过这个关键字来输出错误信息

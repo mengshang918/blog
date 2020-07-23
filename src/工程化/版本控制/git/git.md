@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [git 流程图](#git-%E6%B5%81%E7%A8%8B%E5%9B%BE)
+- [git init 生成的.git 文件目录](#git-init-%E7%94%9F%E6%88%90%E7%9A%84git-%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95)
+- [Git 基础](#git-%E5%9F%BA%E7%A1%80)
+- [Git 分支](#git-%E5%88%86%E6%94%AF)
+- [git tag](#git-tag)
+- [分布式 Git](#%E5%88%86%E5%B8%83%E5%BC%8F-git)
+- [Git 工具](#git-%E5%B7%A5%E5%85%B7)
+- [Git 自定义](#git-%E8%87%AA%E5%AE%9A%E4%B9%89)
+- [Git 命令](#git-%E5%91%BD%E4%BB%A4)
+- [questions](#questions)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 本文是阅读 git 的[gitbook](https://git-scm.com/book/zh/v2)的笔记
 
 本地文件(本地工作目录)=> `git add .`=>暂存区(index 索引区)=>`git commit`=>git 仓库=>`git push`=>git 远程仓库

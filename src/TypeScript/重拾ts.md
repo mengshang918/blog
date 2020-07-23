@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [ts 的必要](#ts-%E7%9A%84%E5%BF%85%E8%A6%81)
+- [learn](#learn)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## ts 的必要
 
 - 静态类型检查

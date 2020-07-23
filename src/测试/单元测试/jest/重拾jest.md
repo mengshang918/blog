@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [Api](#api)
+- [cli](#cli)
+- [配置](#%E9%85%8D%E7%BD%AE)
+- [get start](#get-start)
+- [问题](#%E9%97%AE%E9%A2%98)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Api
 
 1. [global](https://jestjs.io/docs/en/api)

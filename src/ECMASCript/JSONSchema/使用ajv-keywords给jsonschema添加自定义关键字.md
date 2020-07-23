@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [用法](#%E7%94%A8%E6%B3%95)
+- [关键字](#%E5%85%B3%E9%94%AE%E5%AD%97)
+  - [number](#number)
+  - [string](#string)
+  - [arrays](#arrays)
+  - [objects](#objects)
+  - [computer keywords](#computer-keywords)
+  - [All types](#all-types)
+- [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 > JSON Schema 的关键字太少，有些默认的校验无法满足效果，需要自定义校验关键字，ajv-errors 提供一些常见的 validator 关键字
 
 ## 用法

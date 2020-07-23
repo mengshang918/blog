@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
+
+- [选择器](#%E9%80%89%E6%8B%A9%E5%99%A8)
+- [Shallow rendering（shallow）](#shallow-renderingshallow)
+- [Full dom rendering（mount）](#full-dom-renderingmount)
+- [Static rendering](#static-rendering)
+- [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 本文为初次学习笔记，持续更新。。。
 
 ## 选择器
