@@ -166,6 +166,24 @@
   resolved "http://registry.m.jd.com/@commitlint/types/download/@commitlint/types-9.1.1.tgz#d97ebc35d20eed6d8458361cbca5c7cb85d45184"
   integrity sha1-2X68NdIO7W2EWDYcvKXHy4XUUYQ=
 
+"@textlint/ast-node-types@^4.0.3":
+  version "4.2.5"
+  resolved "http://registry.m.jd.com/@textlint/ast-node-types/download/@textlint/ast-node-types-4.2.5.tgz#ae13981bc8711c98313a6ac1c361194d6bf2d39b"
+  integrity sha1-rhOYG8hxHJgxOmrBw2EZTWvy05s=
+
+"@textlint/markdown-to-ast@~6.0.9":
+  version "6.0.9"
+  resolved "http://registry.m.jd.com/@textlint/markdown-to-ast/download/@textlint/markdown-to-ast-6.0.9.tgz#e7c89e5ad15d17dcd8e5a62758358936827658fa"
+  integrity sha1-58ieWtFdF9zY5aYnWDWJNoJ2WPo=
+  dependencies:
+    "@textlint/ast-node-types" "^4.0.3"
+    debug "^2.1.3"
+    remark-frontmatter "^1.2.0"
+    remark-parse "^5.0.0"
+    structured-source "^3.0.2"
+    traverse "^0.6.6"
+    unified "^6.1.6"
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "http://registry.m.jd.com/@types/color-name/download/@types/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -221,6 +239,13 @@ ajv@^6.10.0, ajv@^6.10.2:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
+
+anchor-markdown-header@^0.5.5:
+  version "0.5.7"
+  resolved "http://registry.m.jd.com/anchor-markdown-header/download/anchor-markdown-header-0.5.7.tgz#045063d76e6a1f9cd327a57a0126aa0fdec371a7"
+  integrity sha1-BFBj125qH5zTJ6V6ASaqD97Dcac=
+  dependencies:
+    emoji-regex "~6.1.0"
 
 ansi-colors@^4.1.1:
   version "4.1.1"
@@ -296,10 +321,20 @@ astral-regex@^2.0.0:
   resolved "http://registry.m.jd.com/astral-regex/download/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=
 
+bail@^1.0.0:
+  version "1.0.5"
+  resolved "http://registry.m.jd.com/bail/download/bail-1.0.5.tgz#b6fa133404a392cbc1f8c4bf63f5953351e7a776"
+  integrity sha1-tvoTNASjksvB+MS/Y/WVM1Hnp3Y=
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "http://registry.m.jd.com/balanced-match/download/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+
+boundary@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.m.jd.com/boundary/download/boundary-1.0.1.tgz#4d67dc2602c0cc16dd9bce7ebf87e948290f5812"
+  integrity sha1-TWfcJgLAzBbdm85+v4fpSCkPWBI=
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -379,6 +414,21 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+character-entities-legacy@^1.0.0:
+  version "1.1.4"
+  resolved "http://registry.m.jd.com/character-entities-legacy/download/character-entities-legacy-1.1.4.tgz#94bc1845dce70a5bb9d2ecc748725661293d8fc1"
+  integrity sha1-lLwYRdznClu50uzHSHJWYSk9j8E=
+
+character-entities@^1.0.0:
+  version "1.2.4"
+  resolved "http://registry.m.jd.com/character-entities/download/character-entities-1.2.4.tgz#e12c3939b7eaf4e5b15e7ad4c5e28e1d48c5b16b"
+  integrity sha1-4Sw5Obfq9OWxXnrUxeKOHUjFsWs=
+
+character-reference-invalid@^1.0.0:
+  version "1.1.4"
+  resolved "http://registry.m.jd.com/character-reference-invalid/download/character-reference-invalid-1.1.4.tgz#083329cda0eae272ab3dbbf37e9a382c13af1560"
+  integrity sha1-CDMpzaDq4nKrPbvzfpo4LBOvFWA=
+
 chardet@^0.7.0:
   version "0.7.0"
   resolved "http://registry.m.jd.com/chardet/download/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
@@ -423,6 +473,11 @@ clone@^1.0.2:
   version "1.0.4"
   resolved "http://registry.m.jd.com/clone/download/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
+
+collapse-white-space@^1.0.2:
+  version "1.0.6"
+  resolved "http://registry.m.jd.com/collapse-white-space/download/collapse-white-space-1.0.6.tgz#e63629c0016665792060dbbeb79c42239d2c5287"
+  integrity sha1-5jYpwAFmZXkgYNu+t5xCI50sUoc=
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -543,6 +598,13 @@ dargs@^7.0.0:
   resolved "http://registry.m.jd.com/dargs/download/dargs-7.0.0.tgz#04015c41de0bcb69ec84050f3d9be0caf8d6d5cc"
   integrity sha1-BAFcQd4Ly2nshAUPPZvgyvjW1cw=
 
+debug@^2.1.3:
+  version "2.6.9"
+  resolved "http://registry.m.jd.com/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
+  integrity sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=
+  dependencies:
+    ms "2.0.0"
+
 debug@^4.0.1, debug@^4.1.1:
   version "4.1.1"
   resolved "http://registry.m.jd.com/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
@@ -580,12 +642,57 @@ defaults@^1.0.3:
   dependencies:
     clone "^1.0.2"
 
+doctoc@^1.4.0:
+  version "1.4.0"
+  resolved "http://registry.m.jd.com/doctoc/download/doctoc-1.4.0.tgz#3115aa61d0a92f0abb0672036918ea904f5b9e02"
+  integrity sha1-MRWqYdCpLwq7BnIDaRjqkE9bngI=
+  dependencies:
+    "@textlint/markdown-to-ast" "~6.0.9"
+    anchor-markdown-header "^0.5.5"
+    htmlparser2 "~3.9.2"
+    minimist "~1.2.0"
+    underscore "~1.8.3"
+    update-section "^0.3.0"
+
 doctrine@^3.0.0:
   version "3.0.0"
   resolved "http://registry.m.jd.com/doctrine/download/doctrine-3.0.0.tgz#addebead72a6574db783639dc87a121773973961"
   integrity sha1-rd6+rXKmV023g2OdyHoSF3OXOWE=
   dependencies:
     esutils "^2.0.2"
+
+dom-serializer@0:
+  version "0.2.2"
+  resolved "http://registry.m.jd.com/dom-serializer/download/dom-serializer-0.2.2.tgz#1afb81f533717175d478655debc5e332d9f9bb51"
+  integrity sha1-GvuB9TNxcXXUeGVd68XjMtn5u1E=
+  dependencies:
+    domelementtype "^2.0.1"
+    entities "^2.0.0"
+
+domelementtype@1, domelementtype@^1.3.0:
+  version "1.3.1"
+  resolved "http://registry.m.jd.com/domelementtype/download/domelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
+  integrity sha1-0EjESzew0Qp/Kj1f7j9DM9eQSB8=
+
+domelementtype@^2.0.1:
+  version "2.0.1"
+  resolved "http://registry.m.jd.com/domelementtype/download/domelementtype-2.0.1.tgz#1f8bdfe91f5a78063274e803b4bdcedf6e94f94d"
+  integrity sha1-H4vf6R9aeAYydOgDtL3O326U+U0=
+
+domhandler@^2.3.0:
+  version "2.4.2"
+  resolved "http://registry.m.jd.com/domhandler/download/domhandler-2.4.2.tgz#8805097e933d65e85546f726d60f5eb88b44f803"
+  integrity sha1-iAUJfpM9ZehVRvcm1g9euItE+AM=
+  dependencies:
+    domelementtype "1"
+
+domutils@^1.5.1:
+  version "1.7.0"
+  resolved "http://registry.m.jd.com/domutils/download/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
+  integrity sha1-Vuo0HoNOBuZ0ivehyyXaZ+qfjCo=
+  dependencies:
+    dom-serializer "0"
+    domelementtype "1"
 
 dot-prop@^3.0.0:
   version "3.0.0"
@@ -604,6 +711,11 @@ emoji-regex@^8.0.0:
   resolved "http://registry.m.jd.com/emoji-regex/download/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=
 
+emoji-regex@~6.1.0:
+  version "6.1.3"
+  resolved "http://registry.m.jd.com/emoji-regex/download/emoji-regex-6.1.3.tgz#ec79a3969b02d2ecf2b72254279bf99bc7a83932"
+  integrity sha1-7HmjlpsC0uzytyJUJ5v5m8eoOTI=
+
 end-of-stream@^1.1.0:
   version "1.4.4"
   resolved "http://registry.m.jd.com/end-of-stream/download/end-of-stream-1.4.4.tgz#5ae64a5f45057baf3626ec14da0ca5e4b2431eb0"
@@ -617,6 +729,16 @@ enquirer@^2.3.5:
   integrity sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=
   dependencies:
     ansi-colors "^4.1.1"
+
+entities@^1.1.1:
+  version "1.1.2"
+  resolved "http://registry.m.jd.com/entities/download/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
+  integrity sha1-vfpzUplmTfr9NFKe1PhSKidf6lY=
+
+entities@^2.0.0:
+  version "2.0.3"
+  resolved "http://registry.m.jd.com/entities/download/entities-2.0.3.tgz#5c487e5742ab93c15abb5da22759b8590ec03b7f"
+  integrity sha1-XEh+V0Krk8Fau12iJ1m4WQ7AO38=
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -750,6 +872,11 @@ execa@^4.0.1, execa@^4.0.3:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
+extend@^3.0.0:
+  version "3.0.2"
+  resolved "http://registry.m.jd.com/extend/download/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
+  integrity sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=
+
 external-editor@^3.0.3:
   version "3.1.0"
   resolved "http://registry.m.jd.com/external-editor/download/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
@@ -773,6 +900,13 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "http://registry.m.jd.com/fast-levenshtein/download/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+fault@^1.0.1:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/fault/download/fault-1.0.4.tgz#eafcfc0a6d214fc94601e170df29954a4f842f13"
+  integrity sha1-6vz8Cm0hT8lGAeFw3ymVSk+ELxM=
+  dependencies:
+    format "^0.2.0"
 
 figures@^3.0.0, figures@^3.2.0:
   version "3.2.0"
@@ -830,6 +964,11 @@ flatted@^2.0.0:
   version "2.0.2"
   resolved "http://registry.m.jd.com/flatted/download/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha1-RXWyHivO50NKqb5mL0t7X5wrUTg=
+
+format@^0.2.0:
+  version "0.2.2"
+  resolved "http://registry.m.jd.com/format/download/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
+  integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
 fs-extra@^8.1.0:
   version "8.1.0"
@@ -936,6 +1075,18 @@ hosted-git-info@^2.1.4:
   resolved "http://registry.m.jd.com/hosted-git-info/download/hosted-git-info-2.8.8.tgz#7539bd4bc1e0e0a895815a2e0262420b12858488"
   integrity sha1-dTm9S8Hg4KiVgVouAmJCCxKFhIg=
 
+htmlparser2@~3.9.2:
+  version "3.9.2"
+  resolved "http://registry.m.jd.com/htmlparser2/download/htmlparser2-3.9.2.tgz#1bdf87acca0f3f9e53fa4fcceb0f4b4cbb00b338"
+  integrity sha1-G9+HrMoPP55T+k/M6w9LTLsAszg=
+  dependencies:
+    domelementtype "^1.3.0"
+    domhandler "^2.3.0"
+    domutils "^1.5.1"
+    entities "^1.1.1"
+    inherits "^2.0.1"
+    readable-stream "^2.0.2"
+
 human-signals@^1.1.1:
   version "1.1.1"
   resolved "http://registry.m.jd.com/human-signals/download/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
@@ -1000,7 +1151,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.3:
+inherits@2, inherits@^2.0.0, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.3:
   version "2.0.4"
   resolved "http://registry.m.jd.com/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
@@ -1029,10 +1180,33 @@ inquirer@^7.3.2:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
+is-alphabetical@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/is-alphabetical/download/is-alphabetical-1.0.4.tgz#9e7d6b94916be22153745d184c298cbf986a686d"
+  integrity sha1-nn1rlJFr4iFTdF0YTCmMv5hqaG0=
+
+is-alphanumerical@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/is-alphanumerical/download/is-alphanumerical-1.0.4.tgz#7eb9a2431f855f6b1ef1a78e326df515696c4dbf"
+  integrity sha1-frmiQx+FX2se8aeOMm31FWlsTb8=
+  dependencies:
+    is-alphabetical "^1.0.0"
+    is-decimal "^1.0.0"
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "http://registry.m.jd.com/is-arrayish/download/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=
+
+is-buffer@^1.1.4:
+  version "1.1.6"
+  resolved "http://registry.m.jd.com/is-buffer/download/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+  integrity sha1-76ouqdqg16suoTqXsritUf776L4=
+
+is-decimal@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/is-decimal/download/is-decimal-1.0.4.tgz#65a3a5958a1c5b63a706e1b333d7cd9f630d3fa5"
+  integrity sha1-ZaOllYocW2OnBuGzM9fNn2MNP6U=
 
 is-extglob@^2.1.1:
   version "2.1.1"
@@ -1055,6 +1229,11 @@ is-glob@^4.0.0, is-glob@^4.0.1:
   integrity sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=
   dependencies:
     is-extglob "^2.1.1"
+
+is-hexadecimal@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/is-hexadecimal/download/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
+  integrity sha1-zDXJdYjaS9Saju3WvECC1E3LI6c=
 
 is-interactive@^1.0.0:
   version "1.0.0"
@@ -1092,6 +1271,16 @@ is-text-path@^1.0.1:
   integrity sha1-Thqg+1G/vLPpJogAE5cgLBd1tm4=
   dependencies:
     text-extensions "^1.0.0"
+
+is-whitespace-character@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/is-whitespace-character/download/is-whitespace-character-1.0.4.tgz#0858edd94a95594c7c9dd0b5c174ec6e45ee4aa7"
+  integrity sha1-CFjt2UqVWUx8ndC1wXTsbkXuSqc=
+
+is-word-character@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/is-word-character/download/is-word-character-1.0.4.tgz#ce0e73216f98599060592f62ff31354ddbeb0230"
+  integrity sha1-zg5zIW+YWZBgWS9i/zE1TdvrAjA=
 
 isarray@~1.0.0:
   version "1.0.0"
@@ -1293,6 +1482,11 @@ map-obj@^4.0.0:
   resolved "http://registry.m.jd.com/map-obj/download/map-obj-4.1.0.tgz#b91221b542734b9f14256c0132c897c5d7256fd5"
   integrity sha1-uRIhtUJzS58UJWwBMsiXxdclb9U=
 
+markdown-escapes@^1.0.0:
+  version "1.0.4"
+  resolved "http://registry.m.jd.com/markdown-escapes/download/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
+  integrity sha1-yVQV70UUmddgK5EJXzyOiXX3hTU=
+
 meow@5.0.0:
   version "5.0.0"
   resolved "http://registry.m.jd.com/meow/download/meow-5.0.0.tgz#dfc73d63a9afc714a5e371760eb5c88b91078aa4"
@@ -1374,7 +1568,7 @@ minimist-options@^4.0.2:
     is-plain-obj "^1.1.0"
     kind-of "^6.0.3"
 
-minimist@^1.2.5:
+minimist@^1.2.5, minimist@~1.2.0:
   version "1.2.5"
   resolved "http://registry.m.jd.com/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
@@ -1385,6 +1579,11 @@ mkdirp@^0.5.1:
   integrity sha1-2Rzv1i0UNsoPQWIOJRKI1CAJne8=
   dependencies:
     minimist "^1.2.5"
+
+ms@2.0.0:
+  version "2.0.0"
+  resolved "http://registry.m.jd.com/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+  integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
 ms@^2.1.1:
   version "2.1.2"
@@ -1524,6 +1723,18 @@ parent-module@^1.0.0:
   integrity sha1-aR0nCeeMefrjoVZiJFLQB2LKqqI=
   dependencies:
     callsites "^3.0.0"
+
+parse-entities@^1.1.0:
+  version "1.2.2"
+  resolved "http://registry.m.jd.com/parse-entities/download/parse-entities-1.2.2.tgz#c31bf0f653b6661354f8973559cb86dd1d5edf50"
+  integrity sha1-wxvw9lO2ZhNU+Jc1WcuG3R1e31A=
+  dependencies:
+    character-entities "^1.0.0"
+    character-entities-legacy "^1.0.0"
+    character-reference-invalid "^1.0.0"
+    is-alphanumerical "^1.0.0"
+    is-decimal "^1.0.0"
+    is-hexadecimal "^1.0.0"
 
 parse-json@^4.0.0:
   version "4.0.0"
@@ -1697,7 +1908,7 @@ read-pkg@^5.2.0:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
-readable-stream@~2.3.6:
+readable-stream@^2.0.2, readable-stream@~2.3.6:
   version "2.3.7"
   resolved "http://registry.m.jd.com/readable-stream/download/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
   integrity sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c=
@@ -1740,6 +1951,45 @@ regexpp@^3.1.0:
   version "3.1.0"
   resolved "http://registry.m.jd.com/regexpp/download/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
   integrity sha1-IG0K0KVkjP+9uK5GQ489xRyfeOI=
+
+remark-frontmatter@^1.2.0:
+  version "1.3.3"
+  resolved "http://registry.m.jd.com/remark-frontmatter/download/remark-frontmatter-1.3.3.tgz#67ec63c89da5a84bb793ecec166e11b4eb47af10"
+  integrity sha1-Z+xjyJ2lqEu3k+zsFm4RtOtHrxA=
+  dependencies:
+    fault "^1.0.1"
+    xtend "^4.0.1"
+
+remark-parse@^5.0.0:
+  version "5.0.0"
+  resolved "http://registry.m.jd.com/remark-parse/download/remark-parse-5.0.0.tgz#4c077f9e499044d1d5c13f80d7a98cf7b9285d95"
+  integrity sha1-TAd/nkmQRNHVwT+A16mM97koXZU=
+  dependencies:
+    collapse-white-space "^1.0.2"
+    is-alphabetical "^1.0.0"
+    is-decimal "^1.0.0"
+    is-whitespace-character "^1.0.0"
+    is-word-character "^1.0.0"
+    markdown-escapes "^1.0.0"
+    parse-entities "^1.1.0"
+    repeat-string "^1.5.4"
+    state-toggle "^1.0.0"
+    trim "0.0.1"
+    trim-trailing-lines "^1.0.0"
+    unherit "^1.0.4"
+    unist-util-remove-position "^1.0.0"
+    vfile-location "^2.0.0"
+    xtend "^4.0.1"
+
+repeat-string@^1.5.4:
+  version "1.6.1"
+  resolved "http://registry.m.jd.com/repeat-string/download/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
+  integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
+
+replace-ext@1.0.0:
+  version "1.0.0"
+  resolved "http://registry.m.jd.com/replace-ext/download/replace-ext-1.0.0.tgz#de63128373fcbf7c3ccfa4de5a480c45a67958eb"
+  integrity sha1-3mMSg3P8v3w8z6TeWkgMRaZ5WOs=
 
 resolve-from@5.0.0, resolve-from@^5.0.0:
   version "5.0.0"
@@ -1914,6 +2164,11 @@ sprintf-js@~1.0.2:
   resolved "http://registry.m.jd.com/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+state-toggle@^1.0.0:
+  version "1.0.3"
+  resolved "http://registry.m.jd.com/state-toggle/download/state-toggle-1.0.3.tgz#e123b16a88e143139b09c6852221bc9815917dfe"
+  integrity sha1-4SOxaojhQxObCcaFIiG8mBWRff4=
+
 string-argv@0.3.1:
   version "0.3.1"
   resolved "http://registry.m.jd.com/string-argv/download/string-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
@@ -2001,6 +2256,13 @@ strip-json-comments@^3.1.0:
   resolved "http://registry.m.jd.com/strip-json-comments/download/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=
 
+structured-source@^3.0.2:
+  version "3.0.2"
+  resolved "http://registry.m.jd.com/structured-source/download/structured-source-3.0.2.tgz#dd802425e0f53dc4a6e7aca3752901a1ccda7af5"
+  integrity sha1-3YAkJeD1PcSm56yjdSkBoczaevU=
+  dependencies:
+    boundary "^1.0.1"
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "http://registry.m.jd.com/supports-color/download/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -2070,6 +2332,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+traverse@^0.6.6:
+  version "0.6.6"
+  resolved "http://registry.m.jd.com/traverse/download/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
+  integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
+
 trim-newlines@^2.0.0:
   version "2.0.0"
   resolved "http://registry.m.jd.com/trim-newlines/download/trim-newlines-2.0.0.tgz#b403d0b91be50c331dfc4b82eeceb22c3de16d20"
@@ -2084,6 +2351,21 @@ trim-off-newlines@^1.0.0:
   version "1.0.1"
   resolved "http://registry.m.jd.com/trim-off-newlines/download/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
+
+trim-trailing-lines@^1.0.0:
+  version "1.1.3"
+  resolved "http://registry.m.jd.com/trim-trailing-lines/download/trim-trailing-lines-1.1.3.tgz#7f0739881ff76657b7776e10874128004b625a94"
+  integrity sha1-fwc5iB/3Zle3d24Qh0EoAEtiWpQ=
+
+trim@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.m.jd.com/trim/download/trim-0.0.1.tgz#5858547f6b290757ee95cccc666fb50084c460dd"
+  integrity sha1-WFhUf2spB1fulczMZm+1AITEYN0=
+
+trough@^1.0.0:
+  version "1.0.5"
+  resolved "http://registry.m.jd.com/trough/download/trough-1.0.5.tgz#b8b639cefad7d0bb2abd37d433ff8293efa5f406"
+  integrity sha1-uLY5zvrX0LsqvTfUM/+Ck++l9AY=
 
 tslib@^1.9.0:
   version "1.13.0"
@@ -2117,10 +2399,71 @@ type-fest@^0.8.1:
   resolved "http://registry.m.jd.com/type-fest/download/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha1-CeJJ696FHTseSNJ8EFREZn8XuD0=
 
+underscore@~1.8.3:
+  version "1.8.3"
+  resolved "http://registry.m.jd.com/underscore/download/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
+  integrity sha1-Tz+1OxBuYJf8+ctBCfKl6b36UCI=
+
+unherit@^1.0.4:
+  version "1.1.3"
+  resolved "http://registry.m.jd.com/unherit/download/unherit-1.1.3.tgz#6c9b503f2b41b262330c80e91c8614abdaa69c22"
+  integrity sha1-bJtQPytBsmIzDIDpHIYUq9qmnCI=
+  dependencies:
+    inherits "^2.0.0"
+    xtend "^4.0.0"
+
+unified@^6.1.6:
+  version "6.2.0"
+  resolved "http://registry.m.jd.com/unified/download/unified-6.2.0.tgz#7fbd630f719126d67d40c644b7e3f617035f6dba"
+  integrity sha1-f71jD3GRJtZ9QMZEt+P2FwNfbbo=
+  dependencies:
+    bail "^1.0.0"
+    extend "^3.0.0"
+    is-plain-obj "^1.1.0"
+    trough "^1.0.0"
+    vfile "^2.0.0"
+    x-is-string "^0.1.0"
+
+unist-util-is@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.m.jd.com/unist-util-is/download/unist-util-is-3.0.0.tgz#d9e84381c2468e82629e4a5be9d7d05a2dd324cd"
+  integrity sha1-2ehDgcJGjoJinkpb6dfQWi3TJM0=
+
+unist-util-remove-position@^1.0.0:
+  version "1.1.4"
+  resolved "http://registry.m.jd.com/unist-util-remove-position/download/unist-util-remove-position-1.1.4.tgz#ec037348b6102c897703eee6d0294ca4755a2020"
+  integrity sha1-7ANzSLYQLIl3A+7m0ClMpHVaICA=
+  dependencies:
+    unist-util-visit "^1.1.0"
+
+unist-util-stringify-position@^1.0.0, unist-util-stringify-position@^1.1.1:
+  version "1.1.2"
+  resolved "http://registry.m.jd.com/unist-util-stringify-position/download/unist-util-stringify-position-1.1.2.tgz#3f37fcf351279dcbca7480ab5889bb8a832ee1c6"
+  integrity sha1-Pzf881EnncvKdICrWIm7ioMu4cY=
+
+unist-util-visit-parents@^2.0.0:
+  version "2.1.2"
+  resolved "http://registry.m.jd.com/unist-util-visit-parents/download/unist-util-visit-parents-2.1.2.tgz#25e43e55312166f3348cae6743588781d112c1e9"
+  integrity sha1-JeQ+VTEhZvM0jK5nQ1iHgdESwek=
+  dependencies:
+    unist-util-is "^3.0.0"
+
+unist-util-visit@^1.1.0:
+  version "1.4.1"
+  resolved "http://registry.m.jd.com/unist-util-visit/download/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
+  integrity sha1-RySqqEhububibX/zyGhZYNVgseM=
+  dependencies:
+    unist-util-visit-parents "^2.0.0"
+
 universalify@^0.1.0:
   version "0.1.2"
   resolved "http://registry.m.jd.com/universalify/download/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY=
+
+update-section@^0.3.0:
+  version "0.3.3"
+  resolved "http://registry.m.jd.com/update-section/download/update-section-0.3.3.tgz#458f17820d37820dc60e20b86d94391b00123158"
+  integrity sha1-RY8Xgg03gg3GDiC4bZQ5GwASMVg=
 
 uri-js@^4.2.2:
   version "4.2.2"
@@ -2146,6 +2489,28 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+vfile-location@^2.0.0:
+  version "2.0.6"
+  resolved "http://registry.m.jd.com/vfile-location/download/vfile-location-2.0.6.tgz#8a274f39411b8719ea5728802e10d9e0dff1519e"
+  integrity sha1-iidPOUEbhxnqVyiALhDZ4N/xUZ4=
+
+vfile-message@^1.0.0:
+  version "1.1.1"
+  resolved "http://registry.m.jd.com/vfile-message/download/vfile-message-1.1.1.tgz#5833ae078a1dfa2d96e9647886cd32993ab313e1"
+  integrity sha1-WDOuB4od+i2W6WR4hs0ymTqzE+E=
+  dependencies:
+    unist-util-stringify-position "^1.1.1"
+
+vfile@^2.0.0:
+  version "2.3.0"
+  resolved "http://registry.m.jd.com/vfile/download/vfile-2.3.0.tgz#e62d8e72b20e83c324bc6c67278ee272488bf84a"
+  integrity sha1-5i2OcrIOg8MkvGxnJ47ickiL+Eo=
+  dependencies:
+    is-buffer "^1.1.4"
+    replace-ext "1.0.0"
+    unist-util-stringify-position "^1.0.0"
+    vfile-message "^1.0.0"
 
 wcwidth@^1.0.1:
   version "1.0.1"
@@ -2192,7 +2557,12 @@ write@1.0.3:
   dependencies:
     mkdirp "^0.5.1"
 
-xtend@~4.0.1:
+x-is-string@^0.1.0:
+  version "0.1.0"
+  resolved "http://registry.m.jd.com/x-is-string/download/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
+  integrity sha1-R0tQhlrzpJqcRlfwWs0UVFj3fYI=
+
+xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.2"
   resolved "http://registry.m.jd.com/xtend/download/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=

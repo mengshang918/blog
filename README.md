@@ -1,3 +1,12 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [blog](#blog)
+  - [程序员三大美德](#%E7%A8%8B%E5%BA%8F%E5%91%98%E4%B8%89%E5%A4%A7%E7%BE%8E%E5%BE%B7)
+  - [参考](#%E5%8F%82%E8%80%83)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # blog
 
 ## 程序员三大美德

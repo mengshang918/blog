@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [blog 架构](#blog-%E6%9E%B6%E6%9E%84)
+- [待解决](#%E5%BE%85%E8%A7%A3%E5%86%B3)
+- [查漏补缺](#%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA)
+- [待输出博客](#%E5%BE%85%E8%BE%93%E5%87%BA%E5%8D%9A%E5%AE%A2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## blog 架构
+
+1. ~~eslint、prettier、commitlint~~
+2. ~~pre-push 判断空文件夹，添加 TODO.md，防止 git 无法跟踪~~
+3. ~~pre-commit doctoc 自动添加 toc 目录~~
+4. 自动发布到 csdn
+5. 静态博客 or 服务器？
+
+## 待解决
+
 4. coding like a pro
 
 5. 为啥需要使用 Map
