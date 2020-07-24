@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-23 17:20:24
+ * @Last Modified time: 2020-07-24 18:16:41
  */
 const fs = require('fs')
 const path = require('path')
@@ -115,7 +115,7 @@ let emptyDirQ = emptyDir.map((item) =>
           })
           try {
             await execa('git', ['add', '.'])
-            await execa('git', ['commit', '-m', '新增TODO.md文件'])
+            await execa('git', ['commit', '-m', 'docs: 新增TODO.md文件'])
           } catch (error) {
             log(chalk.red(error))
           }
