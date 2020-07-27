@@ -15,8 +15,12 @@
 1. ~~eslint、prettier、commitlint~~
 2. ~~pre-push 判断空文件夹，添加 TODO.md，防止 git 无法跟踪~~
 3. ~~pre-commit doctoc 自动添加 toc 目录~~
-4. 自动发布到 csdn
-5. 静态博客 or 服务器？
+4. tree to xmind
+   - https://markmap.js.org/
+   - https://github.com/dundalek/markmap
+   - https://github.com/gera2ld/markmap-lib#markmap-lib
+5. 自动发布到 csdn
+6. 静态博客 or 服务器？
 
 ## 待解决
 
