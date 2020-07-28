@@ -7,7 +7,7 @@
 	"author": "mengshang918",
 	"license": "MIT",
 	"scripts": {
-		"pre-push": "node scripts/index"
+		"pre-push": "node scripts/pre-push"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^9.1.1",
@@ -19,8 +19,11 @@
 		"husky": "^4.2.5",
 		"inquirer": "^7.3.2",
 		"lint-staged": "^10.2.11",
+		"markmap-lib": "^0.7.11",
 		"ora": "^4.0.5",
-		"prettier": "^2.0.5"
+		"prettier": "^2.0.5",
+		"puppeteer": "^5.2.1",
+		"puppeteer-core": "^5.2.1"
 	},
 	"husky": {
 		"hooks": {
@@ -34,6 +37,9 @@
 			"eslint --fix",
 			"prettier --config .prettierrc.yml --write"
 		],
-		"*.md": ["doctoc","prettier --config .prettierrc.yml --write"]
+		"*.md": [
+			"doctoc",
+			"prettier --config .prettierrc.yml --write"
+		]
 	}
 }
