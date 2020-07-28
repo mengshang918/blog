@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 16:26:42
+ * @Last Modified time: 2020-07-28 16:31:08
  */
 const fs = require('fs')
 const path = require('path')
@@ -95,7 +95,7 @@ if (emptyDir.length !== 0) {
     item.split(rootPath).length > 1 ? item.split(rootPath)[1] : item
   )
   log(emptyDirQ)
-  questions.push({
+  questions.unshift({
     type: 'confirm',
     name: 'addTodo',
     message: '确认要在上面所有文件夹下新建TODO.md文件?',
