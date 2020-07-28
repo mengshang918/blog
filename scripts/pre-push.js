@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 16:46:55
+ * @Last Modified time: 2020-07-28 17:12:24
  */
 const fs = require('fs')
 const path = require('path')
@@ -20,7 +20,7 @@ const loading = ora('读取当前项目空文件夹（git会忽略空文件夹�
 // 递归判断文件夹是否为空的入口
 const rootPath = path.resolve(__dirname, '../')
 // 忽略的文件
-const ignoreDir = ['.git', '.scripts', '.gitignore', 'node_modules']
+const ignoreDir = ['.git', '.scripts', '.gitignore', 'node_modules', 'scripts']
 const { log } = console
 // 包含空格的文件
 const notAllowFilrOrDir = []

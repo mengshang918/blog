@@ -3,10 +3,11 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 16:10:01
+ * @Last Modified time: 2020-07-28 17:11:52
  */
 const fs = require('fs')
 const path = require('path')
+const crypto = require('crypto')
 const execa = require('execa')
 const pptr = require('puppeteer')
 const chalk = require('chalk')
@@ -34,6 +35,11 @@ module.exports = async (entryPath) => {
   fs.writeFileSync(outPutPath, data, {
     encoding: 'utf8',
   })
+  const buffer = fs.readFileSync(outPutPath)
+  const fsHash = crypto.createHash('md5')
+  fsHash.update(buffer)
+  const fsMd5 = fsHash.digest('hex')
+  fs.writeFileSync(path.resolve(__dirname, './.cache/xmind.cache', fsMd5))
   await execa('npx', [
     'markmap',
     `${outPutPath}`,
