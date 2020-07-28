@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 17:33:56
+ * @Last Modified time: 2020-07-28 17:51:00
  */
 const fs = require('fs')
 const path = require('path')
@@ -84,7 +84,7 @@ const questions = [
   {
     type: 'confirm',
     name: 'isCreateXmind',
-    message: '是否自动根据目录生成那个思维导图？',
+    message: '是否自动根据目录生成思维导图？',
     default: false,
   },
 ]
