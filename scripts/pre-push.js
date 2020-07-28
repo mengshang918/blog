@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-24 18:16:41
+ * @Last Modified time: 2020-07-28 16:26:42
  */
 const fs = require('fs')
 const path = require('path')
@@ -14,7 +14,8 @@ const chalk = require('chalk')
 const ora = require('ora')
 const inquirer = require('inquirer')
 const execa = require('execa')
-
+const createXmind = require('./createXmind')
+const addTodoFn = require('./addTodo')
 const loading = ora('读取当前项目空文件夹（git会忽略空文件夹）')
 // 递归判断文件夹是否为空的入口
 const rootPath = path.resolve(__dirname, '../')
@@ -42,18 +43,6 @@ const getGitIgnoreArr = ()=>{
 }
 // 将.gitignore中的文件忽略
 getGitIgnoreArr() */
-
-/**
- * 在path路径下添加TODO.md文件
- * @param {string} path 路径
- */
-const addTodoFn = (path) => {
-  try {
-    fs.appendFileSync(`${path}/TODO.md`, '')
-  } catch (error) {
-    log(chalk.red(error))
-  }
-}
 
 /**
  * 以entryPath为入口开始递归判断是否有文件夹为空。并自动新增TODO.md文件
@@ -90,39 +79,51 @@ if (notAllowFilrOrDir.length > 0) {
   process.exit(1)
 }
 
-// 去除rootPath前缀
-let emptyDirQ = emptyDir.map((item) =>
-  item.split(rootPath).length > 1 ? item.split(rootPath)[1] : item
-)
+// 交互问题
+const questions = [
+  {
+    type: 'confirm',
+    name: 'isCreateXmind',
+    message: '是否自动根据目录生成那个思维导图？',
+    default: false,
+  },
+]
+
+if (emptyDir.length !== 0) {
+  // 去除rootPath前缀
+  let emptyDirQ = emptyDir.map((item) =>
+    item.split(rootPath).length > 1 ? item.split(rootPath)[1] : item
+  )
+  log(emptyDirQ)
+  questions.push({
+    type: 'confirm',
+    name: 'addTodo',
+    message: '确认要在上面所有文件夹下新建TODO.md文件?',
+    default: false,
+  })
+}
+
 // confirm交互，是否
 ;(async () => {
-  if (emptyDir.length === 0) {
-    process.exit(0)
-  } else {
-    log(emptyDirQ)
-    inquirer
-      .prompt({
-        type: 'confirm',
-        name: 'addTodo',
-        message: '确认要在上面所有文件夹下新建TODO.md文件',
-        default: false,
-      })
-      .then(async (answer) => {
-        const { addTodo } = answer
-        if (addTodo) {
-          emptyDir.map((item) => {
-            addTodoFn(item)
-          })
-          try {
-            await execa('git', ['add', '.'])
-            await execa('git', ['commit', '-m', 'docs: 新增TODO.md文件'])
-          } catch (error) {
-            log(chalk.red(error))
-          }
-          process.exit(0)
-        } else {
-          process.exit(1)
-        }
-      })
-  }
+  inquirer
+    .prompt(questions)
+    .then(async (answer) => {
+      const { addTodo, isCreateXmind } = answer
+      if (addTodo) {
+        emptyDir.map((item) => {
+          addTodoFn(item)
+        })
+        await execa('git', ['add', '.'])
+        await execa('git', ['commit', '-m', 'docs: 新增TODO.md文件'])
+      }
+      if (isCreateXmind) {
+        createXmind(path.join(rootPath, '/src'))
+        await execa('git', ['add', '.'])
+        await execa('git', ['commit', '-m', 'chore: updata思维导图'])
+      }
+    })
+    .catch((err) => {
+      log(chalk.red(err))
+      process.exit(1)
+    })
 })()
