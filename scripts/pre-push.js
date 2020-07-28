@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 17:12:24
+ * @Last Modified time: 2020-07-28 17:33:56
  */
 const fs = require('fs')
 const path = require('path')
@@ -118,8 +118,6 @@ if (emptyDir.length !== 0) {
       }
       if (isCreateXmind) {
         createXmind(path.join(rootPath, '/src'))
-        await execa('git', ['add', '.'])
-        await execa('git', ['commit', '-m', 'chore: updata思维导图'])
       }
     })
     .catch((err) => {

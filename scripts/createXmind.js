@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 17:13:05
+ * @Last Modified time: 2020-07-28 17:30:34
  */
 const fs = require('fs')
 const path = require('path')
@@ -35,11 +35,19 @@ module.exports = async (entryPath) => {
   fs.writeFileSync(outPutPath, data, {
     encoding: 'utf8',
   })
+
+  // 判断路径下目录是否发生变化
   const buffer = fs.readFileSync(outPutPath)
   const fsHash = crypto.createHash('md5')
   fsHash.update(buffer)
   const fsMd5 = fsHash.digest('hex')
+  const cacheData = fs.readFileSync(
+    path.resolve(__dirname, './.cache/xmind.cache'),
+    'utf-8'
+  )
   fs.writeFileSync(path.resolve(__dirname, './.cache/xmind.cache'), fsMd5)
+  if (cacheData === fsMd5) return
+  // 变化则重新生成xmind.html和xmind.png。
   await execa('npx', [
     'markmap',
     `${outPutPath}`,
@@ -57,4 +65,6 @@ module.exports = async (entryPath) => {
   })
   await page.close()
   await browser.close()
+  await execa('git', ['add', '.'])
+  await execa('git', ['commit', '-m', 'chore: updata思维导图'])
 }
