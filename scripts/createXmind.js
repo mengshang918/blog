@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 17:11:52
+ * @Last Modified time: 2020-07-28 17:13:05
  */
 const fs = require('fs')
 const path = require('path')
@@ -39,7 +39,7 @@ module.exports = async (entryPath) => {
   const fsHash = crypto.createHash('md5')
   fsHash.update(buffer)
   const fsMd5 = fsHash.digest('hex')
-  fs.writeFileSync(path.resolve(__dirname, './.cache/xmind.cache', fsMd5))
+  fs.writeFileSync(path.resolve(__dirname, './.cache/xmind.cache'), fsMd5)
   await execa('npx', [
     'markmap',
     `${outPutPath}`,
