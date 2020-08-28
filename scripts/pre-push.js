@@ -5,7 +5,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-23 15:00:45
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 17:51:00
+ * @Last Modified time: 2020-08-28 14:05:56
  */
 const fs = require('fs')
 const path = require('path')
@@ -117,7 +117,7 @@ if (emptyDir.length !== 0) {
         await execa('git', ['commit', '-m', 'docs: 新增TODO.md文件'])
       }
       if (isCreateXmind) {
-        createXmind(path.join(rootPath, '/src'))
+        createXmind(path.join(rootPath, '/docs'))
       }
     })
     .catch((err) => {

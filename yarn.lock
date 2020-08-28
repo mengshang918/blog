@@ -1535,6 +1535,13 @@ format@^0.2.0:
   resolved "http://registry.m.jd.com/format/download/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
+front-matter@^4.0.2:
+  version "4.0.2"
+  resolved "http://registry.m.jd.com/front-matter/download/front-matter-4.0.2.tgz#b14e54dc745cfd7293484f3210d15ea4edd7f4d5"
+  integrity sha1-sU5U3HRc/XKTSE8yENFepO3X9NU=
+  dependencies:
+    js-yaml "^3.13.1"
+
 fs-constants@^1.0.0:
   version "1.0.0"
   resolved "http://registry.m.jd.com/fs-constants/download/fs-constants-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
