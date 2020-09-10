@@ -1,8 +1,24 @@
+#!/usr/bin/env node
+/*
+ * 给md文件添加front-matter
+ * @Author: jiangxiaowei
+ * @Date: 2020-09-14 14:46:53
+ * @Last Modified by: jiangxiaowei
+ * @Last Modified time: 2020-09-14 14:48:25
+ */
 const fs = require('fs')
 const path = require('path')
 const crypto = require('crypto')
-const fm = require('front-matter')
 const matter = require('gray-matter')
+const argv = require('minimist')(process.argv.slice(2))
+
+/**
+ * 判断文件是否是md文件
+ * @param {string} filePath 文件路径
+ */
+// const adjustMd = (filePath) => {
+//   return path.extname(filePath) === '.md'
+// }
 
 /**
  * 获取文件路径的hash
@@ -21,39 +37,14 @@ const getFileHash = (path, encoding = 'utf8', type = 'md5') => {
 const addFrontMatter = (filePath) => {
   const id = getFileHash(filePath)
   const { name } = path.parse(filePath)
-  const data = fs.readFileSync(filePath, 'utf-8')
-  fs.appendFileSync(filePath, `---\nid: ${id}\ntitle: ${name}\n---\n`)
-
-  console.log(matter(data))
+  const { content, data } = matter.read(filePath, { excerpt: true })
+  data.id = id
+  data.title = name
+  // 使用gray-matter添加fron-matter并覆写原文件
+  const fileData = matter.stringify(content, data)
+  fs.writeFileSync(filePath, fileData)
 }
 
-/**
- * 判断文件是否是md文件
- * @param {string} filePath 文件路径
- */
-const adjustMd = (filePath) => {
-  return path.extname(filePath) === '.md'
-}
-// const filePath = '/Users/jiangxiaowei/study/blog/docs/index.md'
-const filePath = '/Users/jiangxiaowei/study/blog/docs/mac工具/工具.md'
-// module.exports = (filePath) => {
-if (adjustMd(filePath)) {
+argv._.map((filePath) => {
   addFrontMatter(filePath)
-}
-// }
-
-const data = fs.readFileSync(filePath, 'utf-8')
-const frontMatter = fm(data)
-console.log(frontMatter)
-
-// ---
-// id: 1c4523c1bbd658fd04ac67308fd390ed
-// title: index.md
-// ---
-
-// {
-//   attributes: { id: '1c4523c1bbd658fd04ac67308fd390ed', title: 'index.md' },
-//   body: '',
-//   bodyBegin: 5,
-//   frontmatter: 'id: 1c4523c1bbd658fd04ac67308fd390ed\ntitle: index.md'
-// }
+})
