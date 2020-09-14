@@ -4,21 +4,13 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:46:53
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-14 14:48:25
+ * @Last Modified time: 2020-09-14 15:41:18
  */
 const fs = require('fs')
 const path = require('path')
 const crypto = require('crypto')
 const matter = require('gray-matter')
 const argv = require('minimist')(process.argv.slice(2))
-
-/**
- * 判断文件是否是md文件
- * @param {string} filePath 文件路径
- */
-// const adjustMd = (filePath) => {
-//   return path.extname(filePath) === '.md'
-// }
 
 /**
  * 获取文件路径的hash
