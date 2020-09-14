@@ -89,8 +89,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'operating_system/linux/linux_basis/linux_basis',
           path: '../docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
