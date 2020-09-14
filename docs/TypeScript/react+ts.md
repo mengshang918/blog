@@ -47,7 +47,7 @@ title: react+ts
 
    - 初始值是 null 使用联合类型 useState<P | null>(null)
 
-   - useRef<HTMLElement>(null!) or useRef<HTMLElement | _null_>(_null_)
+   - useRef\<HTMLElement\>(null!) or useRef\<HTMLElement | _null_\>(_null_)
 
      **尽量不用`!`(Non-null、Non-undefined),而是使用非 null 后者非 undefined 代码块。程序更易读**
 

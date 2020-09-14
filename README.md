@@ -1,3 +1,8 @@
+---
+id: 149b737d2852ec5b5a99bdec355b4810
+title: README
+---
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -34,7 +39,14 @@
 1. 在 pre-commit 阶段
 
    1. `lint-staged`
-   2. `doctoc` 对新增的 md 文件自动添加针对 github 的目录
+
+      1. ~~`doctoc` 对新增的 md 文件自动添加针对 github 的目录~~
+
+         目录交给 docusaurus 处理
+
+      2. 有改动的 md 文件重新添加`frontmatter`
+
+   2. `docs`文件自动生成`website/sidebars.js`文件
 
 2. pre-push 阶段
 
