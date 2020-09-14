@@ -3,11 +3,12 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:51:31
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-14 17:55:53
+ * @Last Modified time: 2020-09-14 18:04:43
  */
 
 const path = require('path')
 const fs = require('fs')
+const execa = require('execa')
 const matter = require('gray-matter')
 const ignoreDir = ['.DS_Store', 'xmind.html', 'xmind.png']
 // 文档根目录
@@ -70,3 +71,6 @@ fs.writeFileSync(
   path.resolve(__dirname, '../website/sidebars.js'),
   `module.exports=${JSON.stringify(sideBar)}`
 )
+;(async () => {
+  await execa('git', ['add', '.'])
+})()
