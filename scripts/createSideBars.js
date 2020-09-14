@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:51:31
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-14 16:08:22
+ * @Last Modified time: 2020-09-14 17:55:53
  */
 
 const path = require('path')
@@ -48,11 +48,18 @@ const loadDir = (entryPath, sideBarArr) => {
       loadDir(filePath, items)
     } else if (adjustMd(filePath)) {
       const { data } = matter.read(filePath)
-      console.log(filePath, data)
-      sideBarArr.push({
-        type: 'doc',
-        id: path.join(entryPath, data.id).split(`${rootPath}/`)[1],
-      })
+      // 关于该repo文档位置是第一个
+      if (/关于该repo.md/gi.test(filePath)) {
+        sideBarArr.unshift({
+          type: 'doc',
+          id: path.join(entryPath, data.id).split(`${rootPath}/`)[1],
+        })
+      } else {
+        sideBarArr.push({
+          type: 'doc',
+          id: path.join(entryPath, data.id).split(`${rootPath}/`)[1],
+        })
+      }
     }
   })
 }

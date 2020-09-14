@@ -1,5 +1,6 @@
 module.exports = {
   sidebar: [
+    { type: 'doc', id: 'e0788de2cb089a91918692b1fa97db64' },
     {
       type: 'category',
       label: 'Advanced_technology',
@@ -190,7 +191,6 @@ module.exports = {
         { type: 'doc', id: 'TypeScript/b36f6376acc1abd98aab96ef91491d2b' },
       ],
     },
-    { type: 'doc', id: '1c4523c1bbd658fd04ac67308fd390ed' },
     {
       type: 'category',
       label: 'mac工具',
