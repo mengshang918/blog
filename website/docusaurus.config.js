@@ -34,15 +34,16 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: '文档',
+          title: '关于',
           items: [
             {
-              label: 'Style Guide',
+              label: '关于该repo',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'README',
+              href:
+                'https://github.com/mengshang918/blog/blob/master/README.md',
             },
           ],
         },
@@ -51,15 +52,40 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'medium',
+              href: 'https://medium.com/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: '掘金',
+              href: 'https://juejin.im/',
+            },
+            {
+              label: 'reddit',
+              href: 'https://www.reddit.com/',
+            },
+            {
+              label: 'twitter',
+              href: 'https://twitter.com/home',
+            },
+            {
+              label: 'V2EX',
+              href: 'https://www.v2ex.com/',
+            },
+          ],
+        },
+        {
+          title: '资源',
+          items: [
+            {
+              label: 'web前端导航',
+              href: 'http://www.alloyteam.com/nav/',
+            },
+            {
+              label: '印记中文文档',
+              href: 'https://docschina.org/',
             },
           ],
         },
@@ -67,16 +93,16 @@ module.exports = {
           title: '更多',
           items: [
             {
+              label: 'GitHub',
+              href: 'https://github.com/mengshang918',
+            },
+            {
               label: '博客',
               to: 'blog',
             },
             {
               label: 'CSDN博客',
               href: 'https://blog.csdn.net/mengshang529',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/mengshang918',
             },
           ],
         },
@@ -92,14 +118,13 @@ module.exports = {
           path: '../docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/mengshang918/blog/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/mengshang918/blog/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
