@@ -8,7 +8,8 @@
 	"license": "MIT",
 	"scripts": {
 		"pre-push": "node scripts/pre-push",
-		"addFrontMatter": "node scripts/addFrontMatter"
+		"addFrontMatter": "node scripts/addFrontMatter",
+		"createSideBars": "node scripts/createSideBars"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^9.1.1",
@@ -29,9 +30,9 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "lint-staged",
+			"pre-commit": "lint-staged && npm run createSideBars",
 			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-push": "exec < /dev/tty && yarn pre-push"
+			"pre-push": "exec < /dev/tty && npm run pre-push"
 		}
 	},
 	"lint-staged": {
@@ -40,7 +41,6 @@
 			"prettier --config .prettierrc.yml --write"
 		],
 		"*.md": [
-			"doctoc",
 			"npm run addFrontMatter",
 			"prettier --config .prettierrc.yml --write"
 		]

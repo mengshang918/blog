@@ -10,9 +10,11 @@ title: webpack源码解读
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 本文只是笔者初次学习 webpack 源码所写（感谢[依柳诚](https://juejin.im/user/57e1143479bc44610a4a9577)提供的阅读 webpack 源码的思路），供以后精读作目录使用。
 
-![webpack流程图](/Users/jiangxiaowei/Desktop/blog/webpack流程图.jpg)
+<img src={useBaseUrl(img/webpack_process.jpg)}/>
 
 1. vscode debug
 
