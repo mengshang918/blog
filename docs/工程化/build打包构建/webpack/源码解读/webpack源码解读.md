@@ -1,5 +1,5 @@
 ---
-id: 1e942c5bd1545c26d8cf8a50868b7026
+id: bcedcc35cd9b79579bde7ce42c717ec0
 title: webpack源码解读
 ---
 
@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 本文只是笔者初次学习 webpack 源码所写（感谢[依柳诚](https://juejin.im/user/57e1143479bc44610a4a9577)提供的阅读 webpack 源码的思路），供以后精读作目录使用。
 
-<img src={useBaseUrl(img/webpack_process.jpg)}/>
+<img src={useBaseUrl('img/webpack_process.jpg')}/>
 
 1. vscode debug
 
