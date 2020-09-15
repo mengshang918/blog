@@ -3,7 +3,7 @@ module.exports = {
   tagline: '博客、知识记录',
   url: 'https://mengshang918.github.io/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mengshang918', // Usually your GitHub org/user name.
   projectName: 'mengshang918.github.io', // Usually your repo name.
