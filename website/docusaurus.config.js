@@ -22,6 +22,11 @@ module.exports = {
           label: '文档',
           position: 'right',
         },
+        {
+          to: 'xmind',
+          label: '思维导图',
+          position: 'right',
+        },
         { to: 'blog', label: '博客', position: 'right' },
         {
           href: 'https://github.com/mengshang918/blog',
@@ -132,4 +137,5 @@ module.exports = {
       },
     ],
   ],
+  plugins: ['docusaurus-plugin-sass'],
 }
