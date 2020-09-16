@@ -4,7 +4,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:46:53
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-14 15:41:18
+ * @Last Modified time: 2020-09-16 22:13:04
  */
 const fs = require('fs')
 const path = require('path')
@@ -30,7 +30,12 @@ const addFrontMatter = (filePath) => {
   const id = getFileHash(filePath)
   const { name } = path.parse(filePath)
   const { content, data } = matter.read(filePath, { excerpt: true })
-  data.id = id
+  const isBlog = /website\/blog\//gi.test(filePath)
+  if (isBlog) {
+    data.slug = id
+  } else {
+    data.id = id
+  }
   data.title = name
   // 使用gray-matter添加fron-matter并覆写原文件
   const fileData = matter.stringify(content, data)
