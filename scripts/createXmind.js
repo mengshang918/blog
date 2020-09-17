@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-07-28 17:42:05
+ * @Last Modified time: 2020-09-17 17:00:25
  */
 const fs = require('fs')
 const path = require('path')
@@ -17,8 +17,8 @@ const { log } = console
  * @param {str} entryPath 入口路径
  */
 module.exports = async (entryPath) => {
-  const outPutPath = path.join(entryPath, 'xmind.md')
-  const outPutHtml = path.join(entryPath, 'xmind.html')
+  const outPutPath = path.join(__dirname, '../website/static/xmind.md')
+  const outPutHtml = path.join(__dirname, '../website/static/xmind.html')
   let res = null
   try {
     res = await execa('tree', ['-d', '-N', `${entryPath}`])
@@ -64,7 +64,7 @@ module.exports = async (entryPath) => {
   await page.goto(`file://${outPutHtml}`)
   let dom = await page.$('#mindmap')
   await dom.screenshot({
-    path: path.join(entryPath, 'xmind.png'),
+    path: path.join(__dirname, '../website/static/img/xmind.png'),
   })
   await page.close()
   await browser.close()
