@@ -2,11 +2,11 @@ module.exports = {
   title: '梦殇918',
   tagline: '博客、知识记录',
   url: 'https://mengshang918.github.io/',
-  baseUrl: '/',
+  baseUrl: '/blog/',
   onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mengshang918', // Usually your GitHub org/user name.
-  projectName: 'mengshang918.github.io', // Usually your repo name.
+  projectName: 'blog', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '梦殇918',
