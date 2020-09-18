@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React,{useEffect,useCallback,useState} from 'react'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
@@ -30,7 +31,7 @@ window.removeEventListener('resize',getWidth)
     <Layout title={`${siteConfig.title}|思维导图`}>
       <iframe
         src={useBaseUrl('xmind.html')}
-        frameborder="0"
+        frameBorder="0"
         style={{minHeight:600}}
         height={height}
         width="100%"

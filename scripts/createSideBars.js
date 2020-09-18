@@ -3,14 +3,14 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:51:31
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-14 18:04:43
+ * @Last Modified time: 2020-09-18 16:59:51
  */
 
 const path = require('path')
 const fs = require('fs')
 const execa = require('execa')
 const matter = require('gray-matter')
-const ignoreDir = ['.DS_Store', 'xmind.html', 'xmind.png']
+const ignoreDir = ['.DS_Store', 'xmind.html', 'xmind.png', 'todo.md']
 // 文档根目录
 const rootPath = path.resolve(__dirname, '../docs')
 

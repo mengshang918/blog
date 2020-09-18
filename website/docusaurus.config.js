@@ -29,6 +29,16 @@ module.exports = {
         },
         { to: 'blog', label: '博客', position: 'right' },
         {
+          to: 'project',
+          label: '项目页',
+          position: 'right',
+        },
+        {
+          to: 'docs/todo',
+          label: '规划',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/mengshang918/blog',
           label: 'GitHub',
           position: 'right',
