@@ -4,7 +4,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:46:53
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-18 17:04:02
+ * @Last Modified time: 2020-09-18 22:03:32
  */
 const fs = require('fs')
 const path = require('path')
@@ -33,10 +33,11 @@ const addFrontMatter = (filePath) => {
   const isBlog = /website\/blog\//gi.test(filePath)
   if (isBlog) {
     data.slug = id
+    data.title = name.slice(12)
   } else {
     data.id = id
+    data.title = name
   }
-  data.title = name
   // 使用gray-matter添加fron-matter并覆写原文件
   const fileData = matter.stringify(content, data)
   fs.writeFileSync(filePath, fileData)
