@@ -9,7 +9,8 @@
 	"scripts": {
 		"pre-push": "node scripts/pre-push",
 		"addFrontMatter": "node scripts/addFrontMatter",
-		"createSideBars": "node scripts/createSideBars"
+		"createSideBars": "node scripts/createSideBars",
+		"createTodoPage": "node scripts/createTodoPage"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^9.1.1",
@@ -42,6 +43,7 @@
 		],
 		"*.md": [
 			"npm run addFrontMatter",
+			"npm run createTodoPage",
 			"prettier --config .prettierrc.yml --write"
 		]
 	}

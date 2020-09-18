@@ -4,7 +4,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:46:53
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-16 22:13:04
+ * @Last Modified time: 2020-09-18 17:04:02
  */
 const fs = require('fs')
 const path = require('path')
@@ -43,5 +43,7 @@ const addFrontMatter = (filePath) => {
 }
 
 argv._.map((filePath) => {
+  // docs/todo.md手动添加fron-matter。避免出现docusaurus.config.js配置对应不上问题
+  if (/docs\/todo.md/g.test(filePath)) return
   addFrontMatter(filePath)
 })
