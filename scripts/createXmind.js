@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-17 17:00:25
+ * @Last Modified time: 2020-09-18 22:06:29
  */
 const fs = require('fs')
 const path = require('path')
@@ -24,6 +24,7 @@ module.exports = async (entryPath) => {
     res = await execa('tree', ['-d', '-N', `${entryPath}`])
   } catch (error) {
     log(chalk.red('请先使用homeBrew安装tree'))
+    process.exit(1)
   }
   if (!res.stdout) {
     process.exit(1)
