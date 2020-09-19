@@ -17,15 +17,15 @@ function Project() {
           {projects.map((item) => {
             return (
               <div key={item.name} className="col--6 col blog-project--item">
-                <div class="card-demo">
-                  <div class="card">
-                    <div class="card__header">
+                <div className="card-demo">
+                  <div className="card">
+                    <div className="card__header">
                       <h3>{item.name}</h3>
                     </div>
-                    <div class="card__body">
+                    <div className="card__body">
                       <p>{item.description}</p>
                     </div>
-                    <div class="card__footer">
+                    <div className="card__footer">
                       <button
                         className={clsx(
                           'button button--secondary button--block',
