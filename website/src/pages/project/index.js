@@ -2,7 +2,6 @@
 import React from 'react'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import projects from './config'
 import clsx from 'clsx'
 import './index.sass'
 
@@ -14,7 +13,7 @@ function Project() {
     <Layout title={`${siteConfig.title}|项目`}>
       <div className="container">
         <div className="row">
-          {projects.map((item) => {
+          {siteConfig.customFields.projectConfig.map((item) => {
             return (
               <div key={item.name} className="col--6 col blog-project--item">
                 <div className="card-demo">
