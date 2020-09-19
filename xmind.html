@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@5"></script><script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.7.12/dist/browser/view.min.js"></script><script>((data, init, items, opts) => {
+        const {
+          Markmap,
+          loadPlugins
+        } = window.markmap;
+        (init ? init(loadPlugins, items, opts) : Promise.resolve()).then(() => {
+          window.mm = Markmap.create('svg#mindmap', null, data);
+        });
+      })({"t":"heading","d":1,"v":"/Users/jxw/personalProject/blog/docs","c":[{"t":"list_item","d":2,"v":"Advanced_technology","c":[{"t":"list_item","d":3,"v":"GraphQL"},{"t":"list_item","d":3,"v":"PWA"},{"t":"list_item","d":3,"v":"微前端"}]},{"t":"list_item","d":2,"v":"CSS","c":[{"t":"list_item","d":3,"v":"布局"},{"t":"list_item","d":3,"v":"模块化","c":[{"t":"list_item","d":4,"v":"css_in_js"},{"t":"list_item","d":4,"v":"less"},{"t":"list_item","d":4,"v":"sass"},{"t":"list_item","d":4,"v":"stylus"}]}]},{"t":"list_item","d":2,"v":"ECMASCript","c":[{"t":"list_item","d":3,"v":"ES6"},{"t":"list_item","d":3,"v":"JSONSchema"},{"t":"list_item","d":3,"v":"正则"},{"t":"list_item","d":3,"v":"函数式编程"}]},{"t":"list_item","d":2,"v":"English"},{"t":"list_item","d":2,"v":"HTML"},{"t":"list_item","d":2,"v":"Node.js","c":[{"t":"list_item","d":3,"v":"常用npm_package"}]},{"t":"list_item","d":2,"v":"TypeScript"},{"t":"list_item","d":2,"v":"mac工具"},{"t":"list_item","d":2,"v":"动画"},{"t":"list_item","d":2,"v":"实践"},{"t":"list_item","d":2,"v":"文档","c":[{"t":"list_item","d":3,"v":"docusaurus"}]},{"t":"list_item","d":2,"v":"框架","c":[{"t":"list_item","d":3,"v":"angular"},{"t":"list_item","d":3,"v":"react","c":[{"t":"list_item","d":4,"v":"优化"},{"t":"list_item","d":4,"v":"常见报错"}]},{"t":"list_item","d":3,"v":"vue"}]},{"t":"list_item","d":2,"v":"测试","c":[{"t":"list_item","d":3,"v":"E2E测试","c":[{"t":"list_item","d":4,"v":"cypress"},{"t":"list_item","d":4,"v":"puppeteer"}]},{"t":"list_item","d":3,"v":"单元测试","c":[{"t":"list_item","d":4,"v":"enzyme"},{"t":"list_item","d":4,"v":"jest"}]}]},{"t":"list_item","d":2,"v":"运维","c":[{"t":"list_item","d":3,"v":"CI&amp;CD","c":[{"t":"list_item","d":4,"v":"jekins"}]},{"t":"list_item","d":3,"v":"nginx"}]},{"t":"list_item","d":2,"v":"面试"},{"t":"list_item","d":2,"v":"小程序"},{"t":"list_item","d":2,"v":"工程化","c":[{"t":"list_item","d":3,"v":"build打包构建","c":[{"t":"list_item","d":4,"v":"Rollup"},{"t":"list_item","d":4,"v":"webpack","c":[{"t":"list_item","d":5,"v":"loader","c":[{"t":"list_item","d":6,"v":"自定义loader"}]},{"t":"list_item","d":5,"v":"plugins"},{"t":"list_item","d":5,"v":"版本"},{"t":"list_item","d":5,"v":"源码解读"}]}]},{"t":"list_item","d":3,"v":"mock"},{"t":"list_item","d":3,"v":"pakage_manager","c":[{"t":"list_item","d":4,"v":"monorepo"},{"t":"list_item","d":4,"v":"npm"},{"t":"list_item","d":4,"v":"yarn"}]},{"t":"list_item","d":3,"v":"脚手架","c":[{"t":"list_item","d":4,"v":"create-react-app"},{"t":"list_item","d":4,"v":"vue-cli"},{"t":"list_item","d":4,"v":"自定义一个脚手架"}]},{"t":"list_item","d":3,"v":"版本控制","c":[{"t":"list_item","d":4,"v":"git"},{"t":"list_item","d":4,"v":"svn"}]},{"t":"list_item","d":3,"v":"代码格式化和校验"}]},{"t":"list_item","d":2,"v":"浏览器","c":[{"t":"list_item","d":3,"v":"存储","c":[{"t":"list_item","d":4,"v":"cookie"},{"t":"list_item","d":4,"v":"indexDB"},{"t":"list_item","d":4,"v":"localStorage"},{"t":"list_item","d":4,"v":"sessionStorage"}]},{"t":"list_item","d":3,"v":"性能"},{"t":"list_item","d":3,"v":"缓存"},{"t":"list_item","d":3,"v":"跨域"},{"t":"list_item","d":3,"v":"事件机制"},{"t":"list_item","d":3,"v":"渲染机制"},{"t":"list_item","d":3,"v":"时间循环机制"}]},{"t":"list_item","d":2,"v":"前端安全"},{"t":"list_item","d":2,"v":"协议规范"},{"t":"list_item","d":2,"v":"工具调试","c":[{"t":"list_item","d":3,"v":"charles"},{"t":"list_item","d":3,"v":"chrome","c":[{"t":"list_item","d":4,"v":"插件"},{"t":"list_item","d":4,"v":"控制台"}]},{"t":"list_item","d":3,"v":"vscode","c":[{"t":"list_item","d":4,"v":"插件"},{"t":"list_item","d":4,"v":"快捷键"}]}]},{"t":"list_item","d":2,"v":"性能优化"},{"t":"list_item","d":2,"v":"操作系统","c":[{"t":"list_item","d":3,"v":"linux","c":[{"t":"list_item","d":4,"v":"linux基础"},{"t":"list_item","d":4,"v":"脚本"}]}]},{"t":"list_item","d":2,"v":"网络协议"},{"t":"list_item","d":2,"v":"设计模式"},{"t":"list_item","d":2,"v":"微信公众号"},{"t":"list_item","d":2,"v":"算法和数据结构"},{"t":"list_item","d":2,"v":"移动端跨平台开发"}]},(loadPlugins, items, opts) => loadPlugins(items, opts),["prism"],{"prism":true})</script>
+</body>
+</html>
