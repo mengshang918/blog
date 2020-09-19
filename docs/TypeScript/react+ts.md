@@ -1,5 +1,5 @@
 ---
-id: 57f5ec93269198cb9c2ec7e2e70a8d27
+id: 618fc19ed278b0ecfe16266b4cd00f9e
 title: react+ts
 ---
 
@@ -159,7 +159,7 @@ title: react+ts
 
 9. [context](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/context)
 
-10. [forwardRef/createRef](forwardRef/createRef)
+10. forwardRef/createRef
 
 11. class 组件中 createRef 必须指定具体的元素。
 
