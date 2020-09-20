@@ -10,7 +10,8 @@
 		"pre-push": "node scripts/pre-push",
 		"addFrontMatter": "node scripts/addFrontMatter",
 		"createSideBars": "node scripts/createSideBars",
-		"createTodoPage": "node scripts/createTodoPage"
+		"createTodoPage": "node scripts/createTodoPage",
+		"deploy": "cd website && yarn deploy"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^9.1.1",
