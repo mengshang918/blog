@@ -1,5 +1,5 @@
 ---
-id: 149b737d2852ec5b5a99bdec355b4810
+id: 6ed735f585f82da74522348a0781b9d2
 title: README
 ---
 
@@ -32,7 +32,7 @@ title: README
 
 ## 思维导图
 
-![xmind](./src/xmind.png)
+![xmind](./website/static/img/xmind.png)
 
 ## 关于该 repo
 
