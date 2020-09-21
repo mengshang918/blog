@@ -184,5 +184,16 @@ module.exports = {
       },
     ],
   ],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        cacheTime: 600 * 1000, // 600 sec - cache purge period
+        changefreq: 'weekly',
+        priority: 0.5,
+        trailingSlash: false,
+      },
+    ],
+  ],
 }
