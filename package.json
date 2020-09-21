@@ -9,7 +9,7 @@
 	"scripts": {
 		"pre-push": "node scripts/pre-push",
 		"addFrontMatter": "node scripts/addFrontMatter",
-		"createSideBars": "node scripts/createSideBars",
+		"createSideBars": "node scripts/createSideBars && prettier --config .prettierrc.yml --write website/sidebars.js",
 		"createTodoPage": "node scripts/createTodoPage",
 		"deploy": "cd website && yarn deploy"
 	},
