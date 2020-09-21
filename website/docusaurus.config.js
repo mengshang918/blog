@@ -37,7 +37,15 @@ module.exports = {
     ],
   },
   themeConfig: {
+    // announcementBar: {
+    //   id: 'alert',
+    //   content: '欢迎来到我的博客～',
+    //   backgroundColor: '#eee',
+    //   textColor: '#091E42',
+    //   isCloseable: true,
+    // },
     navbar: {
+      hideOnScroll: true,
       title: '梦殇918',
       logo: {
         alt: 'My Site Logo',
