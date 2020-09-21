@@ -168,8 +168,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/mengshang918/blog/edit/master/website/blog/',
+          editUrl: 'https://github.com/mengshang918/blog/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
