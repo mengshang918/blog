@@ -3,17 +3,18 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:51:31
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-21 23:42:42
+ * @Last Modified time: 2020-09-22 00:00:05
  */
 
 const path = require('path')
 const fs = require('fs')
 const execa = require('execa')
+const chalk = require('chalk')
 const matter = require('gray-matter')
 const ignoreDir = ['.DS_Store', 'xmind.html', 'xmind.png', 'todo.md']
 // 文档根目录
 const rootPath = path.resolve(__dirname, '../docs')
-
+const { log } = console
 /**
  * 判断文件是否是md文件
  * @param {string} filePath 文件路径
@@ -72,5 +73,17 @@ fs.writeFileSync(
   `module.exports=${JSON.stringify(sideBar)}`
 )
 ;(async () => {
-  await execa('git', ['add', '.'])
+  try {
+    await execa('npx', [
+      'prettier',
+      '--config',
+      '.prettierrc.yml',
+      '--write',
+      'website/sidebars.js',
+    ])
+    await execa('git', ['add', '.'])
+  } catch (error) {
+    log(chalk.red(error))
+    process.exit(1)
+  }
 })()
