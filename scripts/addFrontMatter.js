@@ -4,7 +4,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:46:53
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-18 22:03:32
+ * @Last Modified time: 2020-09-21 22:05:10
  */
 const fs = require('fs')
 const path = require('path')
@@ -33,7 +33,7 @@ const addFrontMatter = (filePath) => {
   const isBlog = /website\/blog\//gi.test(filePath)
   if (isBlog) {
     data.slug = id
-    data.title = name.slice(12)
+    data.title = name.slice(11)
   } else {
     data.id = id
     data.title = name
