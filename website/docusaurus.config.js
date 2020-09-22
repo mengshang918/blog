@@ -191,4 +191,5 @@ module.exports = {
     ],
   ],
   plugins: ['docusaurus-plugin-sass'],
+  scripts: ['./js/disqus.js'],
 }
