@@ -1,15 +1,17 @@
 const PAGE_IDENTIFIER = window.location.pathname
 
-document.addEventListener('DOMContentLoaded', function () {
+const renderGitTalk = () => {
+  const hasGitTalk = document.getElementById('gitalk-container')
   const gittalkContainer = document.createElement('div')
   gittalkContainer.id = 'gitalk-container'
   const postContainer = document.querySelectorAll(
     '.main-wrapper main .container .margin-vert--lg'
   )[0]
   const isDocsPage = PAGE_IDENTIFIER.indexOf('/docs') !== -1
-  console.log(postContainer, isDocsPage)
   if (postContainer && isDocsPage) {
-    postContainer.parentNode.appendChild(gittalkContainer)
+    if (!hasGitTalk) {
+      postContainer.parentNode.appendChild(gittalkContainer)
+    }
     // eslint-disable-next-line no-undef
     const gitalk = new Gitalk({
       clientID: 'e02b0955ca2deebc1e28',
@@ -23,4 +25,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     gitalk.render('gitalk-container')
   }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  renderGitTalk()
+})
+
+window.addEventListener('popstate', function () {
+  renderGitTalk()
+})
+
+var _wr = function (type) {
+  var orig = history[type]
+  return function () {
+    var rv = orig.apply(this, arguments)
+    var e = new Event(type)
+    e.arguments = arguments
+    window.dispatchEvent(e)
+    return rv
+  }
+}
+history.pushState = _wr('pushState')
+history.replaceState = _wr('replaceState')
+
+window.addEventListener('replaceState', function () {
+  renderGitTalk()
+})
+window.addEventListener('pushState', function () {
+  renderGitTalk()
 })
