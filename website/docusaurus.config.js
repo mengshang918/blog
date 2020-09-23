@@ -195,7 +195,8 @@ module.exports = {
     // disqus 评论引入 受网络影响
     // 'https://mengshang918.github.io/blog/js/disqus.js',
     // gittalk 评论引入
+    'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js',
     'https://mengshang918.github.io/blog/js/gittalk.js',
   ],
-  stylesheets: ['https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js'],
+  stylesheets: ['https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css'],
 }
