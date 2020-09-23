@@ -4,11 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const gittalkContainer = document.createElement('div')
   gittalkContainer.id = 'gitalk-container'
   const postContainer = document.querySelectorAll(
-    '.main-wrapper main .container'
+    '.main-wrapper main .container .margin-vert--lg'
   )[0]
   const isDocsPage = PAGE_IDENTIFIER.indexOf('/docs') !== -1
+  console.log(postContainer, isDocsPage)
   if (postContainer && isDocsPage) {
-    postContainer.appendChild(gittalkContainer)
+    postContainer.parentNode.appendChild(gittalkContainer)
     // eslint-disable-next-line no-undef
     const gitalk = new Gitalk({
       clientID: 'e02b0955ca2deebc1e28',
