@@ -1,4 +1,6 @@
 const PAGE_IDENTIFIER = window.location.pathname
+const idMap = PAGE_IDENTIFIER.split('/').filter((item) => item)
+const id = idMap[idMap.length - 1]
 
 const renderGitTalk = () => {
   const hasGitTalk = document.getElementById('gitalk-container')
@@ -19,7 +21,7 @@ const renderGitTalk = () => {
       repo: 'blog', // The repository of store comments,
       owner: 'mengshang918',
       admin: ['mengshang918'],
-      id: location.pathname, // Ensure uniqueness and length less than 50
+      id, // Ensure uniqueness and length less than 50
       distractionFreeMode: false, // Facebook-like distraction free mode
     })
 
