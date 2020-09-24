@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-25 01:14:03
+ * @Last Modified time: 2020-09-25 01:28:31
  */
 const fs = require('fs')
 const path = require('path')
@@ -38,9 +38,7 @@ module.exports = async (entryPath) => {
 
   Object.keys(allDocs).map((item) => {
     const reg = new RegExp(`\\* ${item}`, 'g')
-    data = data
-      .replace(reg, `* [${item}](${allDocs[item]})`)
-      .replace(/.md/g, '')
+    data = data.replace(reg, `* [${item.split('.md')[0]}](${allDocs[item]})`)
   })
 
   const dataMap = data.split('\n')
