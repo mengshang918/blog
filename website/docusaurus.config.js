@@ -16,7 +16,8 @@ module.exports = {
       },
       {
         name: 'blog',
-        description: '基于docusaurus的个人博客网站。',
+        description: '基于docusaurus开发的个人博客网站。（当前网址）',
+        href: 'https://github.com/mengshang918/blog',
       },
       {
         name: 'node-common',
