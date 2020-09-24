@@ -104,9 +104,11 @@ const observer = new MutationObserver(function (mutations) {
       // console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
       if (mutation.target.contains) {
         if (mutation.target.classList.contains('react-toggle--checked')) {
-          document.getElementById('mindmap').style.color = '#fff'
+          window.frames[0].document.getElementById('mindmap').style.color =
+            '#fff'
         } else if (mutation.target.classList.contains('react-toggle--focus')) {
-          document.getElementById('mindmap').style.color = '#000'
+          window.frames[0].document.getElementById('mindmap').style.color =
+            '#000'
         }
       }
     }
