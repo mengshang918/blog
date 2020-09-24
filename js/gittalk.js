@@ -47,7 +47,6 @@ const config = {
 // instance
 const observer = new MutationObserver(function (mutations) {
   // console.log(`mutations =`, mutations); // MutationRecord
-  console.log(mutations)
   mutations.forEach((mutation) => {
     // console.log("mutation =", mutation);
     // if (mutation.type === 'characterData') {
@@ -70,7 +69,9 @@ const observer = new MutationObserver(function (mutations) {
           `A child node ${mutation.target} has been added!`,
           mutation.target
         )
-        renderGitTalk()
+        if (mutation.target.tagName === 'MAIN') {
+          renderGitTalk()
+        }
       }
       //   if (mutation.target && [...mutation.removedNodes].length) {
       //     console.log(
