@@ -65,11 +65,14 @@ const observer = new MutationObserver(function (mutations) {
     // }
     if (mutation.type === 'childList') {
       if (mutation.target && [...mutation.addedNodes].length) {
-        console.log(
-          `A child node ${mutation.target} has been added!`,
-          mutation.target
-        )
-        if (mutation.target.tagName === 'MAIN') {
+        // console.log(
+        //   `A child node ${mutation.target} has been added!`,
+        //   mutation.target
+        // )
+        if (
+          mutation.target.tagName === 'MAIN' ||
+          mutation.target.id === '__docusaurus'
+        ) {
           renderGitTalk()
         }
       }
