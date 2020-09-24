@@ -61,7 +61,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'xmind',
+          to: 'x_mind',
           label: '思维导图',
           position: 'right',
         },
