@@ -102,11 +102,28 @@ const observer = new MutationObserver(function (mutations) {
     if (mutation.type === 'attributes') {
       // console.log('mutation =', mutation)
       // console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
-      if (mutation.target.contains) {
-        if (mutation.target.classList.contains('react-toggle--checked')) {
+      // 控制思维导图文字颜色
+      if (mutation.target && mutation.target.tagName === 'IFRAME') {
+        const themeE = document.querySelectorAll('.react-toggle--checked')
+        if (themeE) {
           window.frames[0].document.getElementById('mindmap').style.color =
             '#fff'
-        } else if (mutation.target.classList.contains('react-toggle--focus')) {
+        } else {
+          window.frames[0].document.getElementById('mindmap').style.color =
+            '#000'
+        }
+      }
+      if (mutation.target && mutation.target.contains) {
+        if (
+          mutation.target.classList.contains('react-toggle--checked') &&
+          window.frames[0]
+        ) {
+          window.frames[0].document.getElementById('mindmap').style.color =
+            '#fff'
+        } else if (
+          mutation.target.classList.contains('react-toggle--focus') &&
+          window.frames[0]
+        ) {
           window.frames[0].document.getElementById('mindmap').style.color =
             '#000'
         }
