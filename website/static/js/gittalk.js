@@ -106,11 +106,13 @@ const observer = new MutationObserver(function (mutations) {
       if (mutation.target && mutation.target.tagName === 'IFRAME') {
         const themeE = document.querySelectorAll('.react-toggle--checked')
         if (themeE) {
-          window.frames[0].document.getElementById('mindmap').style.color =
-            '#fff'
+          window.frames[0] &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#fff')
         } else {
-          window.frames[0].document.getElementById('mindmap').style.color =
-            '#000'
+          window.frames[0] &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#000')
         }
       }
       if (mutation.target && mutation.target.contains) {
