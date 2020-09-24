@@ -9,8 +9,8 @@ const renderGitTalk = () => {
   const postContainer = document.querySelectorAll(
     '.main-wrapper main .container .margin-vert--lg'
   )[0]
-  const isDocsPage = PAGE_IDENTIFIER.indexOf('/docs') !== -1
-  if (postContainer && isDocsPage) {
+  // const isDocsPage = PAGE_IDENTIFIER.indexOf('/docs') !== -1
+  if (postContainer) {
     if (!hasGitTalk) {
       postContainer.parentNode.appendChild(gittalkContainer)
     }
