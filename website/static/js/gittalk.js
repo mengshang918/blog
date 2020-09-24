@@ -76,39 +76,37 @@ const observer = new MutationObserver(function (mutations) {
           renderGitTalk()
         }
       }
-      //   if (mutation.target && [...mutation.removedNodes].length) {
-      //     console.log(
-      //       `A child node ${mutation.target} has been removed!`,
-      //       mutation.target
-      //     )
-      //   }
-      //   // do somwthings
-      //   let list_values = []
-      //   list_values = [].slice
-      //     .call(list.children)
-      //     .map(function (node) {
-      //       return node.innerHTML
-      //     })
-      //     .filter(function (str) {
-      //       if (str === '<br>') {
-      //         return false
-      //       } else {
-      //         return true
-      //       }
-      //     })
-      //   console.log(list_values)
-      // }
-      if (mutation.type === 'attributes') {
-        // console.log('mutation =', mutation)
-        // console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
-        if (mutation.target.contains) {
-          if (mutation.target.classList.contains('react-toggle--checked')) {
-            document.getElementById('mindmap').style.color = '#fff'
-          } else if (
-            mutation.target.classList.contains('react-toggle--focus')
-          ) {
-            document.getElementById('mindmap').style.color = '#000'
-          }
+    }
+    //   if (mutation.target && [...mutation.removedNodes].length) {
+    //     console.log(
+    //       `A child node ${mutation.target} has been removed!`,
+    //       mutation.target
+    //     )
+    //   }
+    //   // do somwthings
+    //   let list_values = []
+    //   list_values = [].slice
+    //     .call(list.children)
+    //     .map(function (node) {
+    //       return node.innerHTML
+    //     })
+    //     .filter(function (str) {
+    //       if (str === '<br>') {
+    //         return false
+    //       } else {
+    //         return true
+    //       }
+    //     })
+    //   console.log(list_values)
+    // }
+    if (mutation.type === 'attributes') {
+      // console.log('mutation =', mutation)
+      // console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
+      if (mutation.target.contains) {
+        if (mutation.target.classList.contains('react-toggle--checked')) {
+          document.getElementById('mindmap').style.color = '#fff'
+        } else if (mutation.target.classList.contains('react-toggle--focus')) {
+          document.getElementById('mindmap').style.color = '#000'
         }
       }
     }
