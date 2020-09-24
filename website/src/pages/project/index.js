@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import GitHubButton from 'react-github-btn'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import clsx from 'clsx'
@@ -20,6 +21,16 @@ function Project() {
                   <div className="card">
                     <div className="card__header">
                       <h3>{item.name}</h3>
+                      {item.href && (
+                        <GitHubButton
+                          href={item.href}
+                          size="large"
+                          data-icon="octicon-star"
+                          data-show-count="true"
+                        >
+                          Star
+                        </GitHubButton>
+                      )}
                     </div>
                     <div className="card__body">
                       <p>{item.description}</p>
