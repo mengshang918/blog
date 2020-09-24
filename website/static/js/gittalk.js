@@ -98,16 +98,19 @@ const observer = new MutationObserver(function (mutations) {
       //     })
       //   console.log(list_values)
       // }
-      // if (mutation.type === 'attributes') {
-      //   console.log('mutation =', mutation)
-      //   console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
-      //   // console.log("list style =", list.style);
-      //   let { width, height } = list.style
-      //   let style = {
-      //     width,
-      //     height,
-      //   }
-      //   console.log('style =\n', JSON.stringify(style, null, 4))
+      if (mutation.type === 'attributes') {
+        // console.log('mutation =', mutation)
+        // console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
+        if (mutation.target.contains) {
+          if (mutation.target.classList.contains('react-toggle--checked')) {
+            document.getElementById('mindmap').style.color = '#fff'
+          } else if (
+            mutation.target.classList.contains('react-toggle--focus')
+          ) {
+            document.getElementById('mindmap').style.color = '#000'
+          }
+        }
+      }
     }
   })
 })
