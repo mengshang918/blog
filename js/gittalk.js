@@ -37,8 +37,6 @@ const MutationObserver =
   window.MutationObserver ||
   window.WebKitMutationObserver ||
   window.MozMutationObserver
-// target
-const list = document.querySelector('#__docusaurus')
 // options
 const config = {
   attributes: true,
@@ -109,4 +107,17 @@ const observer = new MutationObserver(function (mutations) {
     }
   })
 })
-observer.observe(list, config)
+
+const checkList = () => {
+  // target
+  const list = document.querySelector('#__docusaurus')
+  if (!list) {
+    setTimeout(() => {
+      checkList()
+    }, 100)
+    return
+  }
+  observer.observe(list, config)
+}
+
+checkList()
