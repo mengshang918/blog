@@ -26,6 +26,7 @@ function Project() {
                           href={item.href}
                           size="large"
                           data-icon="octicon-star"
+                          aria-label={`star mengshang918/${item.name} on Github`}
                           data-show-count="true"
                         >
                           Star
