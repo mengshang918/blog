@@ -33,80 +33,80 @@ document.addEventListener('DOMContentLoaded', function () {
   renderGitTalk()
 })
 
-window.addEventListener('popstate', function () {
-  renderGitTalk()
-})
-
-var _wr = function (type) {
-  var orig = history[type]
-  return function () {
-    var rv = orig.apply(this, arguments)
-    var e = new Event(type)
-    e.arguments = arguments
-    window.dispatchEvent(e)
-    return rv
-  }
+const MutationObserver =
+  window.MutationObserver ||
+  window.WebKitMutationObserver ||
+  window.MozMutationObserver
+// target
+const list = document.querySelector('#__docusaurus')
+// options
+const config = {
+  attributes: true,
+  childList: true,
+  characterData: true,
+  subtree: true,
 }
-history.pushState = _wr('pushState')
-history.replaceState = _wr('replaceState')
-
-window.addEventListener('replaceState', function () {
-  renderGitTalk()
-})
-window.addEventListener('pushState', function () {
-  renderGitTalk()
-})
-;(function (win) {
-  'use strict'
-
-  var listeners = []
-  var doc = win.document
-  var MutationObserver = win.MutationObserver || win.WebKitMutationObserver
-  var observer
-
-  function ready(selector, fn) {
-    // 储存选择器和回调函数
-    listeners.push({
-      selector: selector,
-      fn: fn,
-    })
-    if (!observer) {
-      // 监听document变化
-      observer = new MutationObserver(check)
-      observer.observe(doc.documentElement, {
-        childList: true,
-        subtree: true,
-      })
-    }
-    // 检查该节点是否已经在DOM中
-    check()
-  }
-
-  function check() {
-    // 检查是否匹配已储存的节点
-    for (var i = 0; i < listeners.length; i++) {
-      var listener = listeners[i]
-      // 检查指定节点是否有匹配
-      var elements = doc.querySelectorAll(listener.selector)
-      for (var j = 0; j < elements.length; j++) {
-        var element = elements[j]
-        // 确保回调函数只会对该元素调用一次
-        if (!element.ready) {
-          element.ready = true
-          // 对该节点调用回调函数
-          listener.fn.call(element, element)
-        }
+// instance
+const observer = new MutationObserver(function (mutations) {
+  // console.log(`mutations =`, mutations); // MutationRecord
+  console.log(mutations)
+  mutations.forEach((mutation) => {
+    // console.log("mutation =", mutation);
+    // if (mutation.type === 'characterData') {
+    //   // target & object === typeof(mutation.target)
+    //   // console.log("A child node has been added OR removed.", mutation.target, typeof(mutation.target));
+    //   // console.log("[...mutation.addedNodes].length", [...mutation.addedNodes].length);
+    //   // console.log("[...mutation.removedNodes].length", [...mutation.removedNodes].length);
+    //   // if (mutation.target && [...mutation.addedNodes].length) {
+    //   //     // [...mutation.addedNodes].length
+    //   //     console.log(`A child node ${mutation.target} has been added!`, mutation.target);
+    //   // }
+    //   // if (mutation.target && [...mutation.removedNodes].length) {
+    //   //     // [...mutation.removedNodes].length
+    //   //     console.log(`A child node ${mutation.target} has been removed!`, mutation.target);
+    //   // }
+    // }
+    if (mutation.type === 'childList') {
+      if (mutation.target && [...mutation.addedNodes].length) {
+        console.log(
+          `A child node ${mutation.target} has been added!`,
+          mutation.target
+        )
+        renderGitTalk()
       }
+      //   if (mutation.target && [...mutation.removedNodes].length) {
+      //     console.log(
+      //       `A child node ${mutation.target} has been removed!`,
+      //       mutation.target
+      //     )
+      //   }
+      //   // do somwthings
+      //   let list_values = []
+      //   list_values = [].slice
+      //     .call(list.children)
+      //     .map(function (node) {
+      //       return node.innerHTML
+      //     })
+      //     .filter(function (str) {
+      //       if (str === '<br>') {
+      //         return false
+      //       } else {
+      //         return true
+      //       }
+      //     })
+      //   console.log(list_values)
+      // }
+      // if (mutation.type === 'attributes') {
+      //   console.log('mutation =', mutation)
+      //   console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
+      //   // console.log("list style =", list.style);
+      //   let { width, height } = list.style
+      //   let style = {
+      //     width,
+      //     height,
+      //   }
+      //   console.log('style =\n', JSON.stringify(style, null, 4))
     }
-  }
-
-  // 对外暴露ready
-  window.ready = ready
-  console.log(222)
-})(this)
-
-// 使用方法
-window.ready('#__docusaurus', function () {
-  // ...
-  console.log(1)
+  })
 })
+observer.observe(list, config)
