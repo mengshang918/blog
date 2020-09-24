@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:51:31
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-22 00:00:05
+ * @Last Modified time: 2020-09-25 01:19:10
  */
 
 const path = require('path')
@@ -28,6 +28,9 @@ let sideBar = {
   sidebar: [],
 }
 
+// 所有的文章
+let allDocs = {}
+
 const loadDir = (entryPath, sideBarArr) => {
   const files = fs.readdirSync(entryPath)
 
@@ -50,16 +53,27 @@ const loadDir = (entryPath, sideBarArr) => {
       loadDir(filePath, items)
     } else if (adjustMd(filePath)) {
       const { data } = matter.read(filePath)
+      const id = path.join(entryPath, data.id).split(`${rootPath}/`)[1]
+      if (allDocs[id]) {
+        log.error(
+          `docs下存在相同的文件名${
+            item.split('.md')[0]
+          },请更改当前暂存区域的同名文件`
+        )
+        process.exit(1)
+      } else {
+        allDocs[item] = id
+      }
       // 关于该repo文档位置是第一个
       if (/关于该repo.md/gi.test(filePath)) {
         sideBarArr.unshift({
           type: 'doc',
-          id: path.join(entryPath, data.id).split(`${rootPath}/`)[1],
+          id,
         })
       } else {
         sideBarArr.push({
           type: 'doc',
-          id: path.join(entryPath, data.id).split(`${rootPath}/`)[1],
+          id,
         })
       }
     }
@@ -67,6 +81,11 @@ const loadDir = (entryPath, sideBarArr) => {
 }
 
 loadDir(path.resolve(__dirname, '../docs'), sideBar.sidebar)
+
+fs.writeFileSync(
+  path.resolve(__dirname, 'alldoc.json'),
+  JSON.stringify(allDocs)
+)
 
 fs.writeFileSync(
   path.resolve(__dirname, '../website/sidebars.js'),

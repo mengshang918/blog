@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-25 00:04:59
+ * @Last Modified time: 2020-09-25 01:14:03
  */
 const fs = require('fs')
 const path = require('path')
@@ -12,6 +12,7 @@ const execa = require('execa')
 const pptr = require('puppeteer')
 const chalk = require('chalk')
 const { log } = console
+const allDocs = require('./alldoc.json')
 
 /**
  * @param {str} entryPath 入口路径
@@ -29,12 +30,19 @@ module.exports = async (entryPath) => {
   if (!res.stdout) {
     process.exit(1)
   }
-  const data = res.stdout
+  let data = res.stdout
     .replace(entryPath, `# ${entryPath}`)
     .replace(/──/g, '*')
     .replace(/(└|├|│)/g, '')
     .replace(/\* TODO.md/g, '')
-    .replace(/.md/g, '')
+
+  Object.keys(allDocs).map((item) => {
+    const reg = new RegExp(`\\* ${item}`, 'g')
+    data = data
+      .replace(reg, `* [${item}](${allDocs[item]})`)
+      .replace(/.md/g, '')
+  })
+
   const dataMap = data.split('\n')
   dataMap[0] = '# 前端试炼'
 
