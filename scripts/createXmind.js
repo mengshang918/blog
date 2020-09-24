@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-24 21:08:21
+ * @Last Modified time: 2020-09-25 00:04:59
  */
 const fs = require('fs')
 const path = require('path')
@@ -21,7 +21,7 @@ module.exports = async (entryPath) => {
   const outPutHtml = path.join(__dirname, '../website/static/xmind.html')
   let res = null
   try {
-    res = await execa('tree', ['-d', '-N', `${entryPath}`])
+    res = await execa('tree', ['-N', `${entryPath}`])
   } catch (error) {
     log(chalk.red('请先使用homeBrew安装tree'))
     process.exit(1)
@@ -33,6 +33,8 @@ module.exports = async (entryPath) => {
     .replace(entryPath, `# ${entryPath}`)
     .replace(/──/g, '*')
     .replace(/(└|├|│)/g, '')
+    .replace(/\* TODO.md/g, '')
+    .replace(/.md/g, '')
   const dataMap = data.split('\n')
   dataMap[0] = '# 前端试炼'
 
