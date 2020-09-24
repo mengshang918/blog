@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-18 22:06:29
+ * @Last Modified time: 2020-09-24 21:08:21
  */
 const fs = require('fs')
 const path = require('path')
@@ -33,7 +33,10 @@ module.exports = async (entryPath) => {
     .replace(entryPath, `# ${entryPath}`)
     .replace(/──/g, '*')
     .replace(/(└|├|│)/g, '')
-  fs.writeFileSync(outPutPath, data, {
+  const dataMap = data.split('\n')
+  dataMap[0] = '# 前端试炼'
+
+  fs.writeFileSync(outPutPath, dataMap.join('\n'), {
     encoding: 'utf8',
   })
 
