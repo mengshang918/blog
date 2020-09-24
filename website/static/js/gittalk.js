@@ -107,10 +107,12 @@ const observer = new MutationObserver(function (mutations) {
         const themeE = document.querySelectorAll('.react-toggle--checked')
         if (themeE) {
           window.frames[0] &&
+            window.frames[0].document.getElementById('mindmap') &&
             (window.frames[0].document.getElementById('mindmap').style.color =
               '#fff')
         } else {
           window.frames[0] &&
+            window.frames[0].document.getElementById('mindmap') &&
             (window.frames[0].document.getElementById('mindmap').style.color =
               '#000')
         }
@@ -120,14 +122,16 @@ const observer = new MutationObserver(function (mutations) {
           mutation.target.classList.contains('react-toggle--checked') &&
           window.frames[0]
         ) {
-          window.frames[0].document.getElementById('mindmap').style.color =
-            '#fff'
+          window.frames[0].document.getElementById('mindmap') &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#fff')
         } else if (
           mutation.target.classList.contains('react-toggle--focus') &&
           window.frames[0]
         ) {
-          window.frames[0].document.getElementById('mindmap').style.color =
-            '#000'
+          window.frames[0].document.getElementById('mindmap') &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#000')
         }
       }
     }
