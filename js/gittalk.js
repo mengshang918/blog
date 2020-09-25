@@ -76,38 +76,64 @@ const observer = new MutationObserver(function (mutations) {
           renderGitTalk()
         }
       }
-      //   if (mutation.target && [...mutation.removedNodes].length) {
-      //     console.log(
-      //       `A child node ${mutation.target} has been removed!`,
-      //       mutation.target
-      //     )
-      //   }
-      //   // do somwthings
-      //   let list_values = []
-      //   list_values = [].slice
-      //     .call(list.children)
-      //     .map(function (node) {
-      //       return node.innerHTML
-      //     })
-      //     .filter(function (str) {
-      //       if (str === '<br>') {
-      //         return false
-      //       } else {
-      //         return true
-      //       }
-      //     })
-      //   console.log(list_values)
-      // }
-      // if (mutation.type === 'attributes') {
-      //   console.log('mutation =', mutation)
-      //   console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
-      //   // console.log("list style =", list.style);
-      //   let { width, height } = list.style
-      //   let style = {
-      //     width,
-      //     height,
-      //   }
-      //   console.log('style =\n', JSON.stringify(style, null, 4))
+    }
+    //   if (mutation.target && [...mutation.removedNodes].length) {
+    //     console.log(
+    //       `A child node ${mutation.target} has been removed!`,
+    //       mutation.target
+    //     )
+    //   }
+    //   // do somwthings
+    //   let list_values = []
+    //   list_values = [].slice
+    //     .call(list.children)
+    //     .map(function (node) {
+    //       return node.innerHTML
+    //     })
+    //     .filter(function (str) {
+    //       if (str === '<br>') {
+    //         return false
+    //       } else {
+    //         return true
+    //       }
+    //     })
+    //   console.log(list_values)
+    // }
+    if (mutation.type === 'attributes') {
+      // console.log('mutation =', mutation)
+      // console.log(`The \`${mutation.attributeName}\` attribute was modified.`)
+      // 控制思维导图文字颜色
+      if (mutation.target && mutation.target.tagName === 'IFRAME') {
+        const themeE = document.querySelectorAll('.react-toggle--checked')
+        if (themeE) {
+          window.frames[0] &&
+            window.frames[0].document.getElementById('mindmap') &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#fff')
+        } else {
+          window.frames[0] &&
+            window.frames[0].document.getElementById('mindmap') &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#000')
+        }
+      }
+      if (mutation.target && mutation.target.contains) {
+        if (
+          mutation.target.classList.contains('react-toggle--checked') &&
+          window.frames[0]
+        ) {
+          window.frames[0].document.getElementById('mindmap') &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#fff')
+        } else if (
+          mutation.target.classList.contains('react-toggle--focus') &&
+          window.frames[0]
+        ) {
+          window.frames[0].document.getElementById('mindmap') &&
+            (window.frames[0].document.getElementById('mindmap').style.color =
+              '#000')
+        }
+      }
     }
   })
 })
