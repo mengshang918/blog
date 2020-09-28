@@ -61,9 +61,19 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'x_mind',
           label: '思维导图',
           position: 'right',
+          items: [
+            {
+              label: '文档思维导图',
+              to: 'x_mind',
+            },
+            {
+              label: 'processon',
+              href:
+                'https://www.processon.com/view/link/5f71a569e401fd64b5e1143b#map',
+            },
+          ],
         },
         { to: 'blog', label: '博客', position: 'right' },
         {
