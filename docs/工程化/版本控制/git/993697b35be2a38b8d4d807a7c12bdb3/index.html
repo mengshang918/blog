@@ -8,15 +8,15 @@
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script src="https://mengshang918.github.io/blog/js/gittalk.js"></script><title data-react-helmet="true">git | 梦殇918</title><meta data-react-helmet="true" name="docsearch:version" content="current,latest"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="git | 梦殇918"><meta data-react-helmet="true" name="description" content="- git 流程图"><meta data-react-helmet="true" property="og:description" content="- git 流程图"><meta data-react-helmet="true" property="og:url" content="https://mengshang918.github.io//blog/docs/工程化/版本控制/git/993697b35be2a38b8d4d807a7c12bdb3"><link data-react-helmet="true" rel="shortcut icon" href="/blog/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://mengshang918.github.io//blog/docs/工程化/版本控制/git/993697b35be2a38b8d4d807a7c12bdb3"><link rel="stylesheet" href="/blog/styles.30821466.css">
 <link rel="preload" href="/blog/styles.e6cf631b.js" as="script">
-<link rel="preload" href="/blog/runtime~main.6de5ceb0.js" as="script">
+<link rel="preload" href="/blog/runtime~main.18970a70.js" as="script">
 <link rel="preload" href="/blog/main.353ff8ee.js" as="script">
-<link rel="preload" href="/blog/1.62f195fb.js" as="script">
-<link rel="preload" href="/blog/2.21d9e1f7.js" as="script">
-<link rel="preload" href="/blog/4.39ff1a33.js" as="script">
-<link rel="preload" href="/blog/1be78505.3bb21499.js" as="script">
+<link rel="preload" href="/blog/1.8eeb8d56.js" as="script">
+<link rel="preload" href="/blog/2.1b4cdabf.js" as="script">
+<link rel="preload" href="/blog/4.a20ace84.js" as="script">
+<link rel="preload" href="/blog/1be78505.27f73b40.js" as="script">
 <link rel="preload" href="/blog/129.06ca29e2.js" as="script">
 <link rel="preload" href="/blog/935f2afb.91468e22.js" as="script">
-<link rel="preload" href="/blog/17896441.02a6e26c.js" as="script">
+<link rel="preload" href="/blog/17896441.3d3b6433.js" as="script">
 <link rel="preload" href="/blog/1ed3bc20.b2565b75.js" as="script">
 </head>
 <body>
@@ -52,15 +52,15 @@
 <code>[user] name=xxx email=xxx</code></li><li>方法二：<code>git config user.name xxx</code>、<code>git config user.email xxx</code>
 若后接<code>--global</code>，则是修改全局</li></ul></li></ol></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/mengshang918/blog/edit/master/website/../docs/工程化/版本控制/git/git.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/blog/docs/工程化/代码格式化和校验/a6596b5ea7d72374922fe918351123e9"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« TODO</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/blog/docs/工程化/版本控制/svn/dbf7081c12f2f5608e273b2e5c78d05c"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">TODO »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#git-流程图" class="table-of-contents__link">git 流程图</a></li><li><a href="#git-init-生成的git-文件目录" class="table-of-contents__link">git init 生成的.git 文件目录</a></li><li><a href="#git-基础" class="table-of-contents__link">Git 基础</a></li><li><a href="#git-分支" class="table-of-contents__link">Git 分支</a></li><li><a href="#git-tag" class="table-of-contents__link">git tag</a></li><li><a href="#分布式-git" class="table-of-contents__link">分布式 Git</a></li><li><a href="#git-工具" class="table-of-contents__link">Git 工具</a></li><li><a href="#git-自定义" class="table-of-contents__link">Git 自定义</a></li><li><a href="#git-命令" class="table-of-contents__link">Git 命令</a></li><li><a href="#questions" class="table-of-contents__link">questions</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">关于</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/blog/docs/">关于该repo</a></li><li class="footer__item"><a href="https://github.com/mengshang918/blog/blob/master/README.md" target="_blank" rel="noopener noreferrer" class="footer__link-item">README</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">社区</h4><ul class="footer__items"><li class="footer__item"><a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow</a></li><li class="footer__item"><a href="https://medium.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">medium</a></li><li class="footer__item"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="footer__link-item">掘金</a></li><li class="footer__item"><a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">reddit</a></li><li class="footer__item"><a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer" class="footer__link-item">twitter</a></li><li class="footer__item"><a href="https://www.v2ex.com/" target="_blank" rel="noopener noreferrer" class="footer__link-item">V2EX</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">资源</h4><ul class="footer__items"><li class="footer__item"><a href="http://www.alloyteam.com/nav/" target="_blank" rel="noopener noreferrer" class="footer__link-item">web前端导航</a></li><li class="footer__item"><a href="https://docschina.org/" target="_blank" rel="noopener noreferrer" class="footer__link-item">印记中文文档</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">更多</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/mengshang918" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li><li class="footer__item"><a class="footer__link-item" href="/blog/blog">博客</a></li><li class="footer__item"><a href="https://blog.csdn.net/mengshang529" target="_blank" rel="noopener noreferrer" class="footer__link-item">CSDN博客</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 梦殇918</div></div></div></footer></div>
 <script src="/blog/styles.e6cf631b.js"></script>
-<script src="/blog/runtime~main.6de5ceb0.js"></script>
+<script src="/blog/runtime~main.18970a70.js"></script>
 <script src="/blog/main.353ff8ee.js"></script>
-<script src="/blog/1.62f195fb.js"></script>
-<script src="/blog/2.21d9e1f7.js"></script>
-<script src="/blog/4.39ff1a33.js"></script>
-<script src="/blog/1be78505.3bb21499.js"></script>
+<script src="/blog/1.8eeb8d56.js"></script>
+<script src="/blog/2.1b4cdabf.js"></script>
+<script src="/blog/4.a20ace84.js"></script>
+<script src="/blog/1be78505.27f73b40.js"></script>
 <script src="/blog/129.06ca29e2.js"></script>
 <script src="/blog/935f2afb.91468e22.js"></script>
-<script src="/blog/17896441.02a6e26c.js"></script>
+<script src="/blog/17896441.3d3b6433.js"></script>
 <script src="/blog/1ed3bc20.b2565b75.js"></script>
 </body>
 </html>
