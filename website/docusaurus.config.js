@@ -150,6 +150,10 @@ module.exports = {
               label: '印记中文文档',
               href: 'https://docschina.org/',
             },
+            {
+              label: '现代 JavaScript 教程',
+              href: 'https://zh.javascript.info/',
+            },
           ],
         },
         {
