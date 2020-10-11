@@ -154,6 +154,10 @@ module.exports = {
               label: '现代 JavaScript 教程',
               href: 'https://zh.javascript.info/',
             },
+            {
+              label: 'egghead视屏',
+              href: 'https://egghead.io/',
+            },
           ],
         },
         {
