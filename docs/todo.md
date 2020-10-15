@@ -182,15 +182,6 @@ title: todo
 > 
 
 ## 工程化
-### build打包构建
-#### webpack
-##### loader
-##### plugins
-
-
-##### 版本
-
-
 ### mock
 
 > - 接口 mock
@@ -222,10 +213,23 @@ title: todo
 > - ...
 > 
 
-### 版本控制
+### 打包
+#### webpack
+##### loader
+##### plugins
+
+> 
+
+##### 版本
+
+> 
+
+### 版本控制系统
 #### svn
 
+> 
 
+### 组件化
 ### 脚手架
 #### create-react-app
 

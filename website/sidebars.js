@@ -296,104 +296,6 @@ module.exports = {
       items: [
         {
           type: 'category',
-          label: 'build打包构建',
-          items: [
-            {
-              type: 'category',
-              label: 'Rollup',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/build打包构建/Rollup/6ebaaca5f81e896ee0168690ae8779de',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'webpack',
-              items: [
-                {
-                  type: 'category',
-                  label: 'loader',
-                  items: [
-                    {
-                      type: 'category',
-                      label: '自定义loader',
-                      items: [
-                        {
-                          type: 'doc',
-                          id:
-                            '工程化/build打包构建/webpack/loader/自定义loader/f9989330325c94a86c875ff60684a178',
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: 'plugins',
-                  items: [
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/plugins/5057b724ff9ef878a6499ae8130f0f74',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: '源码解读',
-                  items: [
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/源码解读/521df613ece5d7cb408b20062c19e43b',
-                    },
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/源码解读/f8850ecc0cd40bf7ce85f24b413ee093',
-                    },
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/源码解读/0f6231d58a04f4f90a1d4f46fe7763ba',
-                    },
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/源码解读/8298e5267337a10b9732ea03dd9dee69',
-                    },
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/源码解读/bcedcc35cd9b79579bde7ce42c717ec0',
-                    },
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/源码解读/a841581e7bdbfdeae27a300d22cea41b',
-                    },
-                  ],
-                },
-                {
-                  type: 'category',
-                  label: '版本',
-                  items: [
-                    {
-                      type: 'doc',
-                      id:
-                        '工程化/build打包构建/webpack/版本/042fadf357f123366dca83f396994a49',
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
           label: 'mock',
           items: [
             { type: 'doc', id: '工程化/mock/2b8c761295905a5878ffc08da1ff4329' },
@@ -451,6 +353,10 @@ module.exports = {
             },
             {
               type: 'doc',
+              id: '工程化/pakage_manager/ec0f88d99c3ac3c6b5038c575ac4d1ce',
+            },
+            {
+              type: 'doc',
               id: '工程化/pakage_manager/e6a07bea153f8b002ef8dc47f8bc1311',
             },
           ],
@@ -467,7 +373,104 @@ module.exports = {
         },
         {
           type: 'category',
-          label: '版本控制',
+          label: '打包',
+          items: [
+            {
+              type: 'category',
+              label: 'Rollup',
+              items: [
+                {
+                  type: 'doc',
+                  id: '工程化/打包/Rollup/4918d3072fb3da6be9ad6cfe54c020f3',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'webpack',
+              items: [
+                {
+                  type: 'category',
+                  label: 'loader',
+                  items: [
+                    {
+                      type: 'category',
+                      label: '自定义loader',
+                      items: [
+                        {
+                          type: 'doc',
+                          id:
+                            '工程化/打包/webpack/loader/自定义loader/c6093b78d3f332e1920b4067fa4121a9',
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'plugins',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/plugins/e4ca5b7dca8f9439c1afac8537f4615d',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '源码解读',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/源码解读/3044cf73a36f83e5344247f79ffb719e',
+                    },
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/源码解读/8b9409a6ad189493556150ffca9a2079',
+                    },
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/源码解读/0889ebe5191ee49173a6c02e5d4ccd6f',
+                    },
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/源码解读/7cb10912f28c1696659c6131b517f27c',
+                    },
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/源码解读/80e8979bbebe30571bf98fea6d3b32d0',
+                    },
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/源码解读/768e191e2dc797ba437ddbf619dcf3b5',
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '版本',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/打包/webpack/版本/10f363abbaa9c91a7f310c761466b2f2',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '版本控制系统',
           items: [
             {
               type: 'category',
@@ -475,7 +478,8 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id: '工程化/版本控制/git/993697b35be2a38b8d4d807a7c12bdb3',
+                  id:
+                    '工程化/版本控制系统/git/85735fc293ff4dbf3ef3e42201cb061d',
                 },
               ],
             },
@@ -485,7 +489,24 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id: '工程化/版本控制/svn/dbf7081c12f2f5608e273b2e5c78d05c',
+                  id:
+                    '工程化/版本控制系统/svn/b5386787959de37c33208051b4795417',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '组件化',
+          items: [
+            {
+              type: 'category',
+              label: 'bit',
+              items: [
+                {
+                  type: 'doc',
+                  id: '工程化/组件化/bit/a0d47b851468953d2c75ec36293fc240',
                 },
               ],
             },
