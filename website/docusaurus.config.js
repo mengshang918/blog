@@ -20,12 +20,13 @@ module.exports = {
         href: 'https://github.com/mengshang918/blog',
       },
       {
-        name: 'node-common',
-        description: '封装一些常用的node方法',
-      },
-      {
         name: 'branchclear-cli',
         description: '快速清理已经合并的本地或远程分支。',
+        href: 'https://github.com/mengshang918/branchclear-cli',
+      },
+      {
+        name: 'node-common',
+        description: '封装一些常用的node方法',
       },
       {
         name: 'fetch-api',
