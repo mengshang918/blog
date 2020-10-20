@@ -25,19 +25,19 @@ yum [options] [command] [package ...]
 
 ## yum 常用命令
 
-- 列出所有可更新的软件清单命令：yum check-update
+- 列出所有可更新的软件清单命令：`yum check-update`
 
-- 更新所有软件命令：yum update
+- 更新所有软件命令：`yum update`
 
-- 仅安装指定的软件命令：yum install <package_name>
+- 仅安装指定的软件命令：`yum install <package_name>`
 
-- 仅更新指定的软件命令：yum update <package_name>
+- 仅更新指定的软件命令：`yum update <package_name>`
 
-- 列出所有可安裝的软件清单命令：yum list
+- 列出所有可安裝的软件清单命令：`yum list`
 
-- 删除软件包命令：yum remove <package_name>
+- 删除软件包命令：`yum remove <package_name>`
 
-- 查找软件包 命令：yum search <keyword>
+- 查找软件包 命令：`yum search <keyword>`
 
 - 清除缓存命令:
 
