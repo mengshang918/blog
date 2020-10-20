@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-09-14 14:51:31
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-25 01:19:10
+ * @Last Modified time: 2020-10-20 15:53:45
  */
 
 const path = require('path')
@@ -54,16 +54,16 @@ const loadDir = (entryPath, sideBarArr) => {
     } else if (adjustMd(filePath)) {
       const { data } = matter.read(filePath)
       const id = path.join(entryPath, data.id).split(`${rootPath}/`)[1]
-      if (allDocs[id]) {
-        log.error(
-          `docs下存在相同的文件名${
-            item.split('.md')[0]
-          },请更改当前暂存区域的同名文件`
-        )
-        process.exit(1)
-      } else {
-        allDocs[item] = id
-      }
+      // if (allDocs[item]) {
+      //   log(chalk.red(
+      //     `docs下存在相同的文件名${
+      //       item.split('.md'x)[0]
+      //     },请更改当前暂存区域的同名文件`
+      //   ))
+      //   process.exit(1)
+      // } else {
+      allDocs[`${item}.${id}`] = id
+      // }
       // 关于该repo文档位置是第一个
       if (/关于该repo.md/gi.test(filePath)) {
         sideBarArr.unshift({
