@@ -683,7 +683,17 @@ module.exports = {
                   type: 'category',
                   label: '不可变数据',
                   items: [
-                    { type: 'category', label: 'Immer', items: [] },
+                    {
+                      type: 'category',
+                      label: 'Immer',
+                      items: [
+                        {
+                          type: 'doc',
+                          id:
+                            '框架/react/优化/不可变数据/Immer/3c008ebd05281c275df1f7872b8e0776',
+                        },
+                      ],
+                    },
                     {
                       type: 'category',
                       label: 'Immutable',
