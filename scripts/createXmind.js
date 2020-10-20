@@ -3,7 +3,7 @@
  * @Author: jiangxiaowei
  * @Date: 2020-07-28 16:04:36
  * @Last Modified by: jiangxiaowei
- * @Last Modified time: 2020-09-25 09:44:00
+ * @Last Modified time: 2020-10-20 15:54:12
  */
 const fs = require('fs')
 const path = require('path')
@@ -37,11 +37,9 @@ module.exports = async (entryPath) => {
     .replace(/\* TODO.md/g, '')
 
   Object.keys(allDocs).map((item) => {
-    const reg = new RegExp(`\\* ${item}`, 'g')
-    data = data.replace(
-      reg,
-      `* [${item.split('.md')[0]}](docs/${allDocs[item]})`
-    )
+    const title = item.split('.md.')[0]
+    const reg = new RegExp(`\\* ${title}.md`, 'g')
+    data = data.replace(reg, `* [${title}](docs/${allDocs[item]})`)
   })
 
   const dataMap = data.split('\n')
