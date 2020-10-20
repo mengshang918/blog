@@ -1,5 +1,5 @@
 ---
-id: 7d968ee91f7c100c425a0e94bebf58fb
+id: 49e5c57cf10428a541cabf58c6dca9a1
 title: TODO
 ---
 
@@ -50,3 +50,7 @@ title: TODO
 - rxjs
 - 框架
   - react-admin
+
+## 问题
+
+1. PropTypes.node 和 PropTypes.element 区别
