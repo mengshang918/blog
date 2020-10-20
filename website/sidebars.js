@@ -194,7 +194,7 @@ module.exports = {
     {
       type: 'category',
       label: 'mac工具',
-      items: [{ type: 'doc', id: 'mac工具/5bda6d956aa9663cc7cc9f670a33c494' }],
+      items: [{ type: 'doc', id: 'mac工具/e4900cf2bab323e0782022384a85a741' }],
     },
     {
       type: 'category',
