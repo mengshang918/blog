@@ -49,6 +49,7 @@ module.exports = {
           label: '布局',
           items: [
             { type: 'doc', id: 'CSS/布局/dfbbea7451c31a8e6882d46ffd226392' },
+            { type: 'doc', id: 'CSS/布局/d894294d8c56ce41da5469f6ed173daf' },
           ],
         },
         {
@@ -92,7 +93,7 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id: 'CSS/模块化/stylus/e8ee627de9b25d0b07327e3ecb3d8f3a',
+                  id: 'CSS/模块化/stylus/1de4cb8a5702a6a347c89999bfa433d2',
                 },
               ],
             },
@@ -169,6 +170,7 @@ module.exports = {
       type: 'category',
       label: 'Node',
       items: [
+        { type: 'doc', id: 'Node.js/2e274f275e0613b306c487b358d94ab7' },
         { type: 'doc', id: 'Node.js/ecf15e0ac1416dea11fca5db9535f27a' },
         {
           type: 'category',
@@ -193,8 +195,11 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'mac工具',
-      items: [{ type: 'doc', id: 'mac工具/e4900cf2bab323e0782022384a85a741' }],
+      label: 'mac相关',
+      items: [
+        { type: 'doc', id: 'mac相关/a44fd8dd59298708f41334a88822b962' },
+        { type: 'doc', id: 'mac相关/2b9f15fd56b0c6b3cd5a33c28fc68157' },
+      ],
     },
     {
       type: 'category',
@@ -214,7 +219,10 @@ module.exports = {
     {
       type: 'category',
       label: '实践',
-      items: [{ type: 'doc', id: '实践/93a0ca587621cd3b89a415dff538fafd' }],
+      items: [
+        { type: 'doc', id: '实践/e0b82963d855e79fa710d58782e85653' },
+        { type: 'doc', id: '实践/626060a4af5e1540907d7bcd2416544c' },
+      ],
     },
     {
       type: 'category',
@@ -327,6 +335,11 @@ module.exports = {
                 {
                   type: 'doc',
                   id:
+                    '工程化/pakage_manager/npm/67f72670b6c0df84758d36ece60ed1ae',
+                },
+                {
+                  type: 'doc',
+                  id:
                     '工程化/pakage_manager/npm/c7133389f53e8d534c388d5ce8b37459',
                 },
                 {
@@ -400,7 +413,7 @@ module.exports = {
                         {
                           type: 'doc',
                           id:
-                            '工程化/打包/webpack/loader/自定义loader/c6093b78d3f332e1920b4067fa4121a9',
+                            '工程化/打包/webpack/loader/自定义loader/9b68a2b86fd6b41392413eebbe754257',
                         },
                       ],
                     },
@@ -480,6 +493,11 @@ module.exports = {
                   type: 'doc',
                   id:
                     '工程化/版本控制系统/git/85735fc293ff4dbf3ef3e42201cb061d',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/版本控制系统/git/7ee6448a4e193516af12ff819b930f2f',
                 },
               ],
             },
@@ -579,6 +597,11 @@ module.exports = {
                 {
                   type: 'doc',
                   id:
+                    '操作系统/linux/linux基础/760bccd78d82b9e52641e9273b7baad5',
+                },
+                {
+                  type: 'doc',
+                  id:
                     '操作系统/linux/linux基础/585ed91706206035253631d51d62d7d1',
                 },
                 {
@@ -641,14 +664,43 @@ module.exports = {
           type: 'category',
           label: 'react',
           items: [
-            { type: 'doc', id: '框架/react/7d968ee91f7c100c425a0e94bebf58fb' },
+            { type: 'doc', id: '框架/react/49e5c57cf10428a541cabf58c6dca9a1' },
+            {
+              type: 'category',
+              label: 'hooks',
+              items: [
+                {
+                  type: 'doc',
+                  id: '框架/react/hooks/cc79a47e7d739125f1566a487e26fb99',
+                },
+              ],
+            },
             {
               type: 'category',
               label: '优化',
               items: [
                 {
-                  type: 'doc',
-                  id: '框架/react/优化/9593bd0a7ccc4b28542a173a5db9e40d',
+                  type: 'category',
+                  label: '不可变数据',
+                  items: [
+                    { type: 'category', label: 'Immer', items: [] },
+                    {
+                      type: 'category',
+                      label: 'Immutable',
+                      items: [
+                        {
+                          type: 'doc',
+                          id:
+                            '框架/react/优化/不可变数据/Immutable/1d3d9edc29eec0f35eaf85c9e8d5b659',
+                        },
+                      ],
+                    },
+                    {
+                      type: 'doc',
+                      id:
+                        '框架/react/优化/不可变数据/7f536cb00c3fdc6439f768fb47f7a59e',
+                    },
+                  ],
                 },
               ],
             },
@@ -741,11 +793,21 @@ module.exports = {
       items: [
         {
           type: 'category',
+          label: '事件循环机制',
+          items: [
+            {
+              type: 'doc',
+              id: '浏览器/事件循环机制/dc678db259507b0c4aeb94631e2dc8a7',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: '事件机制',
           items: [
             {
               type: 'doc',
-              id: '浏览器/事件机制/6321b158db7a6b1b374812c9493a734a',
+              id: '浏览器/事件机制/7af5dc889f753bd70e5f7ef171c7060f',
             },
           ],
         },
@@ -806,11 +868,15 @@ module.exports = {
         },
         {
           type: 'category',
-          label: '时间循环机制',
+          label: '插件开发',
           items: [
             {
               type: 'doc',
-              id: '浏览器/时间循环机制/e93c56a11903987f19edc26a986e470a',
+              id: '浏览器/插件开发/2c4c0445df023db773d193c34210f844',
+            },
+            {
+              type: 'doc',
+              id: '浏览器/插件开发/bfe71b448da24918198c18263f04233a',
             },
           ],
         },
@@ -860,7 +926,10 @@ module.exports = {
     {
       type: 'category',
       label: '网络协议',
-      items: [{ type: 'doc', id: '网络协议/5284148d604990d09eddda0589ce1956' }],
+      items: [
+        { type: 'doc', id: '网络协议/e797ca4ffddc7041ae448dd87ecc5580' },
+        { type: 'doc', id: '网络协议/a7785cd0374e6044ab0a1c64fbbc81fa' },
+      ],
     },
     {
       type: 'category',
@@ -891,7 +960,7 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id: '运维/CI&CD/jekins/7c64f883c1c2133d7b04281fd41cd0eb',
+                  id: '运维/CI&CD/jekins/d945d19c0ddc3f3d3fd73e4e1dabfcf1',
                 },
               ],
             },
@@ -901,7 +970,14 @@ module.exports = {
           type: 'category',
           label: 'nginx',
           items: [
-            { type: 'doc', id: '运维/nginx/ba06cd83a4099e545d94aff761c40607' },
+            { type: 'doc', id: '运维/nginx/df1da39a6e72280164ae3ce63cb1fc4a' },
+          ],
+        },
+        {
+          type: 'category',
+          label: '服务器',
+          items: [
+            { type: 'doc', id: '运维/服务器/08c9e14f9b32a6e0c3ce858267d3e639' },
           ],
         },
       ],
