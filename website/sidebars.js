@@ -335,17 +335,17 @@ module.exports = {
                 {
                   type: 'doc',
                   id:
-                    '工程化/pakage_manager/npm/67f72670b6c0df84758d36ece60ed1ae',
-                },
-                {
-                  type: 'doc',
-                  id:
                     '工程化/pakage_manager/npm/c7133389f53e8d534c388d5ce8b37459',
                 },
                 {
                   type: 'doc',
                   id:
                     '工程化/pakage_manager/npm/ba56c3b18aefa148f9439f026ec3f973',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/npm/4bc8b6d9c0d959fc89304c7b6ca759d2',
                 },
               ],
             },
