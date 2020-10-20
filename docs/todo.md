@@ -124,6 +124,7 @@ title: todo
 > ## 优先级最高
 > 
 > ## 清单池
+> 
 > - 小程序
 >   - 事项提醒
 >     - 纪念日提醒
@@ -140,7 +141,6 @@ title: todo
 >   - 按行读取
 >   - 复制文件
 >   - 移动文件
-> 
 > 
 
 ## 小程序
@@ -317,7 +317,8 @@ title: todo
 >   - react-admin
 > 
 > ## 问题
-> 1. PropTypes.node和PropTypes.element区别
+> 
+> 1. PropTypes.node 和 PropTypes.element 区别
 > 
 
 #### 优化
@@ -374,7 +375,7 @@ title: todo
 
 ## 网络协议
 
-> 1. 阅读《图解http》，并更新md
+> 1. 阅读《图解 http》，并更新 md
 > 
 
 ## 设计模式
