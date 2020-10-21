@@ -96,7 +96,7 @@ title: 'Jenkins配合webhook实现push,自动构建并发送邮件'
 
 ## 例子
 
-   <img src="https://img-blog.csdnimg.cn/2020032718535652.png" alt="w" style="zoom: 33%;" />
+<img src="https://img-blog.csdnimg.cn/2020032718535652.png" alt="w" style={{zoom: "33%"}} />
 
 1. 使用 github webhooks 触发脚本自动构建
 
