@@ -178,7 +178,7 @@ module.exports = {
           items: [
             {
               type: 'doc',
-              id: 'Node.js/常用npm_package/67e99d6582cb0c3126c6e3f7cc9a7d66',
+              id: 'Node.js/常用npm_package/9688efbb3877b7be40b25452ccaef48f',
             },
           ],
         },
@@ -189,6 +189,8 @@ module.exports = {
       label: 'TypeScript',
       items: [
         { type: 'doc', id: 'TypeScript/618fc19ed278b0ecfe16266b4cd00f9e' },
+        { type: 'doc', id: 'TypeScript/4a8620d3409c9ccc2760c0abdf77eb66' },
+        { type: 'doc', id: 'TypeScript/32bf4b312a9b194926bd9464ec44dbf1' },
         { type: 'doc', id: 'TypeScript/808567b84cc51ad515d4820e54f84e31' },
         { type: 'doc', id: 'TypeScript/b36f6376acc1abd98aab96ef91491d2b' },
       ],
