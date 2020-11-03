@@ -17,4 +17,8 @@ title: ts常见报错
 
   解决：新建一个 ts 文件
 
+- Node 端使用 ts，Cannot redeclare block-scoped variable
+
+  当使用 commonjs 的时候，ts 没法将每个文件认为是一个模块。所以会将变量提升到全局。
+
 -

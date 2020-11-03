@@ -349,6 +349,16 @@ module.exports = {
                   id:
                     '工程化/pakage_manager/npm/4bc8b6d9c0d959fc89304c7b6ca759d2',
                 },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/npm/c6ce67aed5b47d0a31123ae15d9e581a',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/npm/09b0d7c93d19d925aaec8215b046a974',
+                },
               ],
             },
             {
