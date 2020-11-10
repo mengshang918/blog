@@ -182,6 +182,24 @@ module.exports = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: '常见问题',
+          items: [
+            {
+              type: 'doc',
+              id: 'Node.js/常见问题/f3a88e293ba7550437f98043f9c3f757',
+            },
+            {
+              type: 'doc',
+              id: 'Node.js/常见问题/35e3cab374fc073c688aa0cf2cc1e83e',
+            },
+            {
+              type: 'doc',
+              id: 'Node.js/常见问题/181a14245a9ee55171de2d116970a240',
+            },
+          ],
+        },
       ],
     },
     {
@@ -348,6 +366,11 @@ module.exports = {
                   type: 'doc',
                   id:
                     '工程化/pakage_manager/npm/4bc8b6d9c0d959fc89304c7b6ca759d2',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/npm/d65b7b7b836dd8738e6504b00c5d8ec9',
                 },
                 {
                   type: 'doc',
@@ -636,6 +659,16 @@ module.exports = {
                   id: '操作系统/linux/脚本/c89e3ed149c086944696ba0fe3a5ffde',
                 },
               ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '常见问题',
+          items: [
+            {
+              type: 'doc',
+              id: '操作系统/常见问题/5d2f732d1880309d622ee322b766ddcb',
             },
           ],
         },
