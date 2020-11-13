@@ -56,6 +56,11 @@ module.exports = {
       },
       items: [
         {
+          href: 'https://mengshang918.github.io/',
+          label: '返回旧版',
+          position: 'left',
+        },
+        {
           to: 'docs/',
           activeBasePath: 'docs',
           label: '文档',
