@@ -198,6 +198,10 @@ module.exports = {
               type: 'doc',
               id: 'Node.js/常见问题/181a14245a9ee55171de2d116970a240',
             },
+            {
+              type: 'doc',
+              id: 'Node.js/常见问题/34f53dc634b7e09e8d32279fb508f4c5',
+            },
           ],
         },
       ],
