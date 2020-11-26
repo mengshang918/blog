@@ -146,6 +146,16 @@ module.exports = {
         { type: 'doc', id: 'ECMASCript/b53484b1bcbe1911e09c68d510ac7d64' },
         {
           type: 'category',
+          label: '技巧',
+          items: [
+            {
+              type: 'doc',
+              id: 'ECMASCript/技巧/5ba5a0a4b23bea437b86bee22027111d',
+            },
+          ],
+        },
+        {
+          type: 'category',
           label: '正则',
           items: [
             {
@@ -171,7 +181,7 @@ module.exports = {
       label: 'Node',
       items: [
         { type: 'doc', id: 'Node.js/2e274f275e0613b306c487b358d94ab7' },
-        { type: 'doc', id: 'Node.js/ecf15e0ac1416dea11fca5db9535f27a' },
+        { type: 'doc', id: 'Node.js/95e359a75431fe782e078a16e72198c1' },
         {
           type: 'category',
           label: '常用npm_package',
@@ -421,8 +431,20 @@ module.exports = {
               type: 'doc',
               id: '工程化/代码格式化和校验/a6596b5ea7d72374922fe918351123e9',
             },
+            {
+              type: 'category',
+              label: 'eslint',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/代码格式化和校验/eslint/d8f7b00347a3af68dcfcf44d01eaecad',
+                },
+              ],
+            },
           ],
         },
+        { type: 'category', label: '埋点和异常上报', items: [] },
         {
           type: 'category',
           label: '打包',
@@ -573,6 +595,10 @@ module.exports = {
           type: 'category',
           label: '脚手架',
           items: [
+            {
+              type: 'doc',
+              id: '工程化/脚手架/fe01bfee28988b255b84c0210c279624',
+            },
             {
               type: 'category',
               label: 'create-react-app',
