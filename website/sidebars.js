@@ -444,7 +444,16 @@ module.exports = {
             },
           ],
         },
-        { type: 'category', label: '埋点和异常上报', items: [] },
+        {
+          type: 'category',
+          label: '埋点和异常上报',
+          items: [
+            {
+              type: 'doc',
+              id: '工程化/埋点和异常上报/2e8f2d221f82b6fa528c6af118aedc14',
+            },
+          ],
+        },
         {
           type: 'category',
           label: '打包',
