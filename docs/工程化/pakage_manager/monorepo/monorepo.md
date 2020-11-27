@@ -1,32 +1,7 @@
 ---
-id: 8f5278ed6bda43d57e7b77d4c5a243e6
+id: 0839e5ac070eca1b53807ffcbfbf5cc6
 title: monorepo
 ---
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [monorepo](#monorepo)
-  - [Lerna](#lerna)
-    - [常用 lerna 命令](#%E5%B8%B8%E7%94%A8-lerna-%E5%91%BD%E4%BB%A4)
-  - [Yarn workspace](#yarn-workspace)
-    - [常用命令](#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4)
-  - [lerna 配合 yarn workspace](#lerna-%E9%85%8D%E5%90%88-yarn-workspace)
-  - [扩展](#%E6%89%A9%E5%B1%95)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- TOC -->
-
-- [monorepo](#monorepo)
-  - [[Lerna](https://github.com/lerna)](#lernahttpsgithubcomlerna)
-    - [常用 lerna 命令](#常用-lerna-命令)
-  - [Yarn workspace](#yarn-workspace)
-    - [常用命令](#常用命令)
-  - [lerna 配合 yarn workspace](#lerna-配合-yarn-workspace)
-  - [扩展](#扩展)
-
-<!-- /TOC -->
 
 # monorepo
 
@@ -228,7 +203,7 @@ title: monorepo
 
    ~~4. 给所有 package 删除某个包~~
 
-   ​ ~~`yarn workspace remove some-package`~~
+   ~~`yarn workspace remove some-package`~~
 
 2. 根目录
 
@@ -248,3 +223,11 @@ title: monorepo
 
 - [基于主干和基于中继的开发](https://trunkbaseddevelopment.com/)
 - [git submodule](https://www.atlassian.com/git/tutorials/git-submodule)
+
+## 常见问题
+
+1. 发布测试包 command
+
+   - `lerna version --conventional-prerelease --conventional-commits --no-changelog -m "chore(release): 发布测试版本"`
+
+   - a`lerna publish from-package`
