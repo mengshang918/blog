@@ -358,7 +358,7 @@ module.exports = {
                 {
                   type: 'doc',
                   id:
-                    '工程化/pakage_manager/monorepo/8f5278ed6bda43d57e7b77d4c5a243e6',
+                    '工程化/pakage_manager/monorepo/0839e5ac070eca1b53807ffcbfbf5cc6',
                 },
               ],
             },
@@ -429,7 +429,7 @@ module.exports = {
           items: [
             {
               type: 'doc',
-              id: '工程化/代码格式化和校验/a6596b5ea7d72374922fe918351123e9',
+              id: '工程化/代码格式化和校验/6269638cf83b8cd80196b668317f203b',
             },
             {
               type: 'category',
@@ -637,6 +637,11 @@ module.exports = {
                   type: 'doc',
                   id:
                     '工程化/脚手架/自定义一个脚手架/e1f3c1423014acd77d6282114faf6935',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/脚手架/自定义一个脚手架/08da76489044cd5dfcc111cb0b8b8d58',
                 },
               ],
             },
