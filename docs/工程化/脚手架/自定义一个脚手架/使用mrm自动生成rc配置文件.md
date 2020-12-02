@@ -16,4 +16,4 @@ scope 下的 task 包名必须满足`@scope/mrm-task-xxxx`
 使用方式:
 
 - `npm i -g @scope/mrm-task-xxxx`
-- `mrm @scope/mrm-task-xxxx`
+- `mrm @scope/xxxx`
