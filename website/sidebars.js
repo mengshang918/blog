@@ -436,6 +436,17 @@ module.exports = {
               label: 'eslint',
               items: [
                 {
+                  type: 'category',
+                  label: '常见问题',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/代码格式化和校验/eslint/常见问题/30a69d78ea80299566efb6a61e348ec8',
+                    },
+                  ],
+                },
+                {
                   type: 'doc',
                   id:
                     '工程化/代码格式化和校验/eslint/d8f7b00347a3af68dcfcf44d01eaecad',
