@@ -1,5 +1,5 @@
 ---
-id: 38f14e8081af1e36ddd422fa9b4db94a
+id: 505112b129e18311b92912279ec967ac
 title: package.json字段详解
 ---
 

@@ -337,10 +337,6 @@ module.exports = {
               ],
             },
             {
-              type: 'doc',
-              id: '工程化/pakage_manager/38f14e8081af1e36ddd422fa9b4db94a',
-            },
-            {
               type: 'category',
               label: 'yarn',
               items: [
@@ -352,12 +348,30 @@ module.exports = {
               ],
             },
             {
-              type: 'doc',
-              id: '工程化/pakage_manager/ec0f88d99c3ac3c6b5038c575ac4d1ce',
-            },
-            {
-              type: 'doc',
-              id: '工程化/pakage_manager/e6a07bea153f8b002ef8dc47f8bc1311',
+              type: 'category',
+              label: '常见问题',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/常见问题/505112b129e18311b92912279ec967ac',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/常见问题/aa55a1757ae8690ae5adae7d48914a4a',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/常见问题/fa267f67236440714dbd398db0b50f41',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/常见问题/00acc1fbba1d66b5070d1c7cb5c9a175',
+                },
+              ],
             },
           ],
         },
