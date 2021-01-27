@@ -839,7 +839,17 @@ module.exports = {
                     },
                   ],
                 },
-                { type: 'category', label: 'redux', items: [] },
+                {
+                  type: 'category',
+                  label: 'redux',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '框架/react/状态管理方案/redux/db3e9ba1131ac201f9164b0f3f66e248',
+                    },
+                  ],
+                },
               ],
             },
           ],
