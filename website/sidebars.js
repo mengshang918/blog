@@ -824,6 +824,24 @@ module.exports = {
                 },
               ],
             },
+            {
+              type: 'category',
+              label: '状态管理方案',
+              items: [
+                {
+                  type: 'category',
+                  label: 'recoil',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '框架/react/状态管理方案/recoil/d6ba1713e090568a7789d83bf8a1c052',
+                    },
+                  ],
+                },
+                { type: 'category', label: 'redux', items: [] },
+              ],
+            },
           ],
         },
         {
