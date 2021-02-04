@@ -206,6 +206,10 @@ module.exports = {
             },
             {
               type: 'doc',
+              id: 'Node.js/常见问题/6f48d8764eaa96778c489f0f9b512dd3',
+            },
+            {
+              type: 'doc',
               id: 'Node.js/常见问题/d3fd7ec814edd2f7330387995085241f',
             },
             {

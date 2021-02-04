@@ -51,7 +51,7 @@ title: package.json字段详解
   "funding": {},
   //指定这个包被install时候有哪些文件 类似npmignore的反面
   "files": [],
-  //包的入口地址
+  //包的入口地址 未指定，默认index.js
   "main": "dist/babel-form.min.js",
   //es6环境下入口文件
   "module": "",
