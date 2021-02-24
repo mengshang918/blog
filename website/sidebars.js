@@ -42,14 +42,31 @@ module.exports = {
       type: 'category',
       label: 'CSS',
       items: [
-        { type: 'doc', id: 'CSS/b8abd734eae0c4994fb02ee831f5c378' },
-        { type: 'doc', id: 'CSS/0729c4e1a19b9e3b6904b91e63cbd435' },
+        { type: 'doc', id: 'CSS/01d200495955aa76384f9860045733ad' },
         {
           type: 'category',
           label: '布局',
           items: [
-            { type: 'doc', id: 'CSS/布局/dfbbea7451c31a8e6882d46ffd226392' },
-            { type: 'doc', id: 'CSS/布局/eb6d78cc58b2a5329f391cf5692181a3' },
+            { type: 'category', label: 'Grid', items: [] },
+            { type: 'category', label: 'flex', items: [] },
+          ],
+        },
+        {
+          type: 'category',
+          label: '常见问题',
+          items: [
+            {
+              type: 'doc',
+              id: 'CSS/常见问题/61b2f8a60701c5411f074197b3433767',
+            },
+            {
+              type: 'doc',
+              id: 'CSS/常见问题/f62b493f30c8df1b193364b4dee70da6',
+            },
+            {
+              type: 'doc',
+              id: 'CSS/常见问题/caabb2c62d551b0596f7d903c362be1c',
+            },
           ],
         },
         {
@@ -210,6 +227,10 @@ module.exports = {
             },
             {
               type: 'doc',
+              id: 'Node.js/常见问题/35838b51774b034e2d8dedd5458518ff',
+            },
+            {
+              type: 'doc',
               id: 'Node.js/常见问题/d3fd7ec814edd2f7330387995085241f',
             },
             {
@@ -252,7 +273,12 @@ module.exports = {
     {
       type: 'category',
       label: '协议规范',
-      items: [{ type: 'doc', id: '协议规范/dac051430078aa870b7d9fb714fe0249' }],
+      items: [
+        { type: 'doc', id: '协议规范/4dac2ecb9c0266fdc2f0117a2129e0d5' },
+        { type: 'doc', id: '协议规范/08e4ee70cac077e8e29110f3fc5f7ca1' },
+        { type: 'doc', id: '协议规范/c0cdc0b6086c374d267130b1ae1544fa' },
+        { type: 'doc', id: '协议规范/e71b23dfa36e0093f928df8d8ea28b6b' },
+      ],
     },
     {
       type: 'category',
