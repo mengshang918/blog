@@ -47,8 +47,26 @@ module.exports = {
           type: 'category',
           label: '布局',
           items: [
-            { type: 'category', label: 'Grid', items: [] },
-            { type: 'category', label: 'flex', items: [] },
+            {
+              type: 'category',
+              label: 'Grid',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'CSS/布局/Grid/b26940e5eb5e87bfbc94a0034895579c',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'flex',
+              items: [
+                {
+                  type: 'doc',
+                  id: 'CSS/布局/flex/c6367bba7d40f0a6a9fde7feed178d41',
+                },
+              ],
+            },
           ],
         },
         {

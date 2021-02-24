@@ -49,9 +49,16 @@ title: todo
 > - 选择器
 >   — postcss
 > 
-> 
 
 ### 布局
+#### Grid
+
+> 
+
+#### flex
+
+> 
+
 ### 模块化
 #### css_in_js
 
@@ -100,27 +107,27 @@ title: todo
 
 ## 协议规范
 
-> - git规范（https://hschne.at/git-aliases/）
+> - git 规范（https://hschne.at/git-aliases/）
 > 
 >   - 分支管理
 > 
 >     - 发布分支管理
 > 
->     - npm包分支管理
+>     - npm 包分支管理
 > 
->       参考github大型bao分支管理流程
+>       参考 github 大型 bao 分支管理流程
 > 
 >   - fetch/merge
 > 
->     * 是否涉及到version和changelog生成
+>     - 是否涉及到 version 和 changelog 生成
 > 
 >   - [commit 提交规范](https://www.conventionalcommits.org/)
 > 
->   - push规范
+>   - push 规范
 > 
 >     - 强制提交
 > 
-> - monorepo规范
+> - monorepo 规范
 > 
 > - 包管理规范
 > 
@@ -128,20 +135,21 @@ title: todo
 >   - yarn pnp
 >   - singlerepo
 > 
-> - yarn 还是npm
+> - yarn 还是 npm
 > 
 >   - 新版
 > 
-> * eslint规范
-> * browserlist规范 
+> * eslint 规范
+> * browserlist 规范
 > * 编辑器规范
->   * vscode
->   * webstorm
 > 
-> * gitignore规范
-> * prettier规范
-> * readme规范
->   * 添加版本语义化规范链接https://semver.org/lang/zh-CN/
+>   - vscode
+>   - webstorm
+> 
+> * gitignore 规范
+> * prettier 规范
+> * readme 规范
+>   - 添加版本语义化规范链接https://semver.org/lang/zh-CN/
 > 
 
 ## 实践
