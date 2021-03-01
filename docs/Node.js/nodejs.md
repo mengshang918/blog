@@ -50,3 +50,5 @@ title: nodejs
 - [vm - 虚拟机](http://nodejs.cn/api/vm.html)
 - [worker_threads - 工作线程](http://nodejs.cn/api/worker_threads.html)
 - [zlib - 压缩](http://nodejs.cn/api/zlib.html)
+
+Hook-std

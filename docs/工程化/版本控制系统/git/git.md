@@ -1,5 +1,5 @@
 ---
-id: 85735fc293ff4dbf3ef3e42201cb061d
+id: 4afca8d2ec4833c65f692575ce95088a
 title: git
 ---
 
@@ -421,3 +421,16 @@ title: git
      `[user] name=xxx email=xxx`
    - 方法二：`git config user.name xxx`、`git config user.email xxx`
      若后接`--global`，则是修改全局
+5. 批量修改 commit author 和 email
+
+   ```shell
+   git filter-branch --commit-filter '
+           if [ "$GIT_AUTHOR_EMAIL" = "schacon@localhost" ];
+           then
+                   GIT_AUTHOR_NAME="Scott Chacon";
+                   GIT_AUTHOR_EMAIL="schacon@example.com";
+                   git commit-tree "$@";
+           else
+                   git commit-tree "$@";
+           fi' HEAD
+   ```

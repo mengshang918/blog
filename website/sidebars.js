@@ -304,6 +304,10 @@ module.exports = {
       items: [
         { type: 'doc', id: '实践/e60dadaa4eee528c85018bb5fa523752' },
         { type: 'doc', id: '实践/bff45875a92bdbb4eff38e2fbd282edc' },
+        { type: 'doc', id: '实践/2469535958ab34e35a788187a49b0f1e' },
+        { type: 'doc', id: '实践/313041df792b3259a4a58cf8d04c6698' },
+        { type: 'doc', id: '实践/56302d5167213b96a771b67db23abbcc' },
+        { type: 'doc', id: '实践/81ea3d4409458738eefff8329646b6f7' },
       ],
     },
     {
@@ -461,6 +465,11 @@ module.exports = {
               type: 'category',
               label: '常见问题',
               items: [
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/pakage_manager/常见问题/694350b6ceaa5b2e57c6f54052135d17',
+                },
                 {
                   type: 'doc',
                   id:
@@ -635,7 +644,7 @@ module.exports = {
                 {
                   type: 'doc',
                   id:
-                    '工程化/版本控制系统/git/85735fc293ff4dbf3ef3e42201cb061d',
+                    '工程化/版本控制系统/git/4afca8d2ec4833c65f692575ce95088a',
                 },
                 {
                   type: 'doc',

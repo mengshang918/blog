@@ -63,3 +63,7 @@ await execa.command(
   }
 )
 ```
+
+## 参考
+
+1. https://github.com/sindresorhus/ora#why-does-the-spinner-freeze
