@@ -209,7 +209,7 @@ module.exports = {
     {
       type: 'category',
       label: 'HTML',
-      items: [{ type: 'doc', id: 'HTML/b5cbe92ed5b15949dc0369bb1542797d' }],
+      items: [{ type: 'doc', id: 'HTML/fca7044727134c0cf07f43ca110cbb70' }],
     },
     {
       type: 'category',
@@ -268,6 +268,31 @@ module.exports = {
         { type: 'doc', id: 'TypeScript/e387b68cc466c705d3a61c3582db7e05' },
         { type: 'doc', id: 'TypeScript/808567b84cc51ad515d4820e54f84e31' },
         { type: 'doc', id: 'TypeScript/b36f6376acc1abd98aab96ef91491d2b' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Web_API',
+      items: [
+        {
+          type: 'category',
+          label: 'Web_Storage_API',
+          items: [
+            { type: 'category', label: 'SessionStorage', items: [] },
+            {
+              type: 'category',
+              label: 'cookie',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    'Web_API/Web_Storage_API/cookie/40a7846fa53cc65a2ba10a089b45f742',
+                },
+              ],
+            },
+            { type: 'category', label: 'localStorage', items: [] },
+          ],
+        },
       ],
     },
     {
@@ -390,108 +415,46 @@ module.exports = {
       items: [
         {
           type: 'category',
-          label: 'mock',
+          label: 'CI&CD',
           items: [
-            { type: 'doc', id: '工程化/mock/2b8c761295905a5878ffc08da1ff4329' },
+            {
+              type: 'category',
+              label: 'GithubActions',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/CI&CD/GithubActions/fe800869807e028c2189be18d866bdb6',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Travis',
+              items: [
+                {
+                  type: 'doc',
+                  id: '工程化/CI&CD/Travis/97cdda6b04325099543efe7e786c8950',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'jekins',
+              items: [
+                {
+                  type: 'doc',
+                  id: '工程化/CI&CD/jekins/a3cef5366f4fcb032201811a2888d464',
+                },
+              ],
+            },
           ],
         },
         {
           type: 'category',
-          label: 'pakage_manager',
+          label: 'mock',
           items: [
-            {
-              type: 'doc',
-              id: '工程化/pakage_manager/e2e67096c2e43d2808a58654a15452cb',
-            },
-            {
-              type: 'category',
-              label: 'monorepo',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/monorepo/2fc77a972253a664a79edc7890b1cdaa',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'npm',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/npm/c7133389f53e8d534c388d5ce8b37459',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/npm/ba56c3b18aefa148f9439f026ec3f973',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/npm/b0d55dfa1de54204fc41a6b540e0e1e8',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/npm/3dd3c63e7e82145fe4b336ebc0271830',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/npm/4d10ece56264e33ab8a02f78698d77a1',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/npm/76a2b2c6444168e2975719ab5b80d947',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'yarn',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/yarn/6eafe4f881d1d6e41cd203f0421e8932',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: '常见问题',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/常见问题/694350b6ceaa5b2e57c6f54052135d17',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/常见问题/505112b129e18311b92912279ec967ac',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/常见问题/aa55a1757ae8690ae5adae7d48914a4a',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/常见问题/fa267f67236440714dbd398db0b50f41',
-                },
-                {
-                  type: 'doc',
-                  id:
-                    '工程化/pakage_manager/常见问题/00acc1fbba1d66b5070d1c7cb5c9a175',
-                },
-              ],
-            },
+            { type: 'doc', id: '工程化/mock/2b8c761295905a5878ffc08da1ff4329' },
           ],
         },
         {
@@ -521,6 +484,102 @@ module.exports = {
                   type: 'doc',
                   id:
                     '工程化/代码格式化和校验/eslint/a32e173f131f0493cb5fc48bf410366b',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '依赖管理',
+          items: [
+            {
+              type: 'doc',
+              id: '工程化/依赖管理/9527a2875c4f497a3e5591c998dbf1b9',
+            },
+            {
+              type: 'category',
+              label: 'monorepo',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/依赖管理/monorepo/9a9bdec52d1d0df963f2fce797a41aeb',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'npm',
+              items: [
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/15732057d56b45df172c9f42dce5b927',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/5fce1d4981826dba4313269418bc61cc',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/b4cd825516ccfa3a2629d71cd4d83e57',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/1db0a7579e96a363551decd8e85b6344',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/f60305b20503e9d2ad9309764e2f6033',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/3d58eee4c0acb507c3e44d4009328e72',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/npm/f8e85efb13561e8ef5b95ea6fa058971',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'yarn',
+              items: [
+                {
+                  type: 'doc',
+                  id: '工程化/依赖管理/yarn/d85b014615bb1a174e857f844b896bd6',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: '常见问题',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/依赖管理/常见问题/80c3108e07b7e17fbc2f62fe3ce3cf5a',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/依赖管理/常见问题/4bb2ebe839492522a5f9e23333349030',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/依赖管理/常见问题/e2b91ae01897224042badfeabb4e9943',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/依赖管理/常见问题/8661f79af48a1805d3bb8e9b0776c7af',
+                },
+                {
+                  type: 'doc',
+                  id:
+                    '工程化/依赖管理/常见问题/5465da474f6f60291fb1a253cce06f5f',
                 },
               ],
             },
@@ -635,7 +694,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: '版本控制系统',
+          label: '版本管理',
           items: [
             {
               type: 'category',
@@ -643,13 +702,11 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id:
-                    '工程化/版本控制系统/git/4afca8d2ec4833c65f692575ce95088a',
+                  id: '工程化/版本管理/git/a3c10acfacecd20085ffd19a4b785459',
                 },
                 {
                   type: 'doc',
-                  id:
-                    '工程化/版本控制系统/git/f44cff448a465ee2ca3198da71bcb121',
+                  id: '工程化/版本管理/git/d22c453d0f1b235abd0a15ed6699608a',
                 },
               ],
             },
@@ -659,8 +716,7 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id:
-                    '工程化/版本控制系统/svn/b5386787959de37c33208051b4795417',
+                  id: '工程化/版本管理/svn/4cd62ad1981b566b1d7616b2e00c73bb',
                 },
               ],
             },
@@ -1149,32 +1205,6 @@ module.exports = {
       type: 'category',
       label: '运维',
       items: [
-        {
-          type: 'category',
-          label: 'CI&CD',
-          items: [
-            {
-              type: 'category',
-              label: 'Travis',
-              items: [
-                {
-                  type: 'doc',
-                  id: '运维/CI&CD/Travis/40d0a1420dd52b1d0a2a6db4d8f65aca',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'jekins',
-              items: [
-                {
-                  type: 'doc',
-                  id: '运维/CI&CD/jekins/69e64cd56b4da0c2d19ca9f6aa38e042',
-                },
-              ],
-            },
-          ],
-        },
         {
           type: 'category',
           label: 'nginx',

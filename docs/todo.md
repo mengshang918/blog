@@ -88,8 +88,11 @@ title: todo
 > - 语义化
 > - 事件
 > 
+> 
 
 ## Node.js
+## Web_API
+### Web_Storage_API
 ## 前端安全
 
 
@@ -172,7 +175,6 @@ title: todo
 >   - 日期、天气
 >   - 每日歌曲、文字、天气提醒
 >   - 四象法则
->   
 > - 接口缓存优化
 > 
 > - 按需加载
@@ -186,7 +188,6 @@ title: todo
 >   - 按行读取
 >   - 复制文件
 >   - 移动文件
->   
 > - mrm-core
 > 
 >   - branchclear
@@ -204,11 +205,11 @@ title: todo
 >   - readme
 >   - monorepo、sigorepo
 > 
->   node包
+>   node 包
 > 
->   react包
+>   react 包
 > 
-> - 
+> -
 > 
 
 ## 小程序
@@ -236,6 +237,12 @@ title: todo
 > 
 
 ## 工程化
+### CI&CD
+#### Travis
+
+> test1
+> 
+
 ### mock
 
 > - 接口 mock
@@ -243,16 +250,6 @@ title: todo
 >   - mockjs
 > - ...
 > 
-
-### pakage_manager
-
-> 1. npx
-> 2. npm scripts
-> 3.
-> 
-
-#### yarn
-
 
 ### 代码格式化和校验
 
@@ -269,6 +266,20 @@ title: todo
 > 
 
 #### eslint
+### 依赖管理
+
+> 1. npx
+> 2. npm scripts
+> 3. pnpm
+> 4. yarn pnp
+> 5. npm dist-tags ls。  npm install默认latest
+> 
+> 
+
+#### yarn
+
+> 
+
 ### 埋点和异常上报
 
 
@@ -281,9 +292,10 @@ title: todo
 ##### 版本
 
 
-### 版本控制系统
+### 版本管理
 #### svn
 
+> 
 
 ### 组件化
 ### 脚手架
@@ -467,12 +479,6 @@ title: todo
 
 
 ## 运维
-### CI&CD
-#### Travis
-
-> test1
-> 
-
 ## 面试
 
 > https://juejin.im/post/6844904116339261447
