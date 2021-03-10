@@ -25,16 +25,17 @@ module.exports = {
         href: 'https://github.com/mengshang918/branchclear-cli',
       },
       {
+        name: 'project-cli',
+        description: '自定义配置，快速构建项目脚手架。',
+        href: 'https://github.com/mengshang918/project-cli#readme',
+      },
+      {
         name: 'node-common',
         description: '封装一些常用的node方法',
       },
       {
         name: 'fetch-api',
         description: '基于whatwg-fetch封装的接口缓存包。',
-      },
-      {
-        name: 'project-cli',
-        description: '自定义配置，快速构建项目脚手架。',
       },
     ],
   },
