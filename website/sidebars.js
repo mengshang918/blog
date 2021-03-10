@@ -272,51 +272,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Web_API',
-      items: [
-        {
-          type: 'category',
-          label: 'Web_Storage_API',
-          items: [
-            {
-              type: 'category',
-              label: 'SessionStorage',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    'Web_API/Web_Storage_API/SessionStorage/dc020d63686df70de2d547449c2738e9',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'cookie',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    'Web_API/Web_Storage_API/cookie/40a7846fa53cc65a2ba10a089b45f742',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'localStorage',
-              items: [
-                {
-                  type: 'doc',
-                  id:
-                    'Web_API/Web_Storage_API/localStorage/c8bde0b418666d887267faaf3e37b740',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
       label: 'mac相关',
       items: [
         { type: 'doc', id: 'mac相关/f9043ab4f4bd67e13820f42a3e175b56' },
@@ -1107,6 +1062,10 @@ module.exports = {
                 {
                   type: 'doc',
                   id: '浏览器/存储/cookie/4b2986d5d16154d8a94d725f6803fbdc',
+                },
+                {
+                  type: 'doc',
+                  id: '浏览器/存储/cookie/e246237f5824539bdb32194314b5afd5',
                 },
               ],
             },

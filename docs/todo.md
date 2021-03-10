@@ -90,16 +90,6 @@ title: todo
 > 
 
 ## Node.js
-## Web_API
-### Web_Storage_API
-#### SessionStorage
-
-> 
-
-#### localStorage
-
-> 
-
 ## 前端安全
 
 
