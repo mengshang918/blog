@@ -29,7 +29,7 @@ function Xmind() {
   })
 
   return (
-    <Layout title={`${siteConfig.title}|思维导图`}>
+    <Layout title={`${siteConfig.title}|思维导图`} noFooter={true}>
       <iframe
         src={useBaseUrl('xmind.html')}
         frameBorder="0"
