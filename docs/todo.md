@@ -88,11 +88,18 @@ title: todo
 > - 语义化
 > - 事件
 > 
-> 
 
 ## Node.js
 ## Web_API
 ### Web_Storage_API
+#### SessionStorage
+
+> 
+
+#### localStorage
+
+> 
+
 ## 前端安全
 
 
@@ -272,13 +279,11 @@ title: todo
 > 2. npm scripts
 > 3. pnpm
 > 4. yarn pnp
-> 5. npm dist-tags ls。  npm install默认latest
-> 
+> 5. npm dist-tags ls。 npm install 默认 latest
 > 
 
 #### yarn
 
-> 
 
 ### 埋点和异常上报
 
@@ -295,7 +300,6 @@ title: todo
 ### 版本管理
 #### svn
 
-> 
 
 ### 组件化
 ### 脚手架

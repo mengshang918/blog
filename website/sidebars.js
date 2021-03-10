@@ -278,7 +278,17 @@ module.exports = {
           type: 'category',
           label: 'Web_Storage_API',
           items: [
-            { type: 'category', label: 'SessionStorage', items: [] },
+            {
+              type: 'category',
+              label: 'SessionStorage',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    'Web_API/Web_Storage_API/SessionStorage/dc020d63686df70de2d547449c2738e9',
+                },
+              ],
+            },
             {
               type: 'category',
               label: 'cookie',
@@ -290,7 +300,17 @@ module.exports = {
                 },
               ],
             },
-            { type: 'category', label: 'localStorage', items: [] },
+            {
+              type: 'category',
+              label: 'localStorage',
+              items: [
+                {
+                  type: 'doc',
+                  id:
+                    'Web_API/Web_Storage_API/localStorage/c8bde0b418666d887267faaf3e37b740',
+                },
+              ],
+            },
           ],
         },
       ],
