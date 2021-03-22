@@ -45,6 +45,16 @@ title: npm基础
 
 3. npm info 包名 //查看当前包所有信息
 
+4. npm view xxx version //查看包的最新版本
+
+   npm view xxx versions //查看包发布的所有版本
+
+5. npm dist-tag add xxx tag //给包添加标签
+
+   npm install xxx 默认使用 latest 标签
+
+   npm dist-tag ls xxx//查看当前包所有标签
+
 ## 常见问题
 
 1. 模块下载(卡顿)超过五分钟

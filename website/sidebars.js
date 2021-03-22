@@ -290,16 +290,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '协议规范',
-      items: [
-        { type: 'doc', id: '协议规范/4dac2ecb9c0266fdc2f0117a2129e0d5' },
-        { type: 'doc', id: '协议规范/08e4ee70cac077e8e29110f3fc5f7ca1' },
-        { type: 'doc', id: '协议规范/c0cdc0b6086c374d267130b1ae1544fa' },
-        { type: 'doc', id: '协议规范/e71b23dfa36e0093f928df8d8ea28b6b' },
-      ],
-    },
-    {
-      type: 'category',
       label: '实践',
       items: [
         { type: 'doc', id: '实践/e60dadaa4eee528c85018bb5fa523752' },
@@ -557,6 +547,48 @@ module.exports = {
                     '工程化/依赖管理/常见问题/5465da474f6f60291fb1a253cce06f5f',
                 },
               ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '协议规范',
+          items: [
+            {
+              type: 'doc',
+              id: '工程化/协议规范/993207a984ee052c1ddd59681fd9b1bf',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/63e3f15bc79b1f9b0c4d967587030c59',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/ea0f1a36d31f9c158a2e4ccfce38a876',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/723396924c4ed2f7f00c90ea454b2a88',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/7cb3f7a96ffb83a09cd86829799a9fbf',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/49a592b47a06fa922f7d3741cac14eb8',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/55025379543350af856931f78ede1ceb',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/6da04cfcfd8b3c384aac71250ab4ca40',
+            },
+            {
+              type: 'doc',
+              id: '工程化/协议规范/059a10050efba50f107ff235a91cbc8c',
             },
           ],
         },

@@ -1,5 +1,5 @@
 ---
-id: c0cdc0b6086c374d267130b1ae1544fa
+id: 7cb3f7a96ffb83a09cd86829799a9fbf
 title: license规范
 ---
 

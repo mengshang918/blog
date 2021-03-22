@@ -103,53 +103,6 @@ title: todo
 > - openlayer
 > 
 
-## 协议规范
-
-> - git 规范（https://hschne.at/git-aliases/）
-> 
->   - 分支管理
-> 
->     - 发布分支管理
-> 
->     - npm 包分支管理
-> 
->       参考 github 大型 bao 分支管理流程
-> 
->   - fetch/merge
-> 
->     - 是否涉及到 version 和 changelog 生成
-> 
->   - [commit 提交规范](https://www.conventionalcommits.org/)
-> 
->   - push 规范
-> 
->     - 强制提交
-> 
-> - monorepo 规范
-> 
-> - 包管理规范
-> 
->   - monorepo+yarn workspace
->   - yarn pnp
->   - singlerepo
-> 
-> - yarn 还是 npm
-> 
->   - 新版
-> 
-> * eslint 规范
-> * browserlist 规范
-> * 编辑器规范
-> 
->   - vscode
->   - webstorm
-> 
-> * gitignore 规范
-> * prettier 规范
-> * readme 规范
->   - 添加版本语义化规范链接https://semver.org/lang/zh-CN/
-> 
-
 ## 实践
 
 > <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -267,13 +220,33 @@ title: todo
 
 > 1. npx
 > 2. npm scripts
-> 3. pnpm
-> 4. yarn pnp
-> 5. npm dist-tags ls。 npm install 默认 latest
+> 3. pnpm & yarn pnp & npm & yarn
+> 4. npm dist-tags ls。 npm install 默认 latest
+> 5. Npm token or npm _auth  username:password
+> 
 > 
 
 #### yarn
 
+
+### 协议规范
+
+> - 
+> 
+>   - 分支管理
+> 
+>     - ~~发布分支管理~~
+> 
+>     - ~~npm 包分支管理~~
+> 
+>       ~~参考 github 大型 bao 分支管理流程~~
+> 
+>     
+> 
+> 
+> 
+> 
+> 
 
 ### 埋点和异常上报
 

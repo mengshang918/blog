@@ -165,6 +165,10 @@ module.exports = {
               label: 'egghead视屏',
               href: 'https://egghead.io/',
             },
+            {
+              label: 'css-tricks',
+              href: 'https://css-tricks.com/',
+            },
           ],
         },
         {
