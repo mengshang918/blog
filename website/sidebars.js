@@ -556,19 +556,11 @@ module.exports = {
           items: [
             {
               type: 'doc',
-              id: '工程化/协议规范/993207a984ee052c1ddd59681fd9b1bf',
-            },
-            {
-              type: 'doc',
               id: '工程化/协议规范/63e3f15bc79b1f9b0c4d967587030c59',
             },
             {
               type: 'doc',
               id: '工程化/协议规范/ea0f1a36d31f9c158a2e4ccfce38a876',
-            },
-            {
-              type: 'doc',
-              id: '工程化/协议规范/723396924c4ed2f7f00c90ea454b2a88',
             },
             {
               type: 'doc',
@@ -580,15 +572,7 @@ module.exports = {
             },
             {
               type: 'doc',
-              id: '工程化/协议规范/55025379543350af856931f78ede1ceb',
-            },
-            {
-              type: 'doc',
               id: '工程化/协议规范/6da04cfcfd8b3c384aac71250ab4ca40',
-            },
-            {
-              type: 'doc',
-              id: '工程化/协议规范/059a10050efba50f107ff235a91cbc8c',
             },
           ],
         },

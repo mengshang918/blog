@@ -15,7 +15,4 @@ title: changelog规范
 
 1. https://keepachangelog.com/en/1.0.0/
 2. https://www.conventionalcommits.org/en/v1.0.0/
-
-## todo
-
-1. https://zhuanlan.zhihu.com/p/51894196
+3. https://zhuanlan.zhihu.com/p/51894196

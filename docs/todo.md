@@ -222,31 +222,11 @@ title: todo
 > 2. npm scripts
 > 3. pnpm & yarn pnp & npm & yarn
 > 4. npm dist-tags ls。 npm install 默认 latest
-> 5. Npm token or npm _auth  username:password
-> 
+> 5. Npm token or npm \_auth username:password
 > 
 
 #### yarn
 
-
-### 协议规范
-
-> - 
-> 
->   - 分支管理
-> 
->     - ~~发布分支管理~~
-> 
->     - ~~npm 包分支管理~~
-> 
->       ~~参考 github 大型 bao 分支管理流程~~
-> 
->     
-> 
-> 
-> 
-> 
-> 
 
 ### 埋点和异常上报
 
