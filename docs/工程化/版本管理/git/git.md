@@ -264,19 +264,30 @@ title: git
 
 1. 附注标签
    `git tag -a 标签(一般是版本号) -m "详细解释"`
+   
 2. 轻量标签
    `git tag 标签`
+   
 3. 查看某一个标签
    `git show 标签`
+   
 4. 列出所有的标签
    `git tag`
+   
 5. 给某个历史提交(commitId)打标签
    `git tag 标签 commitId`
-6. 删除标签
+   
+6. 删除本地标签
    `git tag -d 标签名`
-7. 将某个标签提交到远程
+
+7. 删除远程标签
+
+   git push origin :refs/tags/标签名
+
+8. 将某个标签提交到远程
    `git push origin 标签名`
-8. 将所有的标签提交到远程
+
+9. 将所有的标签提交到远程
    `git push origin --tags`
 
 ## 分布式 Git
