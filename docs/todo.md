@@ -225,9 +225,6 @@ title: todo
 > 5. Npm token or npm \_auth username:password
 > 
 
-#### yarn
-
-
 ### 埋点和异常上报
 
 

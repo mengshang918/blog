@@ -223,7 +223,7 @@ module.exports = {
           items: [
             {
               type: 'doc',
-              id: 'Node.js/常用npm_package/5b48dd8280d9d24945307c72022765a0',
+              id: 'Node.js/常用npm_package/9688efbb3877b7be40b25452ccaef48f',
             },
           ],
         },
@@ -513,7 +513,7 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id: '工程化/依赖管理/yarn/d85b014615bb1a174e857f844b896bd6',
+                  id: '工程化/依赖管理/yarn/9ae9305418cff5aa629668bf9bc2f1f2',
                 },
               ],
             },
@@ -556,7 +556,7 @@ module.exports = {
           items: [
             {
               type: 'doc',
-              id: '工程化/协议规范/63e3f15bc79b1f9b0c4d967587030c59',
+              id: '工程化/协议规范/11d34bb17b6b6518fe13a517e8018b61',
             },
             {
               type: 'doc',
@@ -694,6 +694,10 @@ module.exports = {
                 {
                   type: 'doc',
                   id: '工程化/版本管理/git/a3c10acfacecd20085ffd19a4b785459',
+                },
+                {
+                  type: 'doc',
+                  id: '工程化/版本管理/git/312c951b7bed071f4a67dda0bf41816c',
                 },
                 {
                   type: 'doc',
