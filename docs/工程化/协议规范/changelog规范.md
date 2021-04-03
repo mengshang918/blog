@@ -21,7 +21,7 @@ title: changelog规范
 
 2. 在`lerna.json`中配置`changelogPreset`，如下
 
-   ```json
+   ```json title="lerna.json"
    {
      "changelogPreset": {
        "name": "conventionalcommits",
@@ -56,7 +56,7 @@ title: changelog规范
 
        上述模板占位符可以在 context 文件中配置
 
-       ```json
+       ```json title="context.json 名字无所谓，是json格式就行"
        {
          "owner": "drip",
          "repository": "drip-form"

@@ -1,7 +1,9 @@
 ---
-id: 9a9bdec52d1d0df963f2fce797a41aeb
+id: e0189ac820aefcacbde63dfb11654d49
 title: monorepo
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # monorepo
 
@@ -235,3 +237,7 @@ title: monorepo
 2. 为什么 lerna.json 设置了`command.version.message`为`chore(release): %s`无效
 
    只有在固定模式才会替换%s
+
+3. 如何自定义 changelog
+
+   参考：<a href={useBaseUrl('docs/工程化/协议规范/11d34bb17b6b6518fe13a517e8018b61#在-monorepo-中如何生成-changelog')}>在 monorepo 中如何生成 changelog</a>

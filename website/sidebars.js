@@ -469,7 +469,7 @@ module.exports = {
                 {
                   type: 'doc',
                   id:
-                    '工程化/依赖管理/monorepo/9a9bdec52d1d0df963f2fce797a41aeb',
+                    '工程化/依赖管理/monorepo/e0189ac820aefcacbde63dfb11654d49',
                 },
               ],
             },
