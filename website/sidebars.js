@@ -685,23 +685,44 @@ module.exports = {
         },
         {
           type: 'category',
-          label: '版本管理',
+          label: '版本管理系统',
           items: [
             {
               type: 'category',
               label: 'git',
               items: [
                 {
-                  type: 'doc',
-                  id: '工程化/版本管理/git/a3c10acfacecd20085ffd19a4b785459',
+                  type: 'category',
+                  label: 'git基础',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/版本管理系统/git/git基础/12b518e6845d24e76fe6670f70959236',
+                    },
+                  ],
                 },
                 {
-                  type: 'doc',
-                  id: '工程化/版本管理/git/312c951b7bed071f4a67dda0bf41816c',
+                  type: 'category',
+                  label: 'git实践',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/版本管理系统/git/git实践/f895b52959649d7be0d3272609467090',
+                    },
+                  ],
                 },
                 {
-                  type: 'doc',
-                  id: '工程化/版本管理/git/d22c453d0f1b235abd0a15ed6699608a',
+                  type: 'category',
+                  label: 'git进阶',
+                  items: [
+                    {
+                      type: 'doc',
+                      id:
+                        '工程化/版本管理系统/git/git进阶/500396d53723578a75a7f6b5446b44d7',
+                    },
+                  ],
                 },
               ],
             },
@@ -711,7 +732,8 @@ module.exports = {
               items: [
                 {
                   type: 'doc',
-                  id: '工程化/版本管理/svn/4cd62ad1981b566b1d7616b2e00c73bb',
+                  id:
+                    '工程化/版本管理系统/svn/ddc55d7ae5a094292c2d26f61f5d8e46',
                 },
               ],
             },

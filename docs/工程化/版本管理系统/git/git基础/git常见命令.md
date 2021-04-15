@@ -1,6 +1,6 @@
 ---
-id: a3c10acfacecd20085ffd19a4b785459
-title: git
+id: 12b518e6845d24e76fe6670f70959236
+title: git常见命令
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -264,19 +264,14 @@ title: git
 
 1. 附注标签
    `git tag -a 标签(一般是版本号) -m "详细解释"`
-   
 2. 轻量标签
    `git tag 标签`
-   
 3. 查看某一个标签
    `git show 标签`
-   
 4. 列出所有的标签
    `git tag`
-   
 5. 给某个历史提交(commitId)打标签
    `git tag 标签 commitId`
-   
 6. 删除本地标签
    `git tag -d 标签名`
 
