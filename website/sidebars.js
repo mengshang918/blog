@@ -698,7 +698,7 @@ module.exports = {
                     {
                       type: 'doc',
                       id:
-                        '工程化/版本管理系统/git/git基础/12b518e6845d24e76fe6670f70959236',
+                        '工程化/版本管理系统/git/git基础/2ee15ea263762953cb96d88106cbdf2d',
                     },
                   ],
                 },

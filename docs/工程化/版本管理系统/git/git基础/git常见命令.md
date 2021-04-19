@@ -1,5 +1,5 @@
 ---
-id: 12b518e6845d24e76fe6670f70959236
+id: 2ee15ea263762953cb96d88106cbdf2d
 title: git常见命令
 ---
 
@@ -26,6 +26,12 @@ title: git常见命令
 ## git 流程图
 
 ![git 流程](https://img-blog.csdnimg.cn/2020010915034312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21lbmdzaGFuZzUyOQ==,size_16,color_FFFFFF,t_70)
+
+**本地工作目录即工作区**
+
+`git reset --HEAD 文件1 文件2` 撤销暂存区 文件 1 和文件 2 到工作区
+
+`git reset --hard xxxcommitId` 撤销 xxxcommitId 之后的 commit
 
 ## git init 生成的.git 文件目录
 
@@ -212,6 +218,8 @@ title: git常见命令
 
    `git cehckout 分支名`
 
+   `git checkout -b a b`基于分支 b 创建并切换 a 分支
+
 3. 删除本地和远程分支
 
    - 本地
@@ -361,7 +369,7 @@ title: git常见命令
 
      `git stash drop xxx`指定删除 list 中某个暂存（不会应用），不指定则默认最新的暂存
 
-     `git stash cleear`清空 list 中所有 stash
+     `git stash clear`清空 list 中所有 stash
 
    - 查看
 
