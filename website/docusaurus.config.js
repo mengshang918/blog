@@ -179,11 +179,11 @@ module.exports = {
             },
             {
               label: 'js发展',
-              href: 'https://2020.stateofjs.com/en-US/',
+              href: 'https://stateofjs.com/',
             },
             {
               label: 'css发展',
-              href: 'https://2020.stateofcss.com/en-US/',
+              href: 'https://stateofcss.com/',
             },
           ],
         },
