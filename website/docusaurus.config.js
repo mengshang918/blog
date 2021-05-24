@@ -169,6 +169,14 @@ module.exports = {
               label: 'css-tricks',
               href: 'https://css-tricks.com/',
             },
+            {
+              label: 'tc39',
+              href: 'https://tc39.es/',
+            },
+            {
+              label: '开源奖',
+              href: 'https://osawards.com/',
+            },
           ],
         },
         {
@@ -185,6 +193,10 @@ module.exports = {
             {
               label: 'CSDN博客',
               href: 'https://blog.csdn.net/mengshang529',
+            },
+            {
+              label: '前端达人',
+              href: 'https://zju.date/fe-newbility/',
             },
           ],
         },

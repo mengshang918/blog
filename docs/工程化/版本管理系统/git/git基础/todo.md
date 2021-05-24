@@ -1,5 +1,5 @@
 ---
-id: eb6f3339b48c485a505130312e4ba55b
+id: 6464694119e90e5321a1cf61496ef4c0
 title: todo
 ---
 
@@ -135,4 +135,4 @@ stars:>1000
 
 ## todo
 
-1. fast-forward
+1. [fast-forward](https://git-scm.com/docs/git-merge)
