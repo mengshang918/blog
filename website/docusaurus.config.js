@@ -177,6 +177,14 @@ module.exports = {
               label: '开源奖',
               href: 'https://osawards.com/',
             },
+            {
+              label: 'js发展',
+              href: 'https://2020.stateofjs.com/en-US/',
+            },
+            {
+              label: 'css发展',
+              href: 'https://2020.stateofcss.com/en-US/',
+            },
           ],
         },
         {
