@@ -908,7 +908,7 @@ module.exports = {
           type: 'category',
           label: 'react',
           items: [
-            { type: 'doc', id: '框架/react/9ca92b8c1296b001d3e7fca1b3cf8ae8' },
+            { type: 'doc', id: '框架/react/49e5c57cf10428a541cabf58c6dca9a1' },
             {
               type: 'category',
               label: 'hooks',
