@@ -185,6 +185,10 @@ module.exports = {
               label: 'css发展',
               href: 'https://stateofcss.com/',
             },
+            {
+              label: 'kentcdodds blog',
+              href: 'https://kentcdodds.com/blog',
+            },
           ],
         },
         {
